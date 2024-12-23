@@ -8,10 +8,12 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://www.linkedin.com/in/tanquangduong/
+      href: https://www.linkedin.com/in/phuong-ntl/
     - icon: github
       text: Github
-      href: https://github.com/tanquangduong
+      href: https://github.com/Phuong-NTL
 ---
 
-Hi, I'm Quang. I am an AI/ML engineer. I live and work in Paris, France.
+Hi, I'm Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in Paris, France.
+
+I have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as GCP, Azure, and AWS.

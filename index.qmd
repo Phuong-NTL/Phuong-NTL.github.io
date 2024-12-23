@@ -1,6 +1,6 @@
 ---
-title: "✨ AI/ML, MLOps, LLMOps"
-description: "📝 Best Practices, Tutorial Notebooks, AI Paper Reviews"
+title: "✨ Data Analysis, Business Intelligence"
+description: "📝 Story Telling, Dashboard, Reports"
 listing:
   contents: posts
   sort: "date desc"

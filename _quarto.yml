@@ -3,9 +3,9 @@ project:
   output-dir: docs
 
 website:
-  title: "Quang Duong"
-  description: "Illustrated guide about artificial intelligence, machine learning."
-  site-url: https://tanquangduong.github.io/
+  title: "Phuong Nguyen"
+  description: "Tutorial, blog, and portfolio of Phuong Nguyen"
+  site-url: https://phuong-ntl.github.io/
   navbar:
     logo: "/images/logo_perso.png"
     left: 
@@ -17,15 +17,15 @@ website:
         file: about.qmd
     right:
       - icon: linkedin
-        href: https://www.linkedin.com/in/tanquangduong/
+        href: https://www.linkedin.com/in/phuong-ntl/
       - icon: github
-        href: https://github.com/tanquangduong
+        href: https://github.com/Phuong-NTL
 
     pinned: false
   favicon: /images/favicon.ico
   twitter-card: true
   open-graph: true
-  page-footer: "{{< fa regular copyright >}} Copyright 2024, Quang T. Duong" 
+  page-footer: "{{< fa regular copyright >}} Copyright 2024, Phuong Nguyen" 
 
   sidebar:
       - id: articles
@@ -34,26 +34,11 @@ website:
         collapse-level: 2
         align: left
         contents:
-          - section: "🧪 **Data Processing**"
+          - section: "🧪 **Power BI Dashboard/Report**"
             contents:
-              - text: "2. Preference Dataset"
-                href: posts/preference-dataset-dpo.html
-          - text: "---"
-          - section: "⚡ **Fine-Tuning**"
-            contents:
-              - text: "1. Supervised Fine-Tuning"
-                href: posts/unsloth-qwen-sft-lora.html   
-              - text: "2. Preference Alignment Fine-Tuning with DPO"
-                href: posts/unsloth-qwen-dpo.html 
-          - text: "---"
-          - section: "💬 **AI Chatbot**"
-            contents:
-              - text: "1. 🤖 Build First Conversational Agentic Chatbot"
-                href: posts/conversational-agent-chatbot.qmd
-              - text: "2. 🛡️ Guardrails for Domain-specific Chatbot"
-                href: posts/domain-specific-chatbot-guardrails.qmd 
-              # - text: "2. Fine-tune Qwen2.5-3B with DPO"
-              #   href: posts/unsloth-qwen-dpo.html      
+              - text: "1. Financial Dashboard"
+                href: posts/financial-dashboard.qmd
+          - text: "---"    
 format:
   html:
     page-layout: article
