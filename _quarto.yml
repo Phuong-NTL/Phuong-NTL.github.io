@@ -36,8 +36,6 @@ website:
         contents:
           - section: "🧪 **Data Processing**"
             contents:
-              - text: "1. Instruction Dataset"
-                href: posts/instruction-dataset-sft.html
               - text: "2. Preference Dataset"
                 href: posts/preference-dataset-dpo.html
           - text: "---"
