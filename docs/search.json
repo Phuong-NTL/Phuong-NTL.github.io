@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "posts/financial-dashboard.html",
-    "href": "posts/financial-dashboard.html",
-    "title": "Financial Dashboard",
+    "objectID": "posts/pbi-tuto-executive-summary-finance-report.html",
+    "href": "posts/pbi-tuto-executive-summary-finance-report.html",
+    "title": "Build Excecutive Summary - Finance Report",
     "section": "",
-    "text": "Conversational Agentic Chatbots leveraging Large Language Models (LLMs) represent a significant leap in AI-powered communication. These advanced chatbots go beyond simple query responses, actively engaging in complex tasks and decision-making processes.\nThey can interact with databases to answer user questions, schedule appointments, or compose and send emails, to name but a few. Unlike traditional chatbots, these AI agents understand context, adapt to user needs in real time, and can perform actions autonomously.\nThe increasing importance of agentic chatbots in the AI world stems from their ability to provide more personalized, efficient, and human-like interactions.\nSome benefits include reduced workload for human teams, and the capacity to handle complex inquiries with greater accuracy and contextual awareness.\nAs businesses seek to enhance customer engagement and streamline operations, agentic chatbots powered by LLMs are becoming indispensable tools for delivering superior user experiences and driving operational efficiency",
+    "text": "Welcome to Business Intelligence world with Power BI!\nIn this post I will walk you through how to build an executive summary - finance report with Power BI.",
     "crumbs": [
       "📝Posts",
       "🧪 **Power BI Dashboard/Report**",
@@ -12,11 +12,11 @@
     ]
   },
   {
-    "objectID": "posts/financial-dashboard.html#conversational-agentic-chatbot",
-    "href": "posts/financial-dashboard.html#conversational-agentic-chatbot",
-    "title": "Financial Dashboard",
-    "section": "Conversational Agentic Chatbot",
-    "text": "Conversational Agentic Chatbot",
+    "objectID": "posts/pbi-tuto-executive-summary-finance-report.html#use-case-description",
+    "href": "posts/pbi-tuto-executive-summary-finance-report.html#use-case-description",
+    "title": "Build Excecutive Summary - Finance Report",
+    "section": "Use-case description",
+    "text": "Use-case description\n\nOur dataset is a sample Financical dataset of Power BI Desktop\nOur objective is to build a Power BI report that help the executives to answer the three following questions:\n\nWhich month and year had the most profit?\nWhere is the company seeing the most success (by country/region)?\nWhich product and segment should the company continue to invest in?",
     "crumbs": [
       "📝Posts",
       "🧪 **Power BI Dashboard/Report**",
@@ -24,11 +24,35 @@
     ]
   },
   {
-    "objectID": "posts/financial-dashboard.html#dashboard",
-    "href": "posts/financial-dashboard.html#dashboard",
-    "title": "Financial Dashboard",
-    "section": "Dashboard",
-    "text": "Dashboard",
+    "objectID": "posts/pbi-tuto-executive-summary-finance-report.html#how-to-guide",
+    "href": "posts/pbi-tuto-executive-summary-finance-report.html#how-to-guide",
+    "title": "Build Excecutive Summary - Finance Report",
+    "section": "How-to guide",
+    "text": "How-to guide\nOur development process involves the following steps:\n\nData preparation\n\nData loading\nData transformation\n\nConvert data type of “Units Sold” to Whole Number\nChange text format of “Segment” to UPPERCASE\nRename “Month Name” to “Month”\nDrop “Montana” product from “Product” as we know that the Montana product was discontinued last month.\n\n\nData modeling\n\nWrite two DAX formulas for measures and tables\n\nBuild report\n\nVisual #1: Add a title\nVisual #2: Line graph for Profit by Date\nVisual #3: Map graph for Profit by Country/Region\nVisual #4: Bar graph for Sales by Product and Segment\nVisual #5: Time slider for Year\n\nPublish our report from Power BI Desktop to Power BI service to share\n\nTo give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:",
+    "crumbs": [
+      "📝Posts",
+      "🧪 **Power BI Dashboard/Report**",
+      "1. Financial Dashboard"
+    ]
+  },
+  {
+    "objectID": "posts/pbi-tuto-executive-summary-finance-report.html#our-result",
+    "href": "posts/pbi-tuto-executive-summary-finance-report.html#our-result",
+    "title": "Build Excecutive Summary - Finance Report",
+    "section": "Our result",
+    "text": "Our result\nIn summary, our final Executive Summary - Finance Report should be like this:\n\n\n\nFrom this report, we can help executive manager to answer the concerned questions:\n\nWhich month and year had the most profit?\n\nDecember 2014\n\nWhich country/region is the company seeing the most success in?\n\nIn Europe, specifically France and Germany.\n\nWhich product and segment should the company continue to invest in?\n\nThe company should continue to invest in the Paseo product and target the Small Business and Government segments.",
+    "crumbs": [
+      "📝Posts",
+      "🧪 **Power BI Dashboard/Report**",
+      "1. Financial Dashboard"
+    ]
+  },
+  {
+    "objectID": "posts/pbi-tuto-executive-summary-finance-report.html#reference",
+    "href": "posts/pbi-tuto-executive-summary-finance-report.html#reference",
+    "title": "Build Excecutive Summary - Finance Report",
+    "section": "Reference",
+    "text": "Reference\n\n[1] https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-excel-stunning-report",
     "crumbs": [
       "📝Posts",
       "🧪 **Power BI Dashboard/Report**",
@@ -40,13 +64,13 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Hi, I’m Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in Paris, France.\nI have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as GCP, Azure, and AWS."
+    "text": "Hi, I’m Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in Paris, France.\nI have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as Azure, GCP, AWS, Databricks."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "✨ Data Analysis, Business Intelligence",
     "section": "",
-    "text": "Financial Dashboard\n\n\nBuilding Financial Dashboard with Power BI\n\n\n\nPower BI\n\n\nFinancial Dashboard\n\n\nProfit Analysis\n\n\n\n\n\n\nNov 23, 2024\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Build Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
   }
 ]

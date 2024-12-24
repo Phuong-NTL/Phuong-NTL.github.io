@@ -7,7 +7,7 @@ website:
   description: "Tutorial, blog, and portfolio of Phuong Nguyen"
   site-url: https://phuong-ntl.github.io/
   navbar:
-    logo: "/images/logo_phuong.png"
+    logo: "/images/logo-profile/Logo-Phuong-P.png"
     left: 
       - text: "📝Posts"
         file: index.qmd
@@ -22,7 +22,7 @@ website:
         href: https://github.com/Phuong-NTL
 
     pinned: false
-  favicon: /images/favicon.ico
+  favicon: /images/logo-profile/favicon.ico
   twitter-card: true
   open-graph: true
   page-footer: "{{< fa regular copyright >}} Copyright 2024, Phuong Nguyen" 
@@ -37,8 +37,12 @@ website:
           - section: "🧪 **Power BI Dashboard/Report**"
             contents:
               - text: "1. Financial Dashboard"
-                href: posts/financial-dashboard.qmd
-          - text: "---"    
+                href: posts/pbi-tuto-executive-summary-finance-report.qmd
+          - text: "---" 
+          - section: "🔗 **Databricks x Power BI**"
+            contents:
+              - text: "1. Connect Power BI to Databricks"
+          - text: "---"   
 format:
   html:
     page-layout: article

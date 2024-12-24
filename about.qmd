@@ -1,7 +1,7 @@
 ---
 title: "About"
 title-block-style: none
-image: ./images/profile.png
+image: ./images/logo-profile/profile.png
 sidebar: false
 about:
   template: jolla
@@ -16,4 +16,4 @@ about:
 
 Hi, I'm Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in Paris, France.
 
-I have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as GCP, Azure, and AWS.
+I have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as Azure, GCP, AWS, Databricks.
