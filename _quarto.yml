@@ -7,7 +7,7 @@ website:
   description: "Tutorial, blog, and portfolio of Phuong Nguyen"
   site-url: https://phuong-ntl.github.io/
   navbar:
-    logo: "/images/logo_perso.png"
+    logo: "/images/logo_phuong.png"
     left: 
       - text: "📝Posts"
         file: index.qmd
