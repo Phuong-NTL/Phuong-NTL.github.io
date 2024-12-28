@@ -28,7 +28,31 @@
     "href": "posts/pbi-tuto-executive-summary-finance-report.html#how-to-guide",
     "title": "Build Excecutive Summary - Finance Report",
     "section": "How-to guide",
-    "text": "How-to guide\nOur development process involves the following steps:\n\nData preparation\n\nData loading\nData transformation\n\nConvert data type of “Units Sold” to Whole Number\nChange text format of “Segment” to UPPERCASE\nRename “Month Name” to “Month”\nDrop “Montana” product from “Product” as we know that the Montana product was discontinued last month.\n\n\nData modeling\n\nWrite two DAX formulas for measures and tables\n\nBuild report\n\nVisual #1: Add a title\nVisual #2: Line graph for Profit by Date\nVisual #3: Map graph for Profit by Country/Region\nVisual #4: Bar graph for Sales by Product and Segment\nVisual #5: Time slider for Year\n\nPublish our report from Power BI Desktop to Power BI service to share\n\nTo give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:",
+    "text": "How-to guide\nOur development process involves the following steps:\n\nData preparation\n\nData loading\nData transformation\n\nConvert data type of “Units Sold” to Whole Number\nChange text format of “Segment” to UPPERCASE\nRename “Month Name” to “Month”\nDrop “Montana” product from “Product” as we know that the Montana product was discontinued last month.\n\n\nData modeling\n\nWrite two DAX formulas for measures and tables\n\nBuild report\n\nVisual #1: Add a title\nVisual #2: Line graph for Profit by Date\nVisual #3: Map graph for Profit by Country/Region\nVisual #4: Bar graph for Sales by Product and Segment\nVisual #5: Time slider for Year\n\nPublish our report from Power BI Desktop to Power BI service to share\n\nTo give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:\n{&lt; video https://www.youtube.com/watch?v=Drteaday4FI}",
+    "crumbs": [
+      "📝Posts",
+      "🧪 **Power BI Dashboard/Report**",
+      "1. Financial Dashboard"
+    ]
+  },
+  {
+    "objectID": "posts/pbi-tuto-executive-summary-finance-report.html#our-result",
+    "href": "posts/pbi-tuto-executive-summary-finance-report.html#our-result",
+    "title": "Build Excecutive Summary - Finance Report",
+    "section": "Our result",
+    "text": "Our result\nIn summary, our final Executive Summary - Finance Report should be like this:\n\n\n\nFrom this report, we can help executive manager to answer the concerned questions:\n\nWhich month and year had the most profit?\n\nDecember 2014\n\nWhich country/region is the company seeing the most success in?\n\nIn Europe, specifically France and Germany.\n\nWhich product and segment should the company continue to invest in?\n\nThe company should continue to invest in the Paseo product and target the Small Business and Government segments.",
+    "crumbs": [
+      "📝Posts",
+      "🧪 **Power BI Dashboard/Report**",
+      "1. Financial Dashboard"
+    ]
+  },
+  {
+    "objectID": "posts/pbi-tuto-executive-summary-finance-report.html#reference",
+    "href": "posts/pbi-tuto-executive-summary-finance-report.html#reference",
+    "title": "Build Excecutive Summary - Finance Report",
+    "section": "Reference",
+    "text": "Reference\n\n[1] https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-excel-stunning-report",
     "crumbs": [
       "📝Posts",
       "🧪 **Power BI Dashboard/Report**",

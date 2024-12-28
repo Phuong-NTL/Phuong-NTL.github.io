@@ -43,7 +43,7 @@ Our development process involves the following steps:
 
 To give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:
 
-{{< video https://www.youtube.com/watch?v=Drteaday4FI}}
+{< video https://www.youtube.com/watch?v=Drteaday4FI}
 
 ## Our result
 In summary, our final Executive Summary - Finance Report should be like this:
