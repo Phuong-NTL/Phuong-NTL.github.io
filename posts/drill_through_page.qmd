@@ -1,6 +1,6 @@
 ---
-title: "Improving Power BI Reports with Drill-through Pages and Visualizing Changes Over Time"
-subtitle: "Mastering Power BI with Finance Report Use-case"
+title: "Improving Power BI Reports with Drill-through Pages"
+subtitle: "Mastering Power BI with Finance Report Use-case and Drill-through page"
 author: "Phuong Nguyen"
 date: "2024-12-23"
 categories: [Power BI, Report, Drill-through Pages, Hierarchy, Changes Over Time]
