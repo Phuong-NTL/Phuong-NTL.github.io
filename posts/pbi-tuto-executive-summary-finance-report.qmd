@@ -26,24 +26,24 @@ Our development process involves the following steps:
 
 **- Data preparation** 
 
-	- Data loading
-	- Data transformation
-		- Convert the data type of "Units Sold" to Whole Number.
-		- Change the ext format of "Segment" to UPPERCASE.
-		- Rename "Month Name" to "Month".
-		- Remove the "Montana" product from "Product" as it was discontinued last month.
+- Data loading
+- Data transformation
+	- Convert the data type of "Units Sold" to Whole Number.
+	- Change the ext format of "Segment" to UPPERCASE.
+	- Rename "Month Name" to "Month".
+	- Remove the "Montana" product from "Product" as it was discontinued last month.
 
 **- Data modeling**
 
-	- Write two DAX formulas for *measures* and *tables*
+- Write two DAX formulas for *measures* and *tables*
 
 **- Report building**
 
-	- Visual #1: Add a title
-	- Visual #2: Line graph for Profit by Date
-	- Visual #3: Map visualisation for Profit by Country/Region
-	- Visual #4: Bar graph for Sales by Product and Segment
-	- Visual #5: Time slider for Year 
+- Visual #1: Add a title
+- Visual #2: Line graph for Profit by Date
+- Visual #3: Map visualisation for Profit by Country/Region
+- Visual #4: Bar graph for Sales by Product and Segment
+- Visual #5: Time slider for Year 
 
 **- Report Publishing**
 
