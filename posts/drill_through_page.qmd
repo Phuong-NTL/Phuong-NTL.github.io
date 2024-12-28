@@ -2,7 +2,7 @@
 title: "Improving Power BI Reports with Drill-through Pages"
 subtitle: "Mastering Power BI with Finance Report Use-case and Drill-through page"
 author: "Phuong Nguyen"
-date: "2024-12-23"
+date: "2024-12-27"
 categories: [Power BI, Report, Drill-through Pages, Hierarchy, Changes Over Time]
 image: "/images/drill_through_page/thumbnail_drillpage.png" 
 ---
@@ -50,18 +50,18 @@ Our development process follows these key steps:
 **Page 1: General Report**
 
 - Add a title.
-- Visual 1: Clustered bar chart showing Actual Amount and Budgeted Amount by Fund Name.
-- Visual 2: Table listing departments over/under budget.
-- Visual 3: Card visual displaying the total amount over budget.
+- Visual #1: Clustered bar chart showing Actual Amount and Budgeted Amount by Fund Name.
+- Visual #2: Table listing departments over/under budget.
+- Visual #3: Card visual displaying the total amount over budget.
 - Apply a filter to display data for fiscal year 2019.
 - Add lines to separate sections of the report.
 
 **Page 2: Drill-through Detailed Report**
 
 - Add a title.
-- Visual 4: Line chart showing Actual Amount over time.
-- Visual 5: Treemap visualizing Actual Amount by Division and Cost Center. Add a drill-through dimension to this page.
-- Visual 6: Scatter chart with a Play Axis to visualize Expenditures by Cost Center over time (Year and Month).
+- Visual #4: Line chart showing Actual Amount over time.
+- Visual #5: Treemap visualizing Actual Amount by Division and Cost Center. Add a drill-through dimension to this page.
+- Visual #6: Scatter chart with a Play Axis to visualize Expenditures by Cost Center over time (Year and Month).
 
 ### Report Publishing
 
