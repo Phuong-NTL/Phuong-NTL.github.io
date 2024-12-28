@@ -60,6 +60,13 @@
     ]
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "✨ Data Analysis, Business Intelligence",
+    "section": "",
+    "text": "Improving Power BI Reports with Drill-through Pages and Visualizing Changes Over Time\n\n\nMastering Power BI with Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDrill-through Pages\n\n\nHierarchy\n\n\nChanges Over Time\n\n\n\n\n\n\nDec 23, 2024\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -67,10 +74,38 @@
     "text": "Hi, I’m Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in Paris, France.\nI have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as Azure, GCP, AWS, Databricks.\nI am co-founder of the Youtube channel Data AI Upskill, where I bring to you hands-on tutorials, best practices, and project-based videos about Data & AI. Hope this is helpful for the Data & AI learner community.\nSubscribe to my channel to learn the latest Data & AI tutorial videos :)"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "✨ Data Analysis, Business Intelligence",
+    "objectID": "posts/drill_through_page.html",
+    "href": "posts/drill_through_page.html",
+    "title": "Improving Power BI Reports with Drill-through Pages and Visualizing Changes Over Time",
     "section": "",
-    "text": "Build Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Hello!\nIn this post, I will introduce how to enhance Power BI reports by using drill-through fields to filter detailed reports, providing deeper insights. Additionally, I will demonstrate how to visualize changes over time using the Play Axis feature, which offers engaging and dynamic data insights."
+  },
+  {
+    "objectID": "posts/drill_through_page.html#use-case-description",
+    "href": "posts/drill_through_page.html#use-case-description",
+    "title": "Improving Power BI Reports with Drill-through Pages and Visualizing Changes Over Time",
+    "section": "Use-case description",
+    "text": "Use-case description\nOur dataset is a sample financial dataset in Power BI Desktop. Our goal is to create a report on the expenditures of Wake County Watchdog, with a focus on the fiscal year 2019. The report consists of two pages: 1. General Report (Page 1): This page provides an overview of expenditures across different funds and departments. It addresses the following questions: - What is the comparison between Actual Amount and Budgeted Amount by Fund Name? - Which departments exceeded their budget, and which did not? - What is the total amount over budget? 2. Detailed Drill-through Report (Page 2): This page focuses on detailed expenditure reports for a selected department, allowing exploration by sub-categories based on the hierarchy: Department -&gt; Division -&gt; Cost Center. It answers questions such as: - How is expenditure distributed by department, division, and cost center over time? - How does the amount over budget change over time by cost center?"
+  },
+  {
+    "objectID": "posts/drill_through_page.html#development-process",
+    "href": "posts/drill_through_page.html#development-process",
+    "title": "Improving Power BI Reports with Drill-through Pages and Visualizing Changes Over Time",
+    "section": "Development Process",
+    "text": "Development Process\nOur development process follows these key steps: 1. Data Loading - Import the sample financial dataset into Power BI Desktop. 2. Data Modeling - Create and verify the hierarchy (Department -&gt; Division -&gt; Cost Center). - Develop DAX formulas to calculate key measures: - Amount Over Budget = SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount]) - Is Over Budget = (SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount])) &gt; 0 - Number of Expenditures = COUNT(Expenditures[Check Number]) 3. Report Building Page 1: General Report - Add a title. - Visual 1: Clustered bar chart showing Actual Amount and Budgeted Amount by Fund Name. - Visual 2: Table listing departments over/under budget. - Visual 3: Card visual displaying the total amount over budget. - Apply a filter to display data for fiscal year 2019. - Add lines to separate sections of the report. Page 2: Drill-through Detailed Report - Add a title. - Visual 4: Line chart showing Actual Amount over time. - Visual 5: Treemap visualizing Actual Amount by Division and Cost Center. Add a drill-through dimension to this page. - Visual 6: Scatter chart with a Play Axis to visualize Expenditures by Cost Center over time (Year and Month). 4. Report Publishing - Publish the report from Power BI Desktop to the Power BI Service for sharing and collaboration.\nTo practice this use case hands-on, follow my step-by-step tutorial video to complete the outlined steps."
+  },
+  {
+    "objectID": "posts/drill_through_page.html#our-result",
+    "href": "posts/drill_through_page.html#our-result",
+    "title": "Improving Power BI Reports with Drill-through Pages and Visualizing Changes Over Time",
+    "section": "Our result",
+    "text": "Our result\nThe resulting report on Wake County Watchdog’s expenditures will contain two pages.\nThe first page Over Budget should be like this:\n\n\n\nThe drill-through page will be accessible through a selected dimension from the first page.\n\n\n\nKey Insights for Executives: - Total Expenditure Over Budget (Fiscal Year 2019): $108.36M - Actual Expenditure for Fire 800MHZ on September 4, 2018: $126,578 - Number of Over-Budget Expenditures for Facilities Design and Construction (November 2018): 41"
+  },
+  {
+    "objectID": "posts/drill_through_page.html#reference",
+    "href": "posts/drill_through_page.html#reference",
+    "title": "Improving Power BI Reports with Drill-through Pages and Visualizing Changes Over Time",
+    "section": "Reference",
+    "text": "Reference\n[1] https://app.datacamp.com/learn/courses/reports-in-power-bi"
   }
 ]
