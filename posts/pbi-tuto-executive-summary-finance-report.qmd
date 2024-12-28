@@ -9,54 +9,55 @@ image: "/images/pbi-tuto-executive-summary-finance-report/thumbnail.png"
 
 <center><img src="/images/pbi-tuto-executive-summary-finance-report/intro-image.webp"></center>
 
-Welcome to Business Intelligence world with Power BI!
+**Welcome to Business Intelligence world with Power BI!**
 
-In this post I will walk you through how to build an executive summary - finance report with Power BI.
+In this post, I will guide you through building an executive summary finance report using Power BI.
 
-## Use-case description
+## Use Case Description
 
-- Our dataset is a sample Financical dataset of Power BI Desktop
-- Our objective is to build a Power BI report that help the executives to answer the three following questions:
-	- Which month and year had the most profit?
-	- Where is the company seeing the most success (by country/region)?
-	- Which product and segment should the company continue to invest in?
+- Our dataset is a sample financical dataset from Power BI Desktop
+- Our objective is to create a Power BI report that helps executives answer the following three questions:
+	- Which month and year had the highest profit?
+	- Where is the company experiencing the most success (by country/region)?
+	- Which product and segment should the company continue investing in?
 
-## How-to guide
+## How-to Guide
 Our development process involves the following steps:
 
-- Data preparation 
+**- Data preparation** 
 	- Data loading
 	- Data transformation
-		- Convert data type of "Units Sold" to Whole Number
-		- Change text format of "Segment" to UPPERCASE
-		- Rename "Month Name" to "Month"
-		- Drop "Montana" product from "Product" as we know that the Montana product was discontinued last month.
-- Data modeling
+		- Convert the data type of "Units Sold" to Whole Number.
+		- Change the ext format of "Segment" to UPPERCASE.
+		- Rename "Month Name" to "Month".
+		- Remove the "Montana" product from "Product" as it was discontinued last month.
+**- Data modeling**
 	- Write two DAX formulas for *measures* and *tables*
-- Build report
+**- Report building**
 	- Visual #1: Add a title
 	- Visual #2: Line graph for Profit by Date
-	- Visual #3: Map graph for Profit by Country/Region
+	- Visual #3: Map visualisation for Profit by Country/Region
 	- Visual #4: Bar graph for Sales by Product and Segment
 	- Visual #5: Time slider for Year 
+**- Report Publishing**
 - Publish our report from Power BI Desktop to Power BI service to share
 
 To give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:
 
 {{< video https://www.youtube.com/watch?v=Drteaday4FI>}}
 
-## Our result
-In summary, our final Executive Summary - Finance Report should be like this:
+## Final result
+In summary, the final Executive Summary - Finance Report should look like this:
 <center><img src="/images/pbi-tuto-executive-summary-finance-report/Finance Dashboard.png"></center>	
 
-From this report, we can help executive manager to answer the concerned questions:
+This report enables executives to address the following questions:
 
-- Which month and year had the most profit?
+**- Which month and year had the highest profit?**
 	- December 2014
-- Which country/region is the company seeing the most success in?
+- In which country/region the company experiencing the most success?
 	- In Europe, specifically France and Germany.
 - Which product and segment should the company continue to invest in?
-	- The company should continue to invest in the Paseo product and target the Small Business and Government segments.
+	- The company should continue to invest in the Paseo product, focusing on the Small Business and Government segments.
 
 ## Reference
 
