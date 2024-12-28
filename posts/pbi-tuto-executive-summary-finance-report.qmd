@@ -42,6 +42,7 @@ Our development process involves the following steps:
 - Publish our report from Power BI Desktop to Power BI service to share
 
 To give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:
+
 {{< video https://www.youtube.com/watch?v=Drteaday4FI}}
 
 ## Our result
