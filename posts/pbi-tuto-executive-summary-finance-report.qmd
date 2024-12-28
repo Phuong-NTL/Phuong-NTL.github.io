@@ -25,21 +25,28 @@ In this post, I will guide you through building an executive summary finance rep
 Our development process involves the following steps:
 
 **- Data preparation** 
+
 	- Data loading
 	- Data transformation
 		- Convert the data type of "Units Sold" to Whole Number.
 		- Change the ext format of "Segment" to UPPERCASE.
 		- Rename "Month Name" to "Month".
 		- Remove the "Montana" product from "Product" as it was discontinued last month.
+
 **- Data modeling**
+
 	- Write two DAX formulas for *measures* and *tables*
+
 **- Report building**
+
 	- Visual #1: Add a title
 	- Visual #2: Line graph for Profit by Date
 	- Visual #3: Map visualisation for Profit by Country/Region
 	- Visual #4: Bar graph for Sales by Product and Segment
 	- Visual #5: Time slider for Year 
+
 **- Report Publishing**
+
 - Publish our report from Power BI Desktop to Power BI service to share
 
 To give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:
@@ -53,10 +60,15 @@ In summary, the final Executive Summary - Finance Report should look like this:
 This report enables executives to address the following questions:
 
 **- Which month and year had the highest profit?**
+
 	- December 2014
-- In which country/region the company experiencing the most success?
+
+**- In which country/region the company experiencing the most success?**
+
 	- In Europe, specifically France and Germany.
-- Which product and segment should the company continue to invest in?
+
+**- Which product and segment should the company continue to invest in?**
+
 	- The company should continue to invest in the Paseo product, focusing on the Small Business and Government segments.
 
 ## Reference
