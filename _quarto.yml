@@ -38,6 +38,8 @@ website:
             contents:
               - text: "1. Financial Dashboard"
                 href: posts/pbi-tuto-executive-summary-finance-report.qmd
+              - text: "2. Reports with Drill-through Pages"
+                href: posts/drill_through_page.qmd
           - text: "---" 
           - section: "🔗 **Databricks x Power BI**"
             contents:

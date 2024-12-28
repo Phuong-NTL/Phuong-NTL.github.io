@@ -54,34 +54,59 @@
     "href": "posts/drill_through_page.html",
     "title": "Improving Power BI Reports with Drill-through Pages and Visualizing Changes Over Time",
     "section": "",
-    "text": "Hello!\nIn this post, I will introduce how to enhance Power BI reports by using drill-through fields to filter detailed reports, providing deeper insights. Additionally, I will demonstrate how to visualize changes over time using the Play Axis feature, which offers engaging and dynamic data insights."
+    "text": "Hello!\nIn this post, I will introduce how to enhance Power BI reports by using drill-through fields to filter detailed reports, providing deeper insights. Additionally, I will demonstrate how to visualize changes over time using the Play Axis feature, which offers engaging and dynamic data insights.",
+    "crumbs": [
+      "📝Posts",
+      "🧪 **Power BI Dashboard/Report**",
+      "2. Reports with Drill-through Pages"
+    ]
   },
   {
     "objectID": "posts/drill_through_page.html#use-case-description",
     "href": "posts/drill_through_page.html#use-case-description",
     "title": "Improving Power BI Reports with Drill-through Pages and Visualizing Changes Over Time",
     "section": "Use-case description",
-    "text": "Use-case description\nOur dataset is a sample financial dataset in Power BI Desktop. Our goal is to create a report on the expenditures of Wake County Watchdog, with a focus on the fiscal year 2019. The report consists of two pages:\nGeneral Report (Page 1)\nThis page provides an overview of expenditures across different funds and departments. It addresses the following questions:\n\nWhat is the comparison between Actual Amount and Budgeted Amount by Fund Name?\nWhich departments exceeded their budget, and which did not?\nWhat is the total amount over budget?\n\nDetailed Drill-through Report (Page 2)\nThis page focuses on detailed expenditure reports for a selected department, allowing exploration by sub-categories based on the hierarchy: Department -&gt; Division -&gt; Cost Center. It answers questions such as:\n\nHow is expenditure distributed by department, division, and cost center over time?\nHow does the amount over budget change over time by cost center?"
+    "text": "Use-case description\nOur dataset is a sample financial dataset in Power BI Desktop. Our goal is to create a report on the expenditures of Wake County Watchdog, with a focus on the fiscal year 2019. The report consists of two pages:\nGeneral Report (Page 1)\nThis page provides an overview of expenditures across different funds and departments. It addresses the following questions:\n\nWhat is the comparison between Actual Amount and Budgeted Amount by Fund Name?\nWhich departments exceeded their budget, and which did not?\nWhat is the total amount over budget?\n\nDetailed Drill-through Report (Page 2)\nThis page focuses on detailed expenditure reports for a selected department, allowing exploration by sub-categories based on the hierarchy: Department -&gt; Division -&gt; Cost Center. It answers questions such as:\n\nHow is expenditure distributed by department, division, and cost center over time?\nHow does the amount over budget change over time by cost center?",
+    "crumbs": [
+      "📝Posts",
+      "🧪 **Power BI Dashboard/Report**",
+      "2. Reports with Drill-through Pages"
+    ]
   },
   {
     "objectID": "posts/drill_through_page.html#development-process",
     "href": "posts/drill_through_page.html#development-process",
     "title": "Improving Power BI Reports with Drill-through Pages and Visualizing Changes Over Time",
     "section": "Development Process",
-    "text": "Development Process\nOur development process follows these key steps:\n\nData Loading\n\nImport the sample financial dataset into Power BI Desktop.\n\n\n\nData Modeling\n\nCreate and verify the hierarchy (Department -&gt; Division -&gt; Cost Center).\nDevelop DAX formulas to calculate key measures:\n\nAmount Over Budget = SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount])\nIs Over Budget = (SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount])) &gt; 0\nNumber of Expenditures = COUNT(Expenditures[Check Number])\n\n\n\n\nReport Building\nPage 1: General Report\n\nAdd a title.\nVisual 1: Clustered bar chart showing Actual Amount and Budgeted Amount by Fund Name.\nVisual 2: Table listing departments over/under budget.\nVisual 3: Card visual displaying the total amount over budget.\nApply a filter to display data for fiscal year 2019.\nAdd lines to separate sections of the report.\n\nPage 2: Drill-through Detailed Report\n\nAdd a title.\nVisual 4: Line chart showing Actual Amount over time.\nVisual 5: Treemap visualizing Actual Amount by Division and Cost Center. Add a drill-through dimension to this page.\nVisual 6: Scatter chart with a Play Axis to visualize Expenditures by Cost Center over time (Year and Month).\n\n\n\nReport Publishing\n\nPublish the report from Power BI Desktop to the Power BI Service for sharing and collaboration.\n\nTo practice this use case hands-on, follow my step-by-step tutorial video to complete the outlined steps."
+    "text": "Development Process\nOur development process follows these key steps:\n\nData Loading\n\nImport the sample financial dataset into Power BI Desktop.\n\n\n\nData Modeling\n\nCreate and verify the hierarchy (Department -&gt; Division -&gt; Cost Center).\nDevelop DAX formulas to calculate key measures:\n\nAmount Over Budget = SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount])\nIs Over Budget = (SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount])) &gt; 0\nNumber of Expenditures = COUNT(Expenditures[Check Number])\n\n\n\n\nReport Building\nPage 1: General Report\n\nAdd a title.\nVisual 1: Clustered bar chart showing Actual Amount and Budgeted Amount by Fund Name.\nVisual 2: Table listing departments over/under budget.\nVisual 3: Card visual displaying the total amount over budget.\nApply a filter to display data for fiscal year 2019.\nAdd lines to separate sections of the report.\n\nPage 2: Drill-through Detailed Report\n\nAdd a title.\nVisual 4: Line chart showing Actual Amount over time.\nVisual 5: Treemap visualizing Actual Amount by Division and Cost Center. Add a drill-through dimension to this page.\nVisual 6: Scatter chart with a Play Axis to visualize Expenditures by Cost Center over time (Year and Month).\n\n\n\nReport Publishing\n\nPublish the report from Power BI Desktop to the Power BI Service for sharing and collaboration.\n\nTo practice this use case hands-on, follow my step-by-step tutorial video to complete the outlined steps.",
+    "crumbs": [
+      "📝Posts",
+      "🧪 **Power BI Dashboard/Report**",
+      "2. Reports with Drill-through Pages"
+    ]
   },
   {
     "objectID": "posts/drill_through_page.html#our-result",
     "href": "posts/drill_through_page.html#our-result",
     "title": "Improving Power BI Reports with Drill-through Pages and Visualizing Changes Over Time",
     "section": "Our result",
-    "text": "Our result\nThe resulting report on Wake County Watchdog’s expenditures will contain two pages.\nThe first page Over Budget should be like this:\n\n\n\nThe drill-through page will be accessible through a selected dimension from the first page.\n\n\n\nKey Insights for Executives:\n\nTotal Expenditure Over Budget (Fiscal Year 2019): $108.36M\nActual Expenditure for Fire 800MHZ on September 4, 2018: $126,578\nNumber of Over-Budget Expenditures for Facilities Design and Construction (November 2018): 41"
+    "text": "Our result\nThe resulting report on Wake County Watchdog’s expenditures will contain two pages.\nThe first page Over Budget should be like this:\n\n\n\nThe drill-through page will be accessible through a selected dimension from the first page.\n\n\n\nKey Insights for Executives:\n\nTotal Expenditure Over Budget (Fiscal Year 2019): $108.36M\nActual Expenditure for Fire 800MHZ on September 4, 2018: $126,578\nNumber of Over-Budget Expenditures for Facilities Design and Construction (November 2018): 41",
+    "crumbs": [
+      "📝Posts",
+      "🧪 **Power BI Dashboard/Report**",
+      "2. Reports with Drill-through Pages"
+    ]
   },
   {
     "objectID": "posts/drill_through_page.html#reference",
     "href": "posts/drill_through_page.html#reference",
     "title": "Improving Power BI Reports with Drill-through Pages and Visualizing Changes Over Time",
     "section": "Reference",
-    "text": "Reference\n[1] https://app.datacamp.com/learn/courses/reports-in-power-bi"
+    "text": "Reference\n[1] https://app.datacamp.com/learn/courses/reports-in-power-bi",
+    "crumbs": [
+      "📝Posts",
+      "🧪 **Power BI Dashboard/Report**",
+      "2. Reports with Drill-through Pages"
+    ]
   }
 ]
