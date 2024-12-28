@@ -16,40 +16,55 @@ In this post, I will introduce how to enhance Power BI reports by using drill-th
 ## Use-case description
 Our dataset is a sample financial dataset in Power BI Desktop. Our goal is to create a report on the expenditures of Wake County Watchdog, with a focus on the fiscal year 2019.
 The report consists of two pages:
+
     1. General Report (Page 1):
+
     This page provides an overview of expenditures across different funds and departments. It addresses the following questions:
+
         - What is the comparison between Actual Amount and Budgeted Amount by Fund Name?
         - Which departments exceeded their budget, and which did not?
         - What is the total amount over budget?
+
     2. Detailed Drill-through Report (Page 2):
+
     This page focuses on detailed expenditure reports for a selected department, allowing exploration by sub-categories based on the hierarchy: Department -> Division -> Cost Center. It answers questions such as:
+
         - How is expenditure distributed by department, division, and cost center over time?
         - How does the amount over budget change over time by cost center?
 
 ## Development Process
 Our development process follows these key steps:
+
     1. Data Loading
         - Import the sample financial dataset into Power BI Desktop.
+
     2. Data Modeling
         - Create and verify the hierarchy (Department -> Division -> Cost Center).
         - Develop DAX formulas to calculate key measures:
                 - Amount Over Budget = SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount])
                 - Is Over Budget = (SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount])) > 0
                 - Number of Expenditures = COUNT(Expenditures[Check Number])
+
     3. Report Building
+
     Page 1: General Report
+
         - Add a title.
         - Visual 1: Clustered bar chart showing Actual Amount and Budgeted Amount by Fund Name.
         - Visual 2: Table listing departments over/under budget.
         - Visual 3: Card visual displaying the total amount over budget.
         - Apply a filter to display data for fiscal year 2019.
         - Add lines to separate sections of the report.
+
     Page 2: Drill-through Detailed Report
+
         - Add a title.
         - Visual 4: Line chart showing Actual Amount over time.
         - Visual 5: Treemap visualizing Actual Amount by Division and Cost Center. Add a drill-through dimension to this page.
         - Visual 6: Scatter chart with a Play Axis to visualize Expenditures by Cost Center over time (Year and Month).
+
     4. Report Publishing
+
         - Publish the report from Power BI Desktop to the Power BI Service for sharing and collaboration.
 
     To practice this use case hands-on, follow my step-by-step tutorial video to complete the outlined steps.
@@ -65,6 +80,7 @@ The drill-through page will be accessible through a selected dimension from the 
 <center><img src="/images/drill_through_page/page2.png"></center>	
 
 Key Insights for Executives:
+
     - Total Expenditure Over Budget (Fiscal Year 2019): $108.36M
     - Actual Expenditure for Fire 800MHZ on September 4, 2018: $126,578
     - Number of Over-Budget Expenditures for Facilities Design and Construction (November 2018): 41

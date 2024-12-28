@@ -18,6 +18,3 @@ Hi, I'm Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in P
 
 I have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as Azure, GCP, AWS, Databricks.
 
-I am co-founder of the Youtube channel **[Data AI Upskill](https://www.youtube.com/@DataAIUpskill)**, where I bring to you hands-on tutorials, best practices, and project-based videos about Data & AI. Hope this is helpful for the Data & AI learner community. 
-
-Subscribe to my channel to learn the latest Data & AI tutorial videos :) 
