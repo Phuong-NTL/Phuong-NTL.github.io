@@ -43,7 +43,8 @@ website:
           - text: "---" 
           - section: "🔗 **Databricks x Power BI**"
             contents:
-              - text: "1. Connect Power BI to Databricks"
+              - text: "1. Get CSV Tables into Databricks"
+                href: posts/get_csv_tables_into_databricks.qmd
           - text: "---"   
 format:
   html:

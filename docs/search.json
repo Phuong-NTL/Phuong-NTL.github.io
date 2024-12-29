@@ -60,20 +60,6 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "✨ Data Analysis, Business Intelligence",
-    "section": "",
-    "text": "Improving Power BI Reports with Drill-through Pages\n\n\nMastering Power BI with Finance Report Use-case and Drill-through page\n\n\n\nPower BI\n\n\nReport\n\n\nDrill-through Pages\n\n\nHierarchy\n\n\nChanges Over Time\n\n\n\n\n\n\nDec 27, 2024\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Hi, I’m Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in Paris, France.\nI have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as Azure, GCP, AWS, Databricks."
-  },
-  {
     "objectID": "posts/drill_through_page.html",
     "href": "posts/drill_through_page.html",
     "title": "Improving Power BI Reports with Drill-through Pages",
@@ -131,6 +117,56 @@
       "📝Posts",
       "🧪 **Power BI Dashboard/Report**",
       "2. Reports with Drill-through Pages"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, I’m Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in Paris, France.\nI have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as Azure, GCP, AWS, Databricks."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "✨ Data Analysis, Business Intelligence",
+    "section": "",
+    "text": "Get CSV Tables Into Databricks\n\n\nUploading one or many csv table into your Databricks work space\n\n\n\nDatabricks\n\n\nGet Csv File\n\n\nMicrosoft Azure\n\n\n\n\n\n\nDec 28, 2024\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nImproving Power BI Reports with Drill-through Pages\n\n\nMastering Power BI with Finance Report Use-case and Drill-through page\n\n\n\nPower BI\n\n\nReport\n\n\nDrill-through Pages\n\n\nHierarchy\n\n\nChanges Over Time\n\n\n\n\n\n\nDec 27, 2024\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/get_csv_tables_into_databricks.html",
+    "href": "posts/get_csv_tables_into_databricks.html",
+    "title": "Get CSV Tables Into Databricks",
+    "section": "",
+    "text": "How to upload a table into your Databricks work space in Microsoft Azure\nHello, This post give a quick through of creating a table in Azure Databricks work space",
+    "crumbs": [
+      "📝Posts",
+      "🔗 **Databricks x Power BI**",
+      "1. Get CSV Tables into Databricks"
+    ]
+  },
+  {
+    "objectID": "posts/get_csv_tables_into_databricks.html#prerequisite",
+    "href": "posts/get_csv_tables_into_databricks.html#prerequisite",
+    "title": "Get CSV Tables Into Databricks",
+    "section": "Prerequisite:",
+    "text": "Prerequisite:\nIn order to perform the task, you must have an Azure Databricks account. If you have not had that, go to create an Azure account on https://azure.microsoft.com/en-us/get-started/azure-portal, then subscribe Databricks to create an Databricks work space, or following instructions in this video",
+    "crumbs": [
+      "📝Posts",
+      "🔗 **Databricks x Power BI**",
+      "1. Get CSV Tables into Databricks"
+    ]
+  },
+  {
+    "objectID": "posts/get_csv_tables_into_databricks.html#create-your-first-table",
+    "href": "posts/get_csv_tables_into_databricks.html#create-your-first-table",
+    "title": "Get CSV Tables Into Databricks",
+    "section": "Create your first table",
+    "text": "Create your first table\nStep 1. Launch your work space Databricks\n\n\n\nStep 2. In the sidebar, click + New to Add or Upload data\n\n\n\nStep 3. Click on Create and modify table\n\n\n\nStep 4. Drop files into the frame or click on browse to upload the files (Maximum 10 files and total upload size of 2GB)\n\n\n\nStep 5. After files are uploaded, verify then click on Create Table\n\n\n\nHere is the table successfully uploaded on the Databrick work space\n\n\n\nTo give you a hands-on practice of this work, please following my step-by-step tutorial video to perform all the above steps:",
+    "crumbs": [
+      "📝Posts",
+      "🔗 **Databricks x Power BI**",
+      "1. Get CSV Tables into Databricks"
     ]
   }
 ]

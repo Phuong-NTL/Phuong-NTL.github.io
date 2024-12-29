@@ -1,0 +1,51 @@
+---
+title: "Get CSV Tables Into Databricks"
+subtitle: "Uploading one or many csv table into your Databricks work space"
+author: "Phuong Nguyen"
+date: "2024-12-28"
+categories: [Databricks, Get Csv File, Microsoft Azure]
+image: "/images/get_csv_tables_into_databricks/introcsv.webp" 
+---
+<center><img src="/images/get_csv_tables_into_databricks/thumbnail_getcsv.png"></center>
+
+**How to upload a table into your Databricks work space in Microsoft Azure**
+
+Hello,
+This post give a quick through of creating a table in Azure Databricks work space
+
+## Prerequisite: 
+
+In order to perform the task, you must have an Azure Databricks account. 
+If you have not had that, go to create an Azure account on https://azure.microsoft.com/en-us/get-started/azure-portal, then subscribe Databricks to create an Databricks work space, or following instructions in this video 
+{{< video https://www.youtube.com/watch?v=sLkrEXu7KAs>}}
+
+## Create your first table
+
+**Step 1.** Launch your work space Databricks
+
+<center><img src="/images/get_csv_tables_into_databricks/Step 1.png"></center>
+
+**Step 2.** In the sidebar, click **+ New**  to **Add or Upload data**
+
+<center><img src="/images/get_csv_tables_into_databricks/Step 2.png"></center>
+
+**Step 3.** Click on **Create and modify table** 
+
+<center><img src="/images/get_csv_tables_into_databricks/Step 3.png"></center>
+
+**Step 4.** Drop files into the frame or click on **browse** to upload the files (Maximum 10 files and total upload size of 2GB)
+
+<center><img src="/images/get_csv_tables_into_databricks/Step 4.png"></center>
+
+**Step 5.** After files are uploaded, verify then click on **Create Table**
+
+<center><img src="/images/get_csv_tables_into_databricks/Step 5.png"></center>
+
+Here is the table successfully uploaded on the Databrick work space
+
+<center><img src="/images/get_csv_tables_into_databricks/Step 6.png"></center>
+
+To give you a hands-on practice of this work, please following my step-by-step tutorial video to perform all the above steps:
+
+{{< video https://www.youtube.com/watch?v=fee3YbfsRBg>}}
+
