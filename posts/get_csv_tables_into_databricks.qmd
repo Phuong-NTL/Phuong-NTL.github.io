@@ -4,9 +4,9 @@ subtitle: "Uploading one or many csv table into your Databricks work space"
 author: "Phuong Nguyen"
 date: "2024-12-28"
 categories: [Databricks, Get Csv File, Microsoft Azure]
-image: "/images/get_csv_tables_into_databricks/introcsv.webp" 
+image: "/images/get_csv_tables_into_databricks/thumbnail_getcsv.png" 
 ---
-<center><img src="/images/get_csv_tables_into_databricks/thumbnail_getcsv.png"></center>
+<center><img src="/images/get_csv_tables_into_databricks/introcsv.webp"></center>
 
 **How to upload a table into your Databricks work space in Microsoft Azure**
 
@@ -16,10 +16,9 @@ This post give a quick through of creating a table in Azure Databricks work spac
 ## Prerequisite: 
 
 In order to perform the task, you must have an Azure Databricks account. 
-If you have not had that, go to create an Azure account on https://azure.microsoft.com/en-us/get-started/azure-portal, then subscribe Databricks to create an Databricks work space, or following instructions in this video 
-{{< video https://www.youtube.com/watch?v=sLkrEXu7KAs>}}
+If you have not had that, go to create an Azure account on https://azure.microsoft.com/en-us/get-started/azure-portal, then subscribe Databricks to create an Databricks work space
 
-## Create your first table
+## Create your first table:
 
 **Step 1.** Launch your work space Databricks
 

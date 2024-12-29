@@ -150,7 +150,7 @@
     "href": "posts/get_csv_tables_into_databricks.html#prerequisite",
     "title": "Get CSV Tables Into Databricks",
     "section": "Prerequisite:",
-    "text": "Prerequisite:\nIn order to perform the task, you must have an Azure Databricks account. If you have not had that, go to create an Azure account on https://azure.microsoft.com/en-us/get-started/azure-portal, then subscribe Databricks to create an Databricks work space, or following instructions in this video",
+    "text": "Prerequisite:\nIn order to perform the task, you must have an Azure Databricks account. If you have not had that, go to create an Azure account on https://azure.microsoft.com/en-us/get-started/azure-portal, then subscribe Databricks to create an Databricks work space",
     "crumbs": [
       "📝Posts",
       "🔗 **Databricks x Power BI**",
@@ -161,8 +161,8 @@
     "objectID": "posts/get_csv_tables_into_databricks.html#create-your-first-table",
     "href": "posts/get_csv_tables_into_databricks.html#create-your-first-table",
     "title": "Get CSV Tables Into Databricks",
-    "section": "Create your first table",
-    "text": "Create your first table\nStep 1. Launch your work space Databricks\n\n\n\nStep 2. In the sidebar, click + New to Add or Upload data\n\n\n\nStep 3. Click on Create and modify table\n\n\n\nStep 4. Drop files into the frame or click on browse to upload the files (Maximum 10 files and total upload size of 2GB)\n\n\n\nStep 5. After files are uploaded, verify then click on Create Table\n\n\n\nHere is the table successfully uploaded on the Databrick work space\n\n\n\nTo give you a hands-on practice of this work, please following my step-by-step tutorial video to perform all the above steps:",
+    "section": "Create your first table:",
+    "text": "Create your first table:\nStep 1. Launch your work space Databricks\n\n\n\nStep 2. In the sidebar, click + New to Add or Upload data\n\n\n\nStep 3. Click on Create and modify table\n\n\n\nStep 4. Drop files into the frame or click on browse to upload the files (Maximum 10 files and total upload size of 2GB)\n\n\n\nStep 5. After files are uploaded, verify then click on Create Table\n\n\n\nHere is the table successfully uploaded on the Databrick work space\n\n\n\nTo give you a hands-on practice of this work, please following my step-by-step tutorial video to perform all the above steps:",
     "crumbs": [
       "📝Posts",
       "🔗 **Databricks x Power BI**",
