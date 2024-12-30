@@ -40,6 +40,8 @@ If you have not had that, go to create an Azure account on https://azure.microso
 
 <center><img src="/images/get_csv_tables_into_databricks/Step 5.png"></center>
 
+## Final result
+
 Here is the table successfully uploaded on the Databrick work space
 
 <center><img src="/images/get_csv_tables_into_databricks/Step 6.png"></center>
@@ -47,4 +49,8 @@ Here is the table successfully uploaded on the Databrick work space
 To give you a hands-on practice of this work, please following my step-by-step tutorial video to perform all the above steps:
 
 {{< video https://www.youtube.com/watch?v=fee3YbfsRBg>}}
+
+## Reference
+
+[1] https://learn.microsoft.com
 
