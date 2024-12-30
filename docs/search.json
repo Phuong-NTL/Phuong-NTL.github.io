@@ -120,6 +120,13 @@
     ]
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "✨ Data Analysis, Business Intelligence",
+    "section": "",
+    "text": "Create Sample Azure SQL Server and Database\n\n\nHow to create a single database and server in Azure SQL Database\n\n\n\nAzure\n\n\nSQL Database\n\n\nServer\n\n\nSingle Database\n\n\n\n\n\n\nDec 29, 2024\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nGet CSV Tables Into Databricks\n\n\nUploading one or many csv table into your Databricks work space\n\n\n\nDatabricks\n\n\nGet Csv File\n\n\nMicrosoft Azure\n\n\n\n\n\n\nDec 28, 2024\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nImproving Power BI Reports with Drill-through Pages\n\n\nMastering Power BI with Finance Report Use-case and Drill-through page\n\n\n\nPower BI\n\n\nReport\n\n\nDrill-through Pages\n\n\nHierarchy\n\n\nChanges Over Time\n\n\n\n\n\n\nDec 27, 2024\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -127,11 +134,25 @@
     "text": "Hi, I’m Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in Paris, France.\nI have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as Azure, GCP, AWS, Databricks."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "✨ Data Analysis, Business Intelligence",
+    "objectID": "posts/create_sample_azure_SQL_server_database.html",
+    "href": "posts/create_sample_azure_SQL_server_database.html",
+    "title": "Create Sample Azure SQL Server and Database",
     "section": "",
-    "text": "Get CSV Tables Into Databricks\n\n\nUploading one or many csv table into your Databricks work space\n\n\n\nDatabricks\n\n\nGet Csv File\n\n\nMicrosoft Azure\n\n\n\n\n\n\nDec 28, 2024\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nImproving Power BI Reports with Drill-through Pages\n\n\nMastering Power BI with Finance Report Use-case and Drill-through page\n\n\n\nPower BI\n\n\nReport\n\n\nDrill-through Pages\n\n\nHierarchy\n\n\nChanges Over Time\n\n\n\n\n\n\nDec 27, 2024\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Hi there,\nIn this guide, I will walk you through the process of creating a single database in Azure SQL Database. Once created, you can query the database using the Query Editor in the Azure portal."
+  },
+  {
+    "objectID": "posts/create_sample_azure_SQL_server_database.html#prerequisites",
+    "href": "posts/create_sample_azure_SQL_server_database.html#prerequisites",
+    "title": "Create Sample Azure SQL Server and Database",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nTo complete this task, you must have an active Azure subscription. If you do not have one yet, you can create a free account by following this link: Azure Free Account"
+  },
+  {
+    "objectID": "posts/create_sample_azure_SQL_server_database.html#creating-a-single-azure-sql-database",
+    "href": "posts/create_sample_azure_SQL_server_database.html#creating-a-single-azure-sql-database",
+    "title": "Create Sample Azure SQL Server and Database",
+    "section": "Creating a Single Azure SQL Database",
+    "text": "Creating a Single Azure SQL Database\nStep 1: Access Azure SQL Databases\n\nGo to the Microsoft Azure Portal. https://portal.azure.com/?quickstart=true#home\nOn the homepage, click on the SQL Databases icon.\n\n\n\n\nStep 2: Create a New SQL Database\n\nOn the SQL Databases page, click Create SQL Database.\n\nStep 3: Configure Database Settings\nBasics Tab:\n\nSelect the desired Azure Subscription.\nFor the Resource group, click Create new, enter a name, and click OK.\nEnter the Database name (requirements: maximum 128 characters, no reserved words, and no existing database with the same name on the server).\nFor Server, select Create new and proceed as follows: o Enter a Server name (Azure will notify you if the name is available). o Select the Location from the dropdown list. o For Authentication method, choose SQL Authentication.  Create a Server Admin Login.  Set a password.  Click OK.\n\nWorkload Environment\n\nUnder Workload environment, select either Development or Production. Note that the fees differ significantly between these options.\nClick Next to proceed to the Networking tab.\n\nNetworking Tab\n\nChoose the connectivity method (e.g., Public endpoint).\nUnder Firewall rules, enable: o Allow Azure services and resources to access this server. o Add current client IP address.\n\nAdditional Settings Tab\n\nIn the Data source section, select Sample.\nClick OK.\n\nStep 4: Review and Create\n\nReview all information in the Tags and Review + create tabs.\nClick Create to finalize the database creation.\n\nYou have successfully created a sample Azure SQL Database. You can now query and manage your database directly from the Azure portal"
   },
   {
     "objectID": "posts/get_csv_tables_into_databricks.html",
