@@ -18,7 +18,7 @@ This post give a quick through of creating a table in Azure Databricks work spac
 In order to perform the task, you must have an Azure Databricks account. 
 If you have not had that, go to create an Azure account on https://azure.microsoft.com/en-us/get-started/azure-portal, then subscribe Databricks to create an Databricks work space
 
-## Create your first table:
+## Create your first table
 
 **Step 1.** Launch your work space Databricks
 

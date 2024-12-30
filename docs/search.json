@@ -209,8 +209,8 @@
     "objectID": "posts/get_csv_tables_into_databricks.html#create-your-first-table",
     "href": "posts/get_csv_tables_into_databricks.html#create-your-first-table",
     "title": "Get CSV Tables Into Databricks",
-    "section": "Create your first table:",
-    "text": "Create your first table:\nStep 1. Launch your work space Databricks\n\n\n\nStep 2. In the sidebar, click + New to Add or Upload data\n\n\n\nStep 3. Click on Create and modify table\n\n\n\nStep 4. Drop files into the frame or click on browse to upload the files (Maximum 10 files and total upload size of 2GB)\n\n\n\nStep 5. After files are uploaded, verify then click on Create Table",
+    "section": "Create your first table",
+    "text": "Create your first table\nStep 1. Launch your work space Databricks\n\n\n\nStep 2. In the sidebar, click + New to Add or Upload data\n\n\n\nStep 3. Click on Create and modify table\n\n\n\nStep 4. Drop files into the frame or click on browse to upload the files (Maximum 10 files and total upload size of 2GB)\n\n\n\nStep 5. After files are uploaded, verify then click on Create Table",
     "crumbs": [
       "📝Posts",
       "🔗 **Databricks**",
