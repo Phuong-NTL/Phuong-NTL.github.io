@@ -21,14 +21,16 @@ To complete this task, you must have an active Azure subscription. If you do not
 
 **Step 1: Access Azure SQL Databases**
 
-1.	Go to the Microsoft Azure Portal. https://portal.azure.com/?quickstart=true#home
+1.	Go to the [Microsoft Azure Portal](https://portal.azure.com/?quickstart=true#home)
 2.	On the homepage, click on the SQL Databases icon.
 
-<center><img src="/images/create_sample_azure_SQL_server_database/page1.png"></center>	
+<center><img src="/images/create_sample_azure_SQL_server_database/Step1.png"></center>	
 
 **Step 2: Create a New SQL Database**
 
 1.	On the SQL Databases page, click Create SQL Database.
+
+<center><img src="/images/create_sample_azure_SQL_server_database/Step2.png"></center>	
 
 **Step 3: Configure Database Settings**
 
@@ -36,36 +38,56 @@ To complete this task, you must have an active Azure subscription. If you do not
 
 1.	Select the desired **Azure Subscription**.
 2.	For the Resource group, click **Create new**, enter a name, and click **OK**.
-3.	Enter the Database name (requirements: maximum 128 characters, no reserved words, and no existing database with the same name on the server).
-4.	For Server, select Create new and proceed as follows:
-o	Enter a Server name (Azure will notify you if the name is available).
-o	Select the Location from the dropdown list.
-o	For Authentication method, choose SQL Authentication.
-	Create a Server Admin Login.
-	Set a password.
-	Click OK.
+3.	Enter the **Database name** (requirements: maximum 128 characters, no reserved words, and no existing database with the same name on the server).
+4.	For Server, select **Create new** and proceed as follows:
+
+<center><img src="/images/create_sample_azure_SQL_server_database/Step3.png"></center>	
+
+o	Enter a **Server name** (Azure will notify you if the name is available).
+o	Select the **Location** from the dropdown list.
+o	For **Authentication method**, choose SQL Authentication.
+        	Create a **Server Admin Login**.
+        	Set a **password**.
+        	Click **OK**.
+
+<center><img src="/images/create_sample_azure_SQL_server_database/Step4.png"></center>	
 
 **Workload Environment**
 
-1.	Under Workload environment, select either Development or Production. Note that the fees differ significantly between these options.
-2.	Click Next to proceed to the Networking tab.
+1.	Under Workload environment, select either **Development** or **Production**. Note that the fees differ significantly between these options.
+2.	Click **Next** to proceed to the **Networking tab**
+
+<center><img src="/images/create_sample_azure_SQL_server_database/Step5.png"></center>	
 
 **Networking Tab**
 
-1.	Choose the connectivity method (e.g., Public endpoint).
-2.	Under Firewall rules, enable:
-o	Allow Azure services and resources to access this server.
-o	Add current client IP address.
+1.	Choose the connectivity method (e.g., **Public endpoint**).
+2.	Under **Firewall rules**, enable:
+    o	Allow Azure services and resources to access this server.
+    o	Add current client IP address.
+
+<center><img src="/images/create_sample_azure_SQL_server_database/Step6.png"></center>	
 
 **Additional Settings Tab**
 
-1.	In the Data source section, select Sample.
-2.	Click OK.
+1.	In the **Data source** section, select **Sample**.
+2.	Click **OK**.
+
+<center><img src="/images/create_sample_azure_SQL_server_database/Step7.png"></center>
 
 **Step 4: Review and Create**
 
 1.	Review all information in the Tags and Review + create tabs.
 2.	Click Create to finalize the database creation.
 
+<center><img src="/images/create_sample_azure_SQL_server_database/Step8.png"></center>
+
 You have successfully created a sample Azure SQL Database. You can now query and manage your database directly from the Azure portal
+
+<center><img src="/images/create_sample_azure_SQL_server_database/Step9.png"></center>
+
+To give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:
+
+{{< video https://www.youtube.com/watch?v=o4L09cLaUXo>}}
+
 
