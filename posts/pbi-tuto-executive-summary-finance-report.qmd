@@ -15,7 +15,7 @@ In this post, I will guide you through building an executive summary finance rep
 
 ## Use Case Description
 
-- Our dataset is a sample financical dataset from Power BI Desktop
+- Our dataset is a sample financical dataset from Power BI Desktop.
 - Our objective is to create a Power BI report that helps executives answer the following three questions:
 	- Which month and year had the highest profit?
 	- Where is the company experiencing the most success (by country/region)?
@@ -35,19 +35,19 @@ Our development process involves the following steps:
 
 **- Data modeling**
 
-- Write two DAX formulas for *measures* and *tables*
+- Write two DAX formulas for *measures* and *tables*.
 
 **- Report building**
 
-- Visual #1: Add a title
-- Visual #2: Line graph for Profit by Date
-- Visual #3: Map visualisation for Profit by Country/Region
-- Visual #4: Bar graph for Sales by Product and Segment
-- Visual #5: Time slider for Year 
+- Visual #1: Add a title.
+- Visual #2: Line graph for Profit by Date.
+- Visual #3: Map visualisation for Profit by Country/Region.
+- Visual #4: Bar graph for Sales by Product and Segment.
+- Visual #5: Time slider for Year. 
 
 **- Report Publishing**
 
-- Publish our report from Power BI Desktop to Power BI service to share
+- Publish our report from Power BI Desktop to Power BI service to share.
 
 To give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:
 
@@ -61,7 +61,7 @@ This report enables executives to address the following questions:
 
 **- Which month and year had the highest profit?**
 
-	- December 2014
+	- December 2014.
 
 **- In which country/region the company experiencing the most success?**
 

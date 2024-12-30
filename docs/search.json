@@ -16,7 +16,7 @@
     "href": "posts/pbi-tuto-executive-summary-finance-report.html#use-case-description",
     "title": "Build Excecutive Summary - Finance Report",
     "section": "Use Case Description",
-    "text": "Use Case Description\n\nOur dataset is a sample financical dataset from Power BI Desktop\nOur objective is to create a Power BI report that helps executives answer the following three questions:\n\nWhich month and year had the highest profit?\nWhere is the company experiencing the most success (by country/region)?\nWhich product and segment should the company continue investing in?",
+    "text": "Use Case Description\n\nOur dataset is a sample financical dataset from Power BI Desktop.\nOur objective is to create a Power BI report that helps executives answer the following three questions:\n\nWhich month and year had the highest profit?\nWhere is the company experiencing the most success (by country/region)?\nWhich product and segment should the company continue investing in?",
     "crumbs": [
       "📝Posts",
       "🧪 **Power BI Dashboard/Report**",
@@ -28,7 +28,7 @@
     "href": "posts/pbi-tuto-executive-summary-finance-report.html#how-to-guide",
     "title": "Build Excecutive Summary - Finance Report",
     "section": "How-to Guide",
-    "text": "How-to Guide\nOur development process involves the following steps:\n- Data preparation\n\nData loading\nData transformation\n\nConvert the data type of “Units Sold” to Whole Number.\nChange the ext format of “Segment” to UPPERCASE.\nRename “Month Name” to “Month”.\nRemove the “Montana” product from “Product” as it was discontinued last month.\n\n\n- Data modeling\n\nWrite two DAX formulas for measures and tables\n\n- Report building\n\nVisual #1: Add a title\nVisual #2: Line graph for Profit by Date\nVisual #3: Map visualisation for Profit by Country/Region\nVisual #4: Bar graph for Sales by Product and Segment\nVisual #5: Time slider for Year\n\n- Report Publishing\n\nPublish our report from Power BI Desktop to Power BI service to share\n\nTo give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:",
+    "text": "How-to Guide\nOur development process involves the following steps:\n- Data preparation\n\nData loading\nData transformation\n\nConvert the data type of “Units Sold” to Whole Number.\nChange the ext format of “Segment” to UPPERCASE.\nRename “Month Name” to “Month”.\nRemove the “Montana” product from “Product” as it was discontinued last month.\n\n\n- Data modeling\n\nWrite two DAX formulas for measures and tables.\n\n- Report building\n\nVisual #1: Add a title.\nVisual #2: Line graph for Profit by Date.\nVisual #3: Map visualisation for Profit by Country/Region.\nVisual #4: Bar graph for Sales by Product and Segment.\nVisual #5: Time slider for Year.\n\n- Report Publishing\n\nPublish our report from Power BI Desktop to Power BI service to share.\n\nTo give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:",
     "crumbs": [
       "📝Posts",
       "🧪 **Power BI Dashboard/Report**",
@@ -40,7 +40,7 @@
     "href": "posts/pbi-tuto-executive-summary-finance-report.html#final-result",
     "title": "Build Excecutive Summary - Finance Report",
     "section": "Final result",
-    "text": "Final result\nIn summary, the final Executive Summary - Finance Report should look like this:\n\n\n\nThis report enables executives to address the following questions:\n- Which month and year had the highest profit?\n- December 2014\n- In which country/region the company experiencing the most success?\n- In Europe, specifically France and Germany.\n- Which product and segment should the company continue to invest in?\n- The company should continue to invest in the Paseo product, focusing on the Small Business and Government segments.",
+    "text": "Final result\nIn summary, the final Executive Summary - Finance Report should look like this:\n\n\n\nThis report enables executives to address the following questions:\n- Which month and year had the highest profit?\n- December 2014.\n- In which country/region the company experiencing the most success?\n- In Europe, specifically France and Germany.\n- Which product and segment should the company continue to invest in?\n- The company should continue to invest in the Paseo product, focusing on the Small Business and Government segments.",
     "crumbs": [
       "📝Posts",
       "🧪 **Power BI Dashboard/Report**",
