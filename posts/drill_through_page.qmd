@@ -69,7 +69,7 @@ Our development process follows these key steps:
 
 To practice this use case hands-on, follow my step-by-step tutorial video to complete the outlined steps.
 
-## Our result
+## Final result
 The resulting report on Wake County Watchdog’s expenditures will contain two pages. 
 
 The first page Over Budget should be like this:
