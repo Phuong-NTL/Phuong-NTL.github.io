@@ -41,7 +41,7 @@ website:
               - text: "2. Reports with Drill-through Pages"
                 href: posts/drill_through_page.qmd
           - text: "---" 
-          - section: "🔗 **Databricks x Power BI**"
+          - section: "🔗 **Databricks**"
             contents:
               - text: "1. Get CSV Tables into Databricks"
                 href: posts/get_csv_tables_into_databricks.qmd
