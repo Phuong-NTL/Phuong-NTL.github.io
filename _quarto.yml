@@ -45,6 +45,8 @@ website:
             contents:
               - text: "1. Get CSV Tables into Databricks"
                 href: posts/get_csv_tables_into_databricks.qmd
+              - text: "2. Create Sample Azure SQL Server and Database"
+                href: posts/create_sample_azure_SQL_server_database.qmd
           - text: "---"   
 format:
   html:
