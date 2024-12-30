@@ -92,4 +92,8 @@ To give you a hands-on practice of this use case, please following my step-by-st
 
 {{< video https://www.youtube.com/watch?v=o4L09cLaUXo>}}
 
+## Reference
+
+https://learn.microsoft.com/en-us/azure/azure-sql/database
+
 

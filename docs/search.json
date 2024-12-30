@@ -182,6 +182,18 @@
     ]
   },
   {
+    "objectID": "posts/create_sample_azure_SQL_server_database.html#reference",
+    "href": "posts/create_sample_azure_SQL_server_database.html#reference",
+    "title": "Create Sample Azure SQL Server and Database",
+    "section": "Reference",
+    "text": "Reference\nhttps://learn.microsoft.com/en-us/azure/azure-sql/database",
+    "crumbs": [
+      "📝Posts",
+      "🔗 **Databricks**",
+      "2. Create Sample Azure SQL Server and Database"
+    ]
+  },
+  {
     "objectID": "posts/get_csv_tables_into_databricks.html",
     "href": "posts/get_csv_tables_into_databricks.html",
     "title": "Get CSV Tables Into Databricks",
