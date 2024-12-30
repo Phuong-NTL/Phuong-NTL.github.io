@@ -11,6 +11,7 @@ image: "/images/get_csv_tables_into_databricks/thumbnail_getcsv.png"
 **How to upload a table into your Databricks work space in Microsoft Azure**
 
 Hello,
+
 This post give a quick through of creating a table in Azure Databricks work space
 
 ## Prerequisite: 

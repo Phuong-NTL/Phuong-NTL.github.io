@@ -186,7 +186,7 @@
     "href": "posts/get_csv_tables_into_databricks.html",
     "title": "Get CSV Tables Into Databricks",
     "section": "",
-    "text": "How to upload a table into your Databricks work space in Microsoft Azure\nHello, This post give a quick through of creating a table in Azure Databricks work space",
+    "text": "How to upload a table into your Databricks work space in Microsoft Azure\nHello,\nThis post give a quick through of creating a table in Azure Databricks work space",
     "crumbs": [
       "📝Posts",
       "🔗 **Databricks**",
