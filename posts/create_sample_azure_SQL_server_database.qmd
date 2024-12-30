@@ -19,20 +19,20 @@ To complete this task, you must have an active Azure subscription. If you do not
 
 ## Creating a Single Azure SQL Database
 
-**Step 1: Access Azure SQL Databases**
+### Step 1: Access Azure SQL Databases
 
 1.	Go to the [Microsoft Azure Portal](https://portal.azure.com/?quickstart=true#home)
 2.	On the homepage, click on the SQL Databases icon.
 
 <center><img src="/images/create_sample_azure_SQL_server_database/Step1.png"></center>	
 
-**Step 2: Create a New SQL Database**
+### Step 2: Create a New SQL Database
 
 1.	On the SQL Databases page, click Create SQL Database.
 
 <center><img src="/images/create_sample_azure_SQL_server_database/Step2.png"></center>	
 
-**Step 3: Configure Database Settings**
+### Step 3: Configure Database Settings
 
 **Basics Tab:**
 
