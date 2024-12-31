@@ -24,10 +24,18 @@ In this guide, I will walk you through how to use a sample dataset to build a da
 **Step 1. Create a dashboard**
 
 1.	In your Azure Databricks workspace, click on **Dashboard**, then click **Create Dashboard**.
+
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step1.png"></center>
+
 2.	By default, the new dashboard is automatically named using its creation timestamp and stored in your /Workspace/Users/<username> directory.
 3.	Rename the dashboard and the page as needed.
+
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step2.png"></center>
+
 4.	Use the **Canvas** tab to create and edit widgets such as visualizations, text boxes, and filters.
 5.	Use the **Data** tab to define the underlying datasets for your dashboard.
+
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step3.png"></center>
 
 **Step 2. Define datasets**
 
@@ -74,11 +82,15 @@ ORDER BY
 5.	Click **Run**. The results will appear below the editor once the query is executed.
 6.	Rename the dataset. By default, it is saved as **Untitled dataset**. Double-click the title to rename it to **Taxicab Data**.
 
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step4.png"></center>
+
 **Step 3. Create and place a visualization**
 
 1.	Return to the **Canvas** tab.
 2.	Click **Add a Visualization** to create a new visualization widget.
 3.	Use your mouse to position the widget on the canvas.
+
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step5.png"></center>
 
 **Step 4. Configure the visualization**
 
@@ -100,13 +112,23 @@ ORDER BY
     o	**Scale Type**: Select **Quantitative**.
     o	**Transform**: Choose **AVG**.
 
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step6.png"></center>
+
 **Optional: Use Databricks Assistant**
 
 - You can create visualizations using natural language with **Databricks Assistant**.
 - Click **Create a Visualization**. A prompt will appear with the text: Describe a chart...
+
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step7.png"></center>
+
 - Type a prompt, for example: Create a bar chart of average fare amount over hourly drop-off time.
+
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step8.png"></center>
+
 - Press **Enter** and click **Accept** if you are satisfied with the visualization.
 - To edit, click the **Assistant** icon, type a new prompt, or modify the existing chart (e.g., Switch to a line chart).
+
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step9.png"></center>
 
 **Step 5. Clone and modify a visualization**
 
@@ -114,6 +136,8 @@ ORDER BY
 2.	Set the X-axis field to **tpep_pickup_datetime**.
 3.	Keep the transform type as **HOURLY**.
 4.	Choose a new color for the cloned chart.
+
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step10.png"></center>
 
 **Step 6. Create a scatter chart**
 
@@ -124,6 +148,8 @@ ORDER BY
     o	**X-axis**: trip_distance
     o	**Y-axis**: fare_amount
     o	**Color/Group by**: day_of_week
+
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step11.png"></center>
 
 **Step 7. Create dashboard filters**
 
@@ -146,15 +172,26 @@ The filter helps your dashboard become more interactive
     2.	Remove the existing field by clicking the remove icon.
     3.	Select **Taxicab_data.pickup_zip** to filter by pickup zip code.
 
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step12.png"></center>
+
 **Step 8. Resize and arrange charts and filters**
 
 Arrange and resize your visualizations and filters to optimize the layout.
 
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step13.png"></center>
 
 **Step 9. Publish and share**
 
     1.	Your dashboard is saved as a draft. To create a final version, click **Publish**.
     2.	Review the list of people with access, then click **Publish**. Users and groups with at least **CAN VIEW** permission will be able to see the dashboard.
+    
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step14.png"></center>
+
+## Result
+Click on Dashboard on the left sidebar of Databricks to verify the your dashboard published successfully
+
+<center><img src="/images/create_dashboard_by-databricks_AIBI/Step15.png"></center>
+
     3.	Follow the link in the notification to view the published dashboard.
 
 **Sharing the Dashboard:**
