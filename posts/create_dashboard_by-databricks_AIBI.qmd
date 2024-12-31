@@ -187,7 +187,7 @@ Arrange and resize your visualizations and filters to optimize the layout.
     
 <center><img src="/images/create_dashboard_by-databricks_AIBI/Step14.png"></center>
 
-## Result
+**Result**
 Click on Dashboard on the left sidebar of Databricks to verify the your dashboard published successfully
 
 <center><img src="/images/create_dashboard_by-databricks_AIBI/Step15.png"></center>
