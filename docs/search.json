@@ -120,11 +120,25 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "✨ Data Analysis, Business Intelligence",
+    "objectID": "posts/create_dashboard_by-databricks_AIBI.html",
+    "href": "posts/create_dashboard_by-databricks_AIBI.html",
+    "title": "Create A Dashboard By Databricks AI/BI",
     "section": "",
-    "text": "Create Sample Azure SQL Server and Database\n\n\nHow to create a single database and server in Azure SQL Database\n\n\n\nAzure\n\n\nSQL Database\n\n\nServer\n\n\nSingle Database\n\n\n\n\n\n\nDec 29, 2024\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nGet CSV Tables Into Databricks\n\n\nUploading one or many csv table into your Databricks work space\n\n\n\nDatabricks\n\n\nGet Csv File\n\n\nMicrosoft Azure\n\n\n\n\n\n\nDec 28, 2024\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nImproving Power BI Reports with Drill-through Pages\n\n\nMastering Power BI with Finance Report Use-case and Drill-through page\n\n\n\nPower BI\n\n\nReport\n\n\nDrill-through Pages\n\n\nHierarchy\n\n\nChanges Over Time\n\n\n\n\n\n\nDec 27, 2024\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Hi there,\nIn this guide, I will walk you through how to use a sample dataset to build a dashboard and extract insights using the AI/BI dashboard UI on Azure Databricks"
+  },
+  {
+    "objectID": "posts/create_dashboard_by-databricks_AIBI.html#prerequisites",
+    "href": "posts/create_dashboard_by-databricks_AIBI.html#prerequisites",
+    "title": "Create A Dashboard By Databricks AI/BI",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n• You are logged into a Azure Databricks workspace. • You have the SQL entitlement in that workspace. • You have at least CAN USE access to one or more SQL warehouses."
+  },
+  {
+    "objectID": "posts/create_dashboard_by-databricks_AIBI.html#how-to-guide",
+    "href": "posts/create_dashboard_by-databricks_AIBI.html#how-to-guide",
+    "title": "Create A Dashboard By Databricks AI/BI",
+    "section": "How-to Guide",
+    "text": "How-to Guide\nStep 1. Create a dashboard\n\nIn your Azure Databricks workspace, click on Dashboard, then click Create Dashboard.\nBy default, the new dashboard is automatically named using its creation timestamp and stored in your /Workspace/Users/ directory.\nRename the dashboard and the page as needed.\nUse the Canvas tab to create and edit widgets such as visualizations, text boxes, and filters.\nUse the Data tab to define the underlying datasets for your dashboard.\n\nStep 2. Define datasets\n\nClick the Data tab.\nClick Create from SQL\nPaste the following query into the editor. Then click Run to return a collection of records.\n\nSELECT\n  T.tpep_pickup_datetime,\n  T.tpep_dropoff_datetime,\n  T.fare_amount,\n  T.pickup_zip,\n  T.dropoff_zip,\n  T.trip_distance,\n  T.weekday,\n  CASE\n    WHEN T.weekday = 1 THEN 'Sunday'\n    WHEN T.weekday = 2 THEN 'Monday'\n    WHEN T.weekday = 3 THEN 'Tuesday'\n    WHEN T.weekday = 4 THEN 'Wednesday'\n    WHEN T.weekday = 5 THEN 'Thursday'\n    WHEN T.weekday = 6 THEN 'Friday'\n    WHEN T.weekday = 7 THEN 'Saturday'\n    ELSE 'N/A'\n  END AS day_of_week\nFROM\n(\n  SELECT\n    dayofweek(tpep_pickup_datetime) as weekday,\n    *\n  FROM\n    `samples`.nyctaxi.trips\n  WHERE\n    trip_distance &gt; 0\n    AND trip_distance &lt; 10\n    AND fare_amount &gt; 0\n    AND fare_amount &lt; 50\n) T\nORDER BY\n  T.weekday"
   },
   {
     "objectID": "about.html",
@@ -132,6 +146,13 @@
     "title": "About",
     "section": "",
     "text": "Hi, I’m Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in Paris, France.\nI have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as Azure, GCP, AWS, Databricks."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "✨ Data Analysis, Business Intelligence",
+    "section": "",
+    "text": "Create A Dashboard By Databricks AI/BI\n\n\nBuilding a AI/BI Dashboard on Azure Databricks\n\n\n\nAI/BI dashboard\n\n\nBusiness intelligence\n\n\nVisualisation\n\n\n\n\n\n\nDec 30, 2024\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nCreate Sample Azure SQL Server and Database\n\n\nHow to create a single database and server in Azure SQL Database\n\n\n\nAzure\n\n\nSQL Database\n\n\nServer\n\n\nSingle Database\n\n\n\n\n\n\nDec 29, 2024\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nGet CSV Tables Into Databricks\n\n\nUploading one or many csv table into your Databricks work space\n\n\n\nDatabricks\n\n\nGet Csv File\n\n\nMicrosoft Azure\n\n\n\n\n\n\nDec 28, 2024\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nImproving Power BI Reports with Drill-through Pages\n\n\nMastering Power BI with Finance Report Use-case and Drill-through page\n\n\n\nPower BI\n\n\nReport\n\n\nDrill-through Pages\n\n\nHierarchy\n\n\nChanges Over Time\n\n\n\n\n\n\nDec 27, 2024\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/create_sample_azure_SQL_server_database.html",
@@ -198,7 +219,7 @@
     "href": "posts/get_csv_tables_into_databricks.html",
     "title": "Get CSV Tables Into Databricks",
     "section": "",
-    "text": "How to upload a table into your Databricks work space in Microsoft Azure\nHello,\nThis post give a quick through of creating a table in Azure Databricks work space",
+    "text": "How to upload a table into your Databricks work space in Microsoft Azure\nHello,\nThis post give a quick through of creating a table in Azure Databricks work space.",
     "crumbs": [
       "📝Posts",
       "🔗 **Databricks**",
@@ -210,7 +231,7 @@
     "href": "posts/get_csv_tables_into_databricks.html#prerequisite",
     "title": "Get CSV Tables Into Databricks",
     "section": "Prerequisite:",
-    "text": "Prerequisite:\nIn order to perform the task, you must have an Azure Databricks account. If you have not had that, go to create an Azure account on https://azure.microsoft.com/en-us/get-started/azure-portal, then subscribe Databricks to create an Databricks work space",
+    "text": "Prerequisite:\nIn order to perform the task, you must have an Azure Databricks account. If you have not had that, go to create an Azure account, then subscribe Databricks to create an Databricks work space",
     "crumbs": [
       "📝Posts",
       "🔗 **Databricks**",

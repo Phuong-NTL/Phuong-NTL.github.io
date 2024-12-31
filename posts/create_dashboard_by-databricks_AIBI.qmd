@@ -1,0 +1,72 @@
+---
+title: "Create A Dashboard By Databricks AI/BI"
+subtitle: "Building a AI/BI Dashboard on Azure Databricks"
+author: "Phuong Nguyen"
+date: "2024-12-30"
+categories: [AI/BI dashboard, Business intelligence, Visualisation]
+image: "/images/create_dashboard_by-databricks_AIBI/thumbnail_dashboardAIBI.png" 
+---
+
+<center><img src="/images/create_dashboard_by-databricks_AIBI/intro_dashboardAIBI.webp"></center>
+
+Hi there,
+
+In this guide, I will walk you through how to use a sample dataset to build a dashboard and extract insights using the AI/BI dashboard UI on Azure Databricks
+
+## Prerequisites
+
+•	You are logged into a Azure Databricks workspace.
+•	You have the SQL entitlement in that workspace.
+•	You have at least CAN USE access to one or more SQL warehouses.
+
+## How-to Guide
+
+**Step 1. Create a dashboard**
+
+1.	In your Azure Databricks workspace, click on Dashboard, then click Create Dashboard.
+2.	By default, the new dashboard is automatically named using its creation timestamp and stored in your /Workspace/Users/<username> directory.
+3.	Rename the dashboard and the page as needed.
+4.	Use the Canvas tab to create and edit widgets such as visualizations, text boxes, and filters.
+5.	Use the Data tab to define the underlying datasets for your dashboard.
+
+**Step 2. Define datasets**
+
+1.	Click the Data tab.
+2.	Click Create from SQL
+3.	Paste the following query into the editor. Then click Run to return a collection of records.
+
+```sql
+SELECT
+  T.tpep_pickup_datetime,
+  T.tpep_dropoff_datetime,
+  T.fare_amount,
+  T.pickup_zip,
+  T.dropoff_zip,
+  T.trip_distance,
+  T.weekday,
+  CASE
+    WHEN T.weekday = 1 THEN 'Sunday'
+    WHEN T.weekday = 2 THEN 'Monday'
+    WHEN T.weekday = 3 THEN 'Tuesday'
+    WHEN T.weekday = 4 THEN 'Wednesday'
+    WHEN T.weekday = 5 THEN 'Thursday'
+    WHEN T.weekday = 6 THEN 'Friday'
+    WHEN T.weekday = 7 THEN 'Saturday'
+    ELSE 'N/A'
+  END AS day_of_week
+FROM
+(
+  SELECT
+    dayofweek(tpep_pickup_datetime) as weekday,
+    *
+  FROM
+    `samples`.nyctaxi.trips
+  WHERE
+    trip_distance > 0
+    AND trip_distance < 10
+    AND fare_amount > 0
+    AND fare_amount < 50
+) T
+ORDER BY
+  T.weekday
+```
