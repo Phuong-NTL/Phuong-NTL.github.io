@@ -15,25 +15,25 @@ In this guide, I will walk you through how to use a sample dataset to build a da
 
 ## Prerequisites
 
-•	You are logged into a Azure Databricks workspace.
-•	You have the SQL entitlement in that workspace.
-•	You have at least CAN USE access to one or more SQL warehouses.
+- You are logged into a Azure Databricks workspace.
+- You have the SQL entitlement in that workspace.
+- You have at least CAN USE access to one or more SQL warehouses.
 
 ## How-to Guide
 
 **Step 1. Create a dashboard**
 
-1.	In your Azure Databricks workspace, click on Dashboard, then click Create Dashboard.
+1.	In your Azure Databricks workspace, click on **Dashboard**, then click **Create Dashboard**.
 2.	By default, the new dashboard is automatically named using its creation timestamp and stored in your /Workspace/Users/<username> directory.
 3.	Rename the dashboard and the page as needed.
-4.	Use the Canvas tab to create and edit widgets such as visualizations, text boxes, and filters.
-5.	Use the Data tab to define the underlying datasets for your dashboard.
+4.	Use the **Canvas** tab to create and edit widgets such as visualizations, text boxes, and filters.
+5.	Use the **Data** tab to define the underlying datasets for your dashboard.
 
 **Step 2. Define datasets**
 
-1.	Click the Data tab.
-2.	Click Create from SQL
-3.	Paste the following query into the editor. Then click Run to return a collection of records.
+1.	Click the **Data** tab.
+2.	Click **Create from SQL**
+3.	Paste the following query into the editor. Then click **Run** to return a collection of records.
 
 ```sql
 SELECT
@@ -70,3 +70,102 @@ FROM
 ORDER BY
   T.weekday
 ```
+4.	Select the server for running
+5.	Click **Run**. The results will appear below the editor once the query is executed.
+6.	Rename the dataset. By default, it is saved as **Untitled dataset**. Double-click the title to rename it to **Taxicab Data**.
+
+**Step 3. Create and place a visualization**
+
+1.	Return to the **Canvas** tab.
+2.	Click **Add a Visualization** to create a new visualization widget.
+3.	Use your mouse to position the widget on the canvas.
+
+**Step 4. Configure the visualization**
+
+1.	Select the visualization widget.
+2.	Use the configuration panel on the right to configure the data. The previously created dataset is automatically selected.
+3.	Select **Bar Chart** as the visualization type.
+
+**X-Axis Configuration:**
+
+- Select tpep_dropoff_datetime as the X-axis.
+- Click the field to access additional options:
+    o	**Scale Type**: Select **Temporal**.
+    o	**Transform**: Choose **HOURLY**.
+
+**Y-Axis Configuration:**
+
+- Select fare_amount as the Y-axis.
+- Click the field to access additional options:
+    o	**Scale Type**: Select **Quantitative**.
+    o	**Transform**: Choose **AVG**.
+
+**Optional: Use Databricks Assistant**
+
+- You can create visualizations using natural language with **Databricks Assistant**.
+- Click **Create a Visualization**. A prompt will appear with the text: Describe a chart...
+- Type a prompt, for example: Create a bar chart of average fare amount over hourly drop-off time.
+- Press **Enter** and click **Accept** if you are satisfied with the visualization.
+- To edit, click the **Assistant** icon, type a new prompt, or modify the existing chart (e.g., Switch to a line chart).
+
+**Step 5. Clone and modify a visualization**
+
+1.	Right-click on an existing visualization and select **Clone**.
+2.	Set the X-axis field to **tpep_pickup_datetime**.
+3.	Keep the transform type as **HOURLY**.
+4.	Choose a new color for the cloned chart.
+
+**Step 6. Create a scatter chart**
+
+1.	Click **Create a Visualization** to add a new widget.
+2.	Configure the chart as follows:
+    o	**Dataset**: Taxicab Data
+    o	**Visualization**: Scatter
+    o	**X-axis**: trip_distance
+    o	**Y-axis**: fare_amount
+    o	**Color/Group by**: day_of_week
+
+**Step 7. Create dashboard filters**
+
+The filter helps your dashboard become more interactive
+
+**- Create a Date Range Filter:**
+    1.	Click the **Filter** icon to add a filter widget to the canvas.
+    2.	In the configuration panel, select **Date range picker** from the dropdown.
+    3.	Check the **Title** box, rename the filter to **Date Range**.
+    4.	Select **Taxicab_data.tpep_pickup_datetime** as the field.
+
+**- Create a Dropdown Filter:**
+    1.	Click the **Filter** icon again to add another filter.
+    2.	Select **Dropdown (single-value)**.
+    3.	Check the **Title** box and rename it to Dropoff Zip Code.
+    4.	Select Taxicab_data.dropoff_zip as the field.
+
+**- Clone a Filter:**
+    1.	Right-click the **Dropoff Zip Code** filter and select **Clone**.
+    2.	Remove the existing field by clicking the remove icon.
+    3.	Select **Taxicab_data.pickup_zip** to filter by pickup zip code.
+
+**Step 8. Resize and arrange charts and filters**
+
+Arrange and resize your visualizations and filters to optimize the layout.
+
+
+**Step 9. Publish and share**
+
+    1.	Your dashboard is saved as a draft. To create a final version, click **Publish**.
+    2.	Review the list of people with access, then click **Publish**. Users and groups with at least **CAN VIEW** permission will be able to see the dashboard.
+    3.	Follow the link in the notification to view the published dashboard.
+
+**Sharing the Dashboard:**
+- To update the list of users or groups, return to the draft dashboard and click **Share**.
+- Add users or groups and set appropriate permission levels.
+
+
+To give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:
+
+{{< video https://www.youtube.com/watch?v=5S6sFYiXWXc>}}
+
+## Reference
+
+https://learn.microsoft.com/en-us/azure/databricks/dashboards/tutorials/create-dashboard
