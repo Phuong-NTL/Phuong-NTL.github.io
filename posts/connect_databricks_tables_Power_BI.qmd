@@ -26,38 +26,62 @@ Follow these instructions, you can use Azure Databricks as a data resource to cr
 
 **Step 2.** Select the schema or table wish to publish.
 
-**Step 3.** Choose a compute resource from the drop-down list “**Attach to an existing compute resource**”. Click Start and Close. 
-Once your compute resource (e.g,  Serverless) has started , verifying the table content by clicking on the Overview, Sample Data, … tabs.
+<center><img src="/images/connect_databricks_tables_Power_BI/Step2.png"></center>	
 
-**Step 4.** In the left side bar, click on Parter Connect dialog, then Select Microsoft Power BI.
+**Step 3.** Choose a compute resource from the drop-down list “**Attach to an existing compute resource**”. Click **Start and Close**. 
+Once your compute resource (e.g,  Serverless) has started , verifying the table content by clicking on the **Overview**, **Sample Data**, … tabs.
 
-**Step 5.** In the Compute box:
+<center><img src="/images/connect_databricks_tables_Power_BI/Step3.png"></center>
+
+**Step 4.** In the left side bar, click on **Parter Connect** dialog, then Select **Microsoft Power BI**.
+
+<center><img src="/images/connect_databricks_tables_Power_BI/Step4.png"></center>
+
+**Step 5.** In the **Compute** box:
 - Choose your compute resource. 
-- Click Download connection file. 
-- Open the downloaded .pbids file in Power BI Desktop. 
+- Click **Download connection file**. 
+- Open the downloaded **.pbids** file in Power BI Desktop. 
+
+<center><img src="/images/connect_databricks_tables_Power_BI/Step5.png"></center>
 
 ### Deal with Azure Databricks credentials – Generate Access token
 
-Step 6. When Power BI Desktop starts, a prompt will request your Azure Databricks credentials. 
-For the credential Method, select Personal Access Token (PAT). This token grants Power BI access to the semantic model.
-Step 7. Back to the Databricks UI to get a PAT. 
+**Step 6.** When Power BI Desktop starts, a prompt will request your Azure Databricks credentials. 
+For the **credential Method**, select **Personal Access Token** (PAT). This token grants Power BI access to the semantic model.
+
+<center><img src="/images/connect_databricks_tables_Power_BI/Step6.png"></center>
+
+**Step 7.** Back to the Databricks UI to get a PAT. 
+
 -	Click on “personal access token”, a window of Access tokens opens. 
--	Click on Generate new token.
+-	Click on **Generate new token**.
 -	Add a comment (e.g., “access databricks”)
 -	Set the token lifetime. (default is 90 days).
--	Click Generate and copy the token immediately once created.
+-	Click **Generate** and copy the token immediately once created.
+
+<center><img src="/images/connect_databricks_tables_Power_BI/Step7.png"></center>
 
 ### Connect with Power BI Desktop
 
-Step 8. In Power BI Desktop, enter your credentials: 
-- Personal Access Token: Paste the copied Azure Databricks token.
-- Click Connect. A Power BI Navigator will open.
-Step 9. Select the desired Azure Databricks data to query from the Power BI Navigator. 
-Click Load to import the dataset into Power BI.
+**Step 8.** In Power BI Desktop, enter your credentials: 
+
+- **Personal Access Token**: Paste the copied Azure Databricks token.
+- Click **Connect**. A Power BI **Navigator** will open.
+
+<center><img src="/images/connect_databricks_tables_Power_BI/Step8.png"></center>
+
+**Step 9.** Select the desired Azure Databricks data to query from the Power BI **Navigator**. 
+
+Click **Load** to import the dataset into Power BI.
+
+<center><img src="/images/connect_databricks_tables_Power_BI/Step9.png"></center>
 
 ## Result
 
 Congratulations! You have successfully loaded a dataset in Power BI from Azure Databricks Catalog.  Now, you can create interactive reports and dashboards using Power BI's visualization tools.
+
+<center><img src="/images/connect_databricks_tables_Power_BI/Step10.png"></center>
+
 For a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:
 
 {{< video https://www.youtube.com/watch?v=Xza5FumbmU0&t=21s>}}
