@@ -52,6 +52,8 @@ website:
             contents:
               - text: "1. Create a Dashboard by Databricks AI/BI"
                 href: posts/pbi-tuto-executive-summary-finance-report.qmd
+              - text: "2. Connect Databricks Tables to Power BI"
+                href: posts/connect_databricks_tables_Power_BI.qmd
               
           - text: "---"    
 format:

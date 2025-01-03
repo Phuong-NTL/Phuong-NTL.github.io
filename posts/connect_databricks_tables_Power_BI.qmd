@@ -1,0 +1,11 @@
+---
+title: "Connect Databricks Tables to Power BI"
+subtitle: "Publish Azure Databricks Tables to a Power BI Dataset"
+author: "Phuong Nguyen"
+date: "2025-01-03"
+categories: [Azure, Databricks, Power BI, Report, Data Source]
+image: "/images/connect_databricks_tables_Power_BI/thumbnail_connect_databricks_BI.png" 
+---
+
+<center><img src="/images/connect_databricks_tables_Power_BI/intro_connect_databricks_BI.webp"></center>
+

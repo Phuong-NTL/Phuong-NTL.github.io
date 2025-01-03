@@ -64,7 +64,7 @@
     "href": "posts/drill_through_page.html",
     "title": "Improving Power BI Reports with Drill-through Pages",
     "section": "",
-    "text": "Hello!\nIn this post, I will introduce how to enhance Power BI reports by using drill-through fields to filter detailed reports, providing deeper insights. Additionally, I will demonstrate how to visualize changes over time using the Play Axis feature, which offers engaging and dynamic data insights.",
+    "text": "Hello!\nHi there, Follow these instructions, you can use Azure Databricks as a data resource to create Power BI dataset from tables or schemas directly from the Databricks UI.",
     "crumbs": [
       "📝Posts",
       "🧪 **Power BI Dashboard/Report**",
@@ -72,11 +72,11 @@
     ]
   },
   {
-    "objectID": "posts/drill_through_page.html#use-case-description",
-    "href": "posts/drill_through_page.html#use-case-description",
+    "objectID": "posts/drill_through_page.html#prerequisites",
+    "href": "posts/drill_through_page.html#prerequisites",
     "title": "Improving Power BI Reports with Drill-through Pages",
-    "section": "Use-case description",
-    "text": "Use-case description\nOur dataset is a sample financial dataset in Power BI Desktop. Our goal is to create a report on the expenditures of Wake County Watchdog, with a focus on the fiscal year 2019. The report consists of two pages:\nGeneral Report (Page 1)\nThis page provides an overview of expenditures across different funds and departments. It addresses the following questions:\n\nWhat is the comparison between Actual Amount and Budgeted Amount by Fund Name?\nWhich departments exceeded their budget, and which did not?\nWhat is the total amount over budget?\n\nDetailed Drill-through Report (Page 2)\nThis page focuses on detailed expenditure reports for a selected department, allowing exploration by sub-categories based on the hierarchy: Department -&gt; Division -&gt; Cost Center. It answers questions such as:\n\nHow is expenditure distributed by department, division, and cost center over time?\nHow does the amount over budget change over time by cost center?",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nYour data must reside in the Unity Catalog within your Databricks workspace.\nYour compute (cluster) must be Unity Catalog-enabled.",
     "crumbs": [
       "📝Posts",
       "🧪 **Power BI Dashboard/Report**",
@@ -84,11 +84,11 @@
     ]
   },
   {
-    "objectID": "posts/drill_through_page.html#development-process",
-    "href": "posts/drill_through_page.html#development-process",
+    "objectID": "posts/drill_through_page.html#step-by-step-guide",
+    "href": "posts/drill_through_page.html#step-by-step-guide",
     "title": "Improving Power BI Reports with Drill-through Pages",
-    "section": "Development Process",
-    "text": "Development Process\nOur development process follows these key steps:\n\nData Loading\n\nImport the sample financial dataset into Power BI Desktop.\n\n\n\nData Modeling\n\nCreate and verify the hierarchy (Department -&gt; Division -&gt; Cost Center).\nDevelop DAX formulas to calculate key measures:\n\nAmount Over Budget = SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount])\nIs Over Budget = (SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount])) &gt; 0\nNumber of Expenditures = COUNT(Expenditures[Check Number])\n\n\n\n\nReport Building\nPage 1: General Report\n\nAdd a title.\nVisual #1: Clustered bar chart showing Actual Amount and Budgeted Amount by Fund Name.\nVisual #2: Table listing departments over/under budget.\nVisual #3: Card visual displaying the total amount over budget.\nApply a filter to display data for fiscal year 2019.\nAdd lines to separate sections of the report.\n\nPage 2: Drill-through Detailed Report\n\nAdd a title.\nVisual #4: Line chart showing Actual Amount over time.\nVisual #5: Treemap visualizing Actual Amount by Division and Cost Center. Add a drill-through dimension to this page.\nVisual #6: Scatter chart with a Play Axis to visualize Expenditures by Cost Center over time (Year and Month).\n\n\n\nReport Publishing\n\nPublish the report from Power BI Desktop to the Power BI Service for sharing and collaboration.\n\nTo practice this use case hands-on, follow my step-by-step tutorial video to complete the outlined steps.",
+    "section": "Step-by-Step Guide",
+    "text": "Step-by-Step Guide\n\nOpen your table\nStep 1. In your Databricks workspace, click on Catalog in the left sidebar to open Catalog Explorer. Step 2. Select the schema or table wish to publish. Step 3. Choose a compute resource from the drop-down list “Attach to an existing compute resource”. Click Start and Close. Once your compute resource (e.g, Serverless) has started , verifying the table content by clicking on the Overview, Sample Data, … tabs. Step 4. In the left side bar, click on Parter Connect dialog, then Select Microsoft Power BI. Step 5. In the Compute box: - Choose your compute resource. - Click Download connection file. - Open the downloaded .pbids file in Power BI Desktop.\n\n\nDeal with Azure Databricks credentials – Generate Access token\nStep 6. When Power BI Desktop starts, a prompt will request your Azure Databricks credentials. For the credential Method, select Personal Access Token (PAT). This token grants Power BI access to the semantic model. Step 7. Back to the Databricks UI to get a PAT. - Click on “personal access token”, a window of Access tokens opens. - Click on Generate new token. - Add a comment (e.g., “access databricks”) - Set the token lifetime. (default is 90 days). - Click Generate and copy the token immediately once created.\n\n\nConnect with Power BI Desktop\nStep 8. In Power BI Desktop, enter your credentials: - Personal Access Token: Paste the copied Azure Databricks token. - Click Connect. A Power BI Navigator will open. Step 9. Select the desired Azure Databricks data to query from the Power BI Navigator. Click Load to import the dataset into Power BI.",
     "crumbs": [
       "📝Posts",
       "🧪 **Power BI Dashboard/Report**",
@@ -96,11 +96,11 @@
     ]
   },
   {
-    "objectID": "posts/drill_through_page.html#final-result",
-    "href": "posts/drill_through_page.html#final-result",
+    "objectID": "posts/drill_through_page.html#result",
+    "href": "posts/drill_through_page.html#result",
     "title": "Improving Power BI Reports with Drill-through Pages",
-    "section": "Final result",
-    "text": "Final result\nThe resulting report on Wake County Watchdog’s expenditures will contain two pages.\nThe first page Over Budget should be like this:\n\n\n\nThe drill-through page will be accessible through a selected dimension from the first page.\n\n\n\nKey Insights for Executives:\n\nTotal Expenditure Over Budget (Fiscal Year 2019): $108.36M\nActual Expenditure for Fire 800MHZ on September 4, 2018: $126,578\nNumber of Over-Budget Expenditures for Facilities Design and Construction (November 2018): 41",
+    "section": "Result",
+    "text": "Result\nCongratulations! You have successfully loaded a dataset in Power BI from Azure Databricks Catalog. Now, you can create interactive reports and dashboards using Power BI’s visualization tools. For a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:\n\nI hope this was helpful !",
     "crumbs": [
       "📝Posts",
       "🧪 **Power BI Dashboard/Report**",
@@ -108,11 +108,11 @@
     ]
   },
   {
-    "objectID": "posts/drill_through_page.html#reference",
-    "href": "posts/drill_through_page.html#reference",
+    "objectID": "posts/drill_through_page.html#references",
+    "href": "posts/drill_through_page.html#references",
     "title": "Improving Power BI Reports with Drill-through Pages",
-    "section": "Reference",
-    "text": "Reference\n[1] https://app.datacamp.com/learn/courses/reports-in-power-bi",
+    "section": "References:",
+    "text": "References:\nhttps://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi#additional-resources",
     "crumbs": [
       "📝Posts",
       "🧪 **Power BI Dashboard/Report**",
@@ -148,18 +148,18 @@
     "text": "Reference\nhttps://learn.microsoft.com/en-us/azure/databricks/dashboards/tutorials/create-dashboard"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "✨ Data Analysis, Business Intelligence",
+    "section": "",
+    "text": "Connect Databricks Tables to Power BI\n\n\nPublish Azure Databricks Tables to a Power BI Dataset\n\n\n\nAzure\n\n\nDatabricks\n\n\nPower BI\n\n\nReport\n\n\nData Source\n\n\n\n\n\n\nJan 3, 2025\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nCreate A Dashboard By Databricks AI/BI\n\n\nBuilding a AI/BI Dashboard on Azure Databricks\n\n\n\nAI/BI dashboard\n\n\nBusiness intelligence\n\n\nVisualisation\n\n\n\n\n\n\nDec 30, 2024\n\n\n5 min\n\n\n\n\n\n\n\n\n\n\n\n\nCreate Sample Azure SQL Server and Database\n\n\nHow to create a single database and server in Azure SQL Database\n\n\n\nAzure\n\n\nSQL Database\n\n\nServer\n\n\nSingle Database\n\n\n\n\n\n\nDec 29, 2024\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nGet CSV Tables Into Databricks\n\n\nUploading one or many csv table into your Databricks work space\n\n\n\nDatabricks\n\n\nGet Csv File\n\n\nMicrosoft Azure\n\n\n\n\n\n\nDec 28, 2024\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nImproving Power BI Reports with Drill-through Pages\n\n\nMastering Power BI with Finance Report Use-case and Drill-through page\n\n\n\nPower BI\n\n\nReport\n\n\nDrill-through Pages\n\n\nHierarchy\n\n\nChanges Over Time\n\n\n\n\n\n\nDec 27, 2024\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "Hi, I’m Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in Paris, France.\nI have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as Azure, GCP, AWS, Databricks."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "✨ Data Analysis, Business Intelligence",
-    "section": "",
-    "text": "Create A Dashboard By Databricks AI/BI\n\n\nBuilding a AI/BI Dashboard on Azure Databricks\n\n\n\nAI/BI dashboard\n\n\nBusiness intelligence\n\n\nVisualisation\n\n\n\n\n\n\nDec 30, 2024\n\n\n5 min\n\n\n\n\n\n\n\n\n\n\n\n\nCreate Sample Azure SQL Server and Database\n\n\nHow to create a single database and server in Azure SQL Database\n\n\n\nAzure\n\n\nSQL Database\n\n\nServer\n\n\nSingle Database\n\n\n\n\n\n\nDec 29, 2024\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nGet CSV Tables Into Databricks\n\n\nUploading one or many csv table into your Databricks work space\n\n\n\nDatabricks\n\n\nGet Csv File\n\n\nMicrosoft Azure\n\n\n\n\n\n\nDec 28, 2024\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nImproving Power BI Reports with Drill-through Pages\n\n\nMastering Power BI with Finance Report Use-case and Drill-through page\n\n\n\nPower BI\n\n\nReport\n\n\nDrill-through Pages\n\n\nHierarchy\n\n\nChanges Over Time\n\n\n\n\n\n\nDec 27, 2024\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/create_sample_azure_SQL_server_database.html",
