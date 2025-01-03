@@ -11,57 +11,80 @@ image: "/images/drill_through_page/thumbnail_drillpage.png"
 
 Hello! 
 
-Hi there,
-Follow these instructions, you can use Azure Databricks as a data resource to create Power BI dataset from tables or schemas directly from the Databricks UI.
+In this post, I will introduce how to enhance Power BI reports by using drill-through fields to filter detailed reports, providing deeper insights. Additionally, I will demonstrate how to visualize changes over time using the Play Axis feature, which offers engaging and dynamic data insights.
 
-## Prerequisites
+## Use-case description
+Our dataset is a sample financial dataset in Power BI Desktop. Our goal is to create a report on the expenditures of Wake County Watchdog, with a focus on the fiscal year 2019.
+The report consists of two pages:
 
-- Your data must reside in the Unity Catalog within your Databricks workspace.
-- Your compute (cluster) must be Unity Catalog-enabled.
+**General Report (Page 1)**
 
-## Step-by-Step Guide
+This page provides an overview of expenditures across different funds and departments. It addresses the following questions:
 
-### Open your table
+- What is the comparison between Actual Amount and Budgeted Amount by Fund Name?
+- Which departments exceeded their budget, and which did not?
+- What is the total amount over budget?
 
-Step 1. In your Databricks workspace, click on  Catalog in the left sidebar to open Catalog Explorer. 
-Step 2. Select the schema or table wish to publish.
-Step 3. Choose a compute resource from the drop-down list “Attach to an existing compute resource”. Click Start and Close. 
-Once your compute resource (e.g,  Serverless) has started , verifying the table content by clicking on the Overview, Sample Data, … tabs.
-Step 4. In the left side bar, click on Parter Connect dialog, then Select Microsoft Power BI.
-Step 5. In the Compute box:
-- Choose your compute resource. 
-- Click Download connection file. 
-- Open the downloaded .pbids file in Power BI Desktop. 
+**Detailed Drill-through Report (Page 2)**
 
-### Deal with Azure Databricks credentials – Generate Access token
+This page focuses on detailed expenditure reports for a selected department, allowing exploration by sub-categories based on the hierarchy: Department -> Division -> Cost Center. It answers questions such as:
 
-Step 6. When Power BI Desktop starts, a prompt will request your Azure Databricks credentials. 
-For the credential Method, select Personal Access Token (PAT). This token grants Power BI access to the semantic model.
-Step 7. Back to the Databricks UI to get a PAT. 
--	Click on “personal access token”, a window of Access tokens opens. 
--	Click on Generate new token.
--	Add a comment (e.g., “access databricks”)
--	Set the token lifetime. (default is 90 days).
--	Click Generate and copy the token immediately once created.
+- How is expenditure distributed by department, division, and cost center over time?
+- How does the amount over budget change over time by cost center?
 
-### Connect with Power BI Desktop
+## Development Process
+Our development process follows these key steps:
 
-Step 8. In Power BI Desktop, enter your credentials: 
-- Personal Access Token: Paste the copied Azure Databricks token.
-- Click Connect. A Power BI Navigator will open.
-Step 9. Select the desired Azure Databricks data to query from the Power BI Navigator. 
-Click Load to import the dataset into Power BI.
+### Data Loading
+- Import the sample financial dataset into Power BI Desktop.
 
-## Result
+### Data Modeling
+- Create and verify the hierarchy (Department -> Division -> Cost Center).
+- Develop DAX formulas to calculate key measures:
+    - Amount Over Budget = SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount])
+    - Is Over Budget = (SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount])) > 0
+    - Number of Expenditures = COUNT(Expenditures[Check Number])
 
-Congratulations! You have successfully loaded a dataset in Power BI from Azure Databricks Catalog.  Now, you can create interactive reports and dashboards using Power BI's visualization tools.
-For a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:
+### Report Building
 
-{{< video https://www.youtube.com/watch?v=Xza5FumbmU0&t=21s>}}
+**Page 1: General Report**
 
-I hope this was helpful !
+- Add a title.
+- Visual #1: Clustered bar chart showing Actual Amount and Budgeted Amount by Fund Name.
+- Visual #2: Table listing departments over/under budget.
+- Visual #3: Card visual displaying the total amount over budget.
+- Apply a filter to display data for fiscal year 2019.
+- Add lines to separate sections of the report.
 
-## References: 
+**Page 2: Drill-through Detailed Report**
 
-https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi#additional-resources
+- Add a title.
+- Visual #4: Line chart showing Actual Amount over time.
+- Visual #5: Treemap visualizing Actual Amount by Division and Cost Center. Add a drill-through dimension to this page.
+- Visual #6: Scatter chart with a Play Axis to visualize Expenditures by Cost Center over time (Year and Month).
 
+### Report Publishing
+
+- Publish the report from Power BI Desktop to the Power BI Service for sharing and collaboration.
+
+To practice this use case hands-on, follow my step-by-step tutorial video to complete the outlined steps.
+
+## Final result
+
+The resulting report on Wake County Watchdog’s expenditures will contain two pages. 
+
+The first page Over Budget should be like this:
+<center><img src="/images/drill_through_page/page1.png"></center>	
+
+The drill-through page will be accessible through a selected dimension from the first page.
+
+<center><img src="/images/drill_through_page/page2.png"></center>	
+
+**Key Insights for Executives:**
+
+- Total Expenditure Over Budget (Fiscal Year 2019): $108.36M
+- Actual Expenditure for Fire 800MHZ on September 4, 2018: $126,578
+- Number of Over-Budget Expenditures for Facilities Design and Construction (November 2018): 41
+
+## Reference
+[1] https://app.datacamp.com/learn/courses/reports-in-power-bi

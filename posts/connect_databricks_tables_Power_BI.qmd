@@ -9,3 +9,58 @@ image: "/images/connect_databricks_tables_Power_BI/thumbnail_connect_databricks_
 
 <center><img src="/images/connect_databricks_tables_Power_BI/intro_connect_databricks_BI.webp"></center>
 
+Hello! 
+
+Hi there,
+Follow these instructions, you can use Azure Databricks as a data resource to create Power BI dataset from tables or schemas directly from the Databricks UI.
+
+## Prerequisites
+
+- Your data must reside in the Unity Catalog within your Databricks workspace.
+- Your compute (cluster) must be Unity Catalog-enabled.
+
+## Step-by-Step Guide
+
+### Open your table
+
+Step 1. In your Databricks workspace, click on  Catalog in the left sidebar to open Catalog Explorer. 
+Step 2. Select the schema or table wish to publish.
+Step 3. Choose a compute resource from the drop-down list “Attach to an existing compute resource”. Click Start and Close. 
+Once your compute resource (e.g,  Serverless) has started , verifying the table content by clicking on the Overview, Sample Data, … tabs.
+Step 4. In the left side bar, click on Parter Connect dialog, then Select Microsoft Power BI.
+Step 5. In the Compute box:
+- Choose your compute resource. 
+- Click Download connection file. 
+- Open the downloaded .pbids file in Power BI Desktop. 
+
+### Deal with Azure Databricks credentials – Generate Access token
+
+Step 6. When Power BI Desktop starts, a prompt will request your Azure Databricks credentials. 
+For the credential Method, select Personal Access Token (PAT). This token grants Power BI access to the semantic model.
+Step 7. Back to the Databricks UI to get a PAT. 
+-	Click on “personal access token”, a window of Access tokens opens. 
+-	Click on Generate new token.
+-	Add a comment (e.g., “access databricks”)
+-	Set the token lifetime. (default is 90 days).
+-	Click Generate and copy the token immediately once created.
+
+### Connect with Power BI Desktop
+
+Step 8. In Power BI Desktop, enter your credentials: 
+- Personal Access Token: Paste the copied Azure Databricks token.
+- Click Connect. A Power BI Navigator will open.
+Step 9. Select the desired Azure Databricks data to query from the Power BI Navigator. 
+Click Load to import the dataset into Power BI.
+
+## Result
+
+Congratulations! You have successfully loaded a dataset in Power BI from Azure Databricks Catalog.  Now, you can create interactive reports and dashboards using Power BI's visualization tools.
+For a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:
+
+{{< video https://www.youtube.com/watch?v=Xza5FumbmU0&t=21s>}}
+
+I hope this was helpful !
+
+## References: 
+
+https://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi#additional-resources
