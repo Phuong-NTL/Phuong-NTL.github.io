@@ -23,7 +23,7 @@ Follow these instructions, you can use Azure Databricks as a data resource to cr
 
 ### Open your table
 
-Step 1. In your Databricks workspace, click on  Catalog in the left sidebar to open Catalog Explorer. 
+Step 1. In your Databricks workspace, click on  **Catalog** in the left sidebar to open Catalog Explorer. 
 Step 2. Select the schema or table wish to publish.
 Step 3. Choose a compute resource from the drop-down list “Attach to an existing compute resource”. Click Start and Close. 
 Once your compute resource (e.g,  Serverless) has started , verifying the table content by clicking on the Overview, Sample Data, … tabs.
