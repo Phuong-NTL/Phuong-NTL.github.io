@@ -9,9 +9,8 @@ image: "/images/connect_databricks_tables_Power_BI/thumbnail_connect_databricks_
 
 <center><img src="/images/connect_databricks_tables_Power_BI/intro_connect_databricks_BI.webp"></center>
 
-Hello! 
-
 Hi there,
+
 Follow these instructions, you can use Azure Databricks as a data resource to create Power BI dataset from tables or schemas directly from the Databricks UI.
 
 ## Prerequisites
@@ -21,14 +20,18 @@ Follow these instructions, you can use Azure Databricks as a data resource to cr
 
 ## Step-by-Step Guide
 
-### Open your table
+    ### Open your table
 
-Step 1. In your Databricks workspace, click on  **Catalog** in the left sidebar to open Catalog Explorer. 
-Step 2. Select the schema or table wish to publish.
-Step 3. Choose a compute resource from the drop-down list “Attach to an existing compute resource”. Click Start and Close. 
+**Step 1.** In your Databricks workspace, click on  **Catalog** in the left sidebar to open **Catalog Explorer**. 
+
+**Step 2.** Select the schema or table wish to publish.
+
+**Step 3.** Choose a compute resource from the drop-down list “**Attach to an existing compute resource**”. Click Start and Close. 
 Once your compute resource (e.g,  Serverless) has started , verifying the table content by clicking on the Overview, Sample Data, … tabs.
-Step 4. In the left side bar, click on Parter Connect dialog, then Select Microsoft Power BI.
-Step 5. In the Compute box:
+
+**Step 4.** In the left side bar, click on Parter Connect dialog, then Select Microsoft Power BI.
+
+**Step 5.** In the Compute box:
 - Choose your compute resource. 
 - Click Download connection file. 
 - Open the downloaded .pbids file in Power BI Desktop. 
