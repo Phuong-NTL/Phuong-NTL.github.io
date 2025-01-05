@@ -48,7 +48,7 @@ website:
               - text: "2. Create Sample Azure SQL Server and Database"
                 href: posts/create_sample_azure_SQL_server_database.qmd
           - text: "---"
-          - section: "🧪 **Azure Databricks AI/BI**"
+          - section: "📊 **Azure Databricks AI/BI**"
             contents:
               - text: "1. Create a Dashboard by Databricks AI/BI"
                 href: posts/pbi-tuto-executive-summary-finance-report.qmd

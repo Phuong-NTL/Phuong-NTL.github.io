@@ -80,11 +80,15 @@ The drill-through page will be accessible through a selected dimension from the 
 
 <center><img src="/images/drill_through_page/page2.png"></center>	
 
+
+To give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:
+{{< video https://www.youtube.com/watch?v=ulI6dI61b_0>}}
+
 **Key Insights for Executives:**
 
-- Total Expenditure Over Budget (Fiscal Year 2019): $108.36M
-- Actual Expenditure for Fire 800MHZ on September 4, 2018: $126,578
-- Number of Over-Budget Expenditures for Facilities Design and Construction (November 2018): 41
+- Total Expenditure Over Budget (Fiscal Year 2019): **$108.36M**
+- Actual Expenditure for Fire 800MHZ on September 4, 2018: **$126,578**
+- Number of Over-Budget Expenditures for Facilities Design and Construction (November 2018): **41**
 
 ## Reference
 [1] https://app.datacamp.com/learn/courses/reports-in-power-bi
