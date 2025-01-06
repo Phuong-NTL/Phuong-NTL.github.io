@@ -51,7 +51,7 @@ website:
           - section: "📊 **Azure Databricks AI/BI**"
             contents:
               - text: "1. Create a Dashboard by Databricks AI/BI"
-                href: posts/pbi-tuto-executive-summary-finance-report.qmd
+                href: posts/create_dashboard_by-databricks_AIBI.qmd
               - text: "2. Connect Databricks Tables to Power BI"
                 href: posts/connect_databricks_tables_Power_BI.qmd
               
