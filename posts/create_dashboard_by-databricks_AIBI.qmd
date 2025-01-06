@@ -183,6 +183,7 @@ Arrange and resize your visualizations and filters to optimize the layout.
 **Step 9. Publish and share**
 
     1.	Your dashboard is saved as a draft. To create a final version, click **Publish**.
+    
     2.	Review the list of people with access, then click **Publish**. Users and groups with at least **CAN VIEW** permission will be able to see the dashboard.
     
 <center><img src="/images/create_dashboard_by-databricks_AIBI/Step14.png"></center>
