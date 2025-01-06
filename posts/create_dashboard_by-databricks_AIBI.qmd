@@ -13,7 +13,7 @@ Hi there,
 
 In this guide, I will walk you through how to use a sample dataset to build a dashboard and extract insights using the AI/BI dashboard UI on Azure Databricks
 
-Moreover, in this use-case, I will guide you how to query sample data stored in the sample catalog on Databricks workspace, using SQL, in order to get the input sample dataset for the dashboard.
+Additionally, I will guide you how to query sample data from the Databricks workspace's sample catalog using SQL, allowing you to retrieve the input dataset needed for the dashboard.
 
 ## Prerequisites
 
