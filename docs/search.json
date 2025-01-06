@@ -124,7 +124,7 @@
     "href": "posts/create_dashboard_by-databricks_AIBI.html",
     "title": "Create A Dashboard By Databricks AI/BI",
     "section": "",
-    "text": "Hi there,\nIn this guide, I will walk you through how to use a sample dataset to build a dashboard and extract insights using the AI/BI dashboard UI on Azure Databricks"
+    "text": "Hi there,\nIn this guide, I will walk you through how to use a sample dataset to build a dashboard and extract insights using the AI/BI dashboard UI on Azure Databricks\nMoreover, in this use-case, I will guide you how to query sample data stored in the sample catalog on Databricks workspace, using SQL, in order to get the input sample dataset for the dashboard."
   },
   {
     "objectID": "posts/create_dashboard_by-databricks_AIBI.html#prerequisites",

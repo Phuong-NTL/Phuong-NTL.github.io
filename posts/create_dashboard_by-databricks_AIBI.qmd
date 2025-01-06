@@ -13,6 +13,8 @@ Hi there,
 
 In this guide, I will walk you through how to use a sample dataset to build a dashboard and extract insights using the AI/BI dashboard UI on Azure Databricks
 
+Moreover, in this use-case, I will guide you how to query sample data stored in the sample catalog on Databricks workspace, using SQL, in order to get the input sample dataset for the dashboard.
+
 ## Prerequisites
 
 - You are logged into a Azure Databricks workspace.
@@ -183,7 +185,7 @@ Arrange and resize your visualizations and filters to optimize the layout.
 **Step 9. Publish and share**
 
     1.	Your dashboard is saved as a draft. To create a final version, click **Publish**.
-    
+
     2.	Review the list of people with access, then click **Publish**. Users and groups with at least **CAN VIEW** permission will be able to see the dashboard.
     
 <center><img src="/images/create_dashboard_by-databricks_AIBI/Step14.png"></center>
