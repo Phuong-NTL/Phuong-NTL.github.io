@@ -9,7 +9,7 @@ image: "/images/create_dashboard_by-databricks_AIBI/thumbnail_dashboardAIBI.png"
 
 <center><img src="/images/get_table_visualize_data_with_databricks_SQL/intro_visualize.webp"></center>
 
-Introduction,
+**Introduction**
 
 Azure Databricks has built-in support for data visualizations in notebooks. In this poste, I will guide you how to query and visualize data in a Databricks notebook.
 
@@ -23,7 +23,7 @@ Azure Databricks has built-in support for data visualizations in notebooks. In t
 
 **Step 1: Create a new notebook**
 
-Click on + ✙ in the sidebar of your Databricks workspace, then select **Notebook**. A blank notebook opens in the workspace
+Click on ✙ in the sidebar of your Databricks workspace, then select **Notebook**. A blank notebook opens in the workspace
 
 <center><img src="/images/get_table_visualize_data_with_databricks_SQL/Step1.png"></center>
 
@@ -35,17 +35,25 @@ Pay attention to connect to your compute resource before starting query
 In order to query the *samples.nyctaxi.trips* table in Unity Catalog using the language of your choice:
 - Copy and paste the code corresponding to your language in a new empty notebook cell:
 
+**SQL**
+
 ```SQL
 SELECT * FROM samples.nyctaxi.trips
 ```
+
+**Python**
 
 ```Python
 display(spark.read.table("samples.nyctaxi.trips"))
 ```
 
+**Scala**
+
 ```Scala
 display(spark.read.table("samples.nyctaxi.trips"))
 ```
+
+**R**
 
 ```R
 library(SparkR)
@@ -59,22 +67,30 @@ display(sql("SELECT*FROM samples.nyctaxi.trips"))
 **Step 3. Data Visualization**
 
 The objective is display a bar chart on the average fare amount by trip distance, grouped by the pickup zip code. Thus, the configuration of Visualization should be as following:
+
 -	In the **Visualization Type**, select **Bar**.
+
 -	For the **X column**, select *fare_amount*.
+
 -	For the **Y column**, select *trip_distance*. For the **aggregation type**, select *Average*.
+
 -	For **Group by**, select *pickup_zip*.
+
 -	Click **Save**
 
 <center><img src="/images/get_table_visualize_data_with_databricks_SQL/Step3.png"></center>
 
 **Further posibilities:**
+
 After visualizing successfully, you can click on the drop-list of Visualizations to have further options (e.g. Download, Rename, Add to dashboard…)
 
 For a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:
+
 {{< video  https://www.youtube.com/watch?v=V5BhdXqE7Qs}}
 
 I hope this was helpful !
 
 ## References
+
 https://learn.microsoft.com/en-us/azure/databricks/getting-started/quick-start
 
