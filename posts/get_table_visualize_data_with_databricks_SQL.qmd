@@ -84,8 +84,7 @@ The objective is display a bar chart on the average fare amount by trip distance
 
 After visualizing successfully, you can click on the drop-list of Visualizations to have further options (e.g. Download, Rename, Add to dashboard…)
 
-For a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:
-{{< video  https://www.youtube.com/watch?v=V5BhdXqE7Qs}}
+For a hands-on practice, watch my step-by-step tutorial video demonstrating the above process: {{< video  https://www.youtube.com/watch?v=V5BhdXqE7Qs}}
 
 I hope this was helpful !
 
