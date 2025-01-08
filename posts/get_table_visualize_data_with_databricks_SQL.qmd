@@ -7,7 +7,7 @@ categories: [Databricks Notebook, Query, Visualisation]
 image: "/images/create_dashboard_by-databricks_AIBI/thumbnail_dashboardAIBI.png" 
 ---
 
-<center><img src="/images/get_table_visualize_data_with_databricks_SQL/intro_visualize.webp"></center>
+<center><img src="/images/get_table_visualize_data_with_databricks_SQL/intro_visualize.webp" style="width:50%;"></center>
 
 **Introduction**
 
@@ -85,7 +85,6 @@ The objective is display a bar chart on the average fare amount by trip distance
 After visualizing successfully, you can click on the drop-list of Visualizations to have further options (e.g. Download, Rename, Add to dashboard…)
 
 For a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:
-
 {{< video  https://www.youtube.com/watch?v=V5BhdXqE7Qs}}
 
 I hope this was helpful !
