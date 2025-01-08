@@ -92,3 +92,11 @@ I hope this was helpful !
 
 https://learn.microsoft.com/en-us/azure/databricks/getting-started/quick-start
 
+To give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:
+
+{{< video https://www.youtube.com/watch?v=5S6sFYiXWXc>}}
+
+## Reference
+
+https://learn.microsoft.com/en-us/azure/databricks/dashboards/tutorials/create-dashboard
+
