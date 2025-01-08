@@ -390,7 +390,19 @@
     "href": "posts/get_table_visualize_data_with_databricks_SQL.html#how-to-guide",
     "title": "Get Table And Visualize Data in Databricks Notebook",
     "section": "How-to Guide",
-    "text": "How-to Guide\nStep 1: Create a new notebook\nClick on ✙ in the sidebar of your Databricks workspace, then select Notebook. A blank notebook opens in the workspace\n\n\n\nStep 2: Query a table\nDatabricks notebook allow you to develop multiple languages: SQL, Python, Scala or R. Pay attention to connect to your compute resource before starting query\nIn order to query the samples.nyctaxi.trips table in Unity Catalog using the language of your choice: - Copy and paste the code corresponding to your language in a new empty notebook cell:\nSQL\nSELECT * FROM samples.nyctaxi.trips\nPython\ndisplay(spark.read.table(\"samples.nyctaxi.trips\"))\nScala\ndisplay(spark.read.table(\"samples.nyctaxi.trips\"))\nR\nlibrary(SparkR)\ndisplay(sql(\"SELECT*FROM samples.nyctaxi.trips\"))\n\nPress Enter to executive the code then move to the next cell.\n\n\n\n\nStep 3. Data Visualization\nThe objective is display a bar chart on the average fare amount by trip distance, grouped by the pickup zip code. Thus, the configuration of Visualization should be as following:\n\nIn the Visualization Type, select Bar.\nFor the X column, select fare_amount.\nFor the Y column, select trip_distance. For the aggregation type, select Average.\nFor Group by, select pickup_zip.\nClick Save\n\n\n\n\nFurther posibilities:\nAfter visualizing successfully, you can click on the drop-list of Visualizations to have further options (e.g. Download, Rename, Add to dashboard…)\nFor a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:",
+    "text": "How-to Guide\nStep 1: Create a new notebook\nClick on ✙ in the sidebar of your Databricks workspace, then select Notebook. A blank notebook opens in the workspace\n\n\n\nStep 2: Query a table\nDatabricks notebook allow you to develop multiple languages: SQL, Python, Scala or R. Pay attention to connect to your compute resource before starting query\nIn order to query the samples.nyctaxi.trips table in Unity Catalog using the language of your choice: - Copy and paste the code corresponding to your language in a new empty notebook cell:\nSQL\nSELECT * FROM samples.nyctaxi.trips\nPython\ndisplay(spark.read.table(\"samples.nyctaxi.trips\"))\nScala\ndisplay(spark.read.table(\"samples.nyctaxi.trips\"))\nR\nlibrary(SparkR)\ndisplay(sql(\"SELECT*FROM samples.nyctaxi.trips\"))\n\nPress Enter to executive the code then move to the next cell.\n\n\n\n\nStep 3. Data Visualization\nThe objective is display a bar chart on the average fare amount by trip distance, grouped by the pickup zip code. Thus, the configuration of Visualization should be as following:\n\nIn the Visualization Type, select Bar.\nFor the X column, select fare_amount.\nFor the Y column, select trip_distance. For the aggregation type, select Average.\nFor Group by, select pickup_zip.\nClick Save\n\n\n\n\nFurther posibilities:\nAfter visualizing successfully, you can click on the drop-list of Visualizations to have further options (e.g. Download, Rename, Add to dashboard…)\nFor a hands-on practice, watch my step-by-step tutorial video demonstrating the above process: \nI hope this was helpful !",
+    "crumbs": [
+      "📝Posts",
+      "🔗 **Databricks**",
+      "3. Get Table And Visualize Data in Databricks Notebook"
+    ]
+  },
+  {
+    "objectID": "posts/get_table_visualize_data_with_databricks_SQL.html#references",
+    "href": "posts/get_table_visualize_data_with_databricks_SQL.html#references",
+    "title": "Get Table And Visualize Data in Databricks Notebook",
+    "section": "References",
+    "text": "References\nhttps://learn.microsoft.com/en-us/azure/databricks/getting-started/quick-start",
     "crumbs": [
       "📝Posts",
       "🔗 **Databricks**",
