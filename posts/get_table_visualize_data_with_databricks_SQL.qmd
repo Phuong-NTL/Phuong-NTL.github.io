@@ -9,7 +9,7 @@ image: "/images/get_table_visualize_data_with_databricks_SQL/Visualize_thumbnail
 
 <center><img src="/images/get_table_visualize_data_with_databricks_SQL/intro_visualize.webp"></center>
 
-**Introduction**
+## Introduction
 
 Azure Databricks has built-in support for data visualizations in notebooks. In this poste, I will guide you how to query and visualize data in a Databricks notebook.
 

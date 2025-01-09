@@ -362,10 +362,10 @@
     ]
   },
   {
-    "objectID": "posts/get_table_visualize_data_with_databricks_SQL.html",
-    "href": "posts/get_table_visualize_data_with_databricks_SQL.html",
+    "objectID": "posts/get_table_visualize_data_with_databricks_SQL.html#introduction",
+    "href": "posts/get_table_visualize_data_with_databricks_SQL.html#introduction",
     "title": "Get Table And Visualize Data in Databricks Notebook",
-    "section": "",
+    "section": "Introduction",
     "text": "Introduction\nAzure Databricks has built-in support for data visualizations in notebooks. In this poste, I will guide you how to query and visualize data in a Databricks notebook.",
     "crumbs": [
       "📝Posts",
