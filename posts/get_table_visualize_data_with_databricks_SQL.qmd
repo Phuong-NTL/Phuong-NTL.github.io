@@ -4,7 +4,7 @@ subtitle: "Query Table And Visualize Data with Databricks SQL"
 author: "Phuong Nguyen"
 date: "2025-01-08"
 categories: [Databricks Notebook, Query, Visualisation]
-image: "/images/create_dashboard_by-databricks_AIBI/thumbnail_dashboardAIBI.png" 
+image: "/images/get_table_visualize_data_with_databricks_SQL/Visualize_thumbnail.png" 
 ---
 
 <center><img src="/images/get_table_visualize_data_with_databricks_SQL/intro_visualize.webp"></center>
