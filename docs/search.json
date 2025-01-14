@@ -262,43 +262,31 @@
     "crumbs": [
       "📝Posts",
       "📊 **Azure Databricks AI/BI**",
-      "3.Pipeline of Building a Simple Lakehouse Analytics"
+      "3. Pipeline of Building a Simple Lakehouse Analytics"
     ]
   },
   {
-    "objectID": "posts/building_simple_Lakehouse_analytics.html#step-1-create-schema",
-    "href": "posts/building_simple_Lakehouse_analytics.html#step-1-create-schema",
+    "objectID": "posts/building_simple_Lakehouse_analytics.html#understanding-data-structure-in-azure-databricks",
+    "href": "posts/building_simple_Lakehouse_analytics.html#understanding-data-structure-in-azure-databricks",
     "title": "End To End Pipeline Of Building a Simple Lakehouse Analytics",
-    "section": "Step 1: Create Schema",
-    "text": "Step 1: Create Schema\n\nIn your Databricks workspace, click Catalog\nSearch and click on your catalog, e.g. azure_databricks_demo\nClick the Create Schema button\nEnter a name for the schema. e.g. malware\nClick Create.",
+    "section": "Understanding data structure in Azure Databricks",
+    "text": "Understanding data structure in Azure Databricks\nTypically, one Unity Catalog is one meta store per Azure subscription or AWS tenant. The Unity Catalog served as a unified organizational structure that holds all data within the entire organization. Data is organized within Unity Catalog into catalogs -&gt; schemas -&gt; table. • Catalogs: Function like databases, holding multiple schemas. • Schemas: Contain multiple tables. • Tables: The organized storage of data The medallion architecture provides a way to organize data in the lakehouse for managing and analyzing large, diverse data. It is structured by three primary layers, corresponding to each specific stage in the data handling process:\nBronze Layer (Raw Layer)\nThis layer includes raw data from external source systems. The table structures in this layer mirror the “as-is” structure of the source systems. The tables are designed to maintain their original format, reflecting the data exactly as it is in the source systems.\nSilver Layer (Enriched Data)\nThe table structures in this layer mirror the “as-is” structure of the source systems. The tables are designed to maintain their original format, reflecting the data exactly as it is in the source systems.\nGold layer (curated data)\nIn this layer, data is organized in consumption-ready “project-specific” database. Data in Gold layer is highly curated and prepared for specific business use case such as analytics or reporting.\nIn summary, the data is curated as it moves through the different layers of a lakehouse. The lake house architecture enable data to be easy to understand and implement.",
     "crumbs": [
       "📝Posts",
       "📊 **Azure Databricks AI/BI**",
-      "3.Pipeline of Building a Simple Lakehouse Analytics"
+      "3. Pipeline of Building a Simple Lakehouse Analytics"
     ]
   },
   {
-    "objectID": "posts/building_simple_Lakehouse_analytics.html#step-2-create-volume",
-    "href": "posts/building_simple_Lakehouse_analytics.html#step-2-create-volume",
+    "objectID": "posts/building_simple_Lakehouse_analytics.html#use-case-building-a-simple-lakehouse-analytics-with-data-retrieved-from-an-url",
+    "href": "posts/building_simple_Lakehouse_analytics.html#use-case-building-a-simple-lakehouse-analytics-with-data-retrieved-from-an-url",
     "title": "End To End Pipeline Of Building a Simple Lakehouse Analytics",
-    "section": "Step 2: Create Volume",
-    "text": "Step 2: Create Volume\n\nSearch or browse to the schema malware\nClick Create Volume\nEnter a name for the volume. e.g. malware_volume\nProvide comment (optional)\nClick Create.",
+    "section": "Use case: Building a simple Lakehouse analytics with data retrieved from an URL",
+    "text": "Use case: Building a simple Lakehouse analytics with data retrieved from an URL\n\nDescription\nYou have a dataset available on an external data source (Github). It is an academic Android malware classification dataset, given by Canadian Institute for Cybersecurity (CIC) and Canadian Centre for Cybersecurity (CCCS). The mission is to retrieve such dataset to your Unity Catalog and organize the data in different layer: Bronze, Silver and Gold. Then, to project the statistics on the impact of malware on mobile phones By the end of this use case, you will have a dashboard published to answer questions on the most affecting malware for mobile phone.\n\n\nThe guide step to step\nBefore we get started, it need to have an All-purpose compute resource. As in this demo, I run both Spark and SQL code in the same notebook. This is typically used for interactive data analysis in notebooks and supports running multiple programming languages. For the pipeline codes simply in SQL, select the option SQL warehouses. From the Databricks work space, click on Compute -&gt; Select the tab All-purpose compute -&gt; Click Create compute then following the instruction to configure the compute.\n\n\nStep 1: Create Schema\n\nIn your Databricks workspace, click Catalog\nSearch and click on your catalog, e.g. azure_databricks_demo\nClick the Create Schema button\nEnter a name for the schema. e.g. malware\nClick Create.\n\n\n\nStep 2: Create Volume\n\nSearch or browse to the schema malware\nClick Create Volume\nEnter a name for the volume. e.g. malware_volume\nProvide comment (optional)\nClick Create.\n\n\n\nStep 3. Create a notebook and add Spark - SQL pipeline code\n1. Download dataset from external datasource (Github) \n\nClick on New in the left side bar, then select Notebook. Rename it to “Malware_Pipeline_Spark_SQL”\nIn the cell code, change the language in cell to Python\nCopy and paste the following code\n\n# Define the URL and the destination path in the volume\nurl = \"https://raw.githubusercontent.com/Phuong-NTL/Dataset-collection/refs/heads/main/malware_dataset.csv\"\n\n# Define the catalog, schema, and volume\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\nvolume_name = \"malware_volume\"\n\n# Construct the path to save the file in the volume\nvolume_path = f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/raw_malware_dataset.csv\"\n\n# Use dbutils to download the file to the volume\ndbutils.fs.cp(url, volume_path)\n\n# Verify the file is downloaded\ndisplay(dbutils.fs.ls(f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/\"))",
     "crumbs": [
       "📝Posts",
       "📊 **Azure Databricks AI/BI**",
-      "3.Pipeline of Building a Simple Lakehouse Analytics"
-    ]
-  },
-  {
-    "objectID": "posts/building_simple_Lakehouse_analytics.html#step-3.-create-a-notebook-and-add-spark---sql-pipeline-code",
-    "href": "posts/building_simple_Lakehouse_analytics.html#step-3.-create-a-notebook-and-add-spark---sql-pipeline-code",
-    "title": "End To End Pipeline Of Building a Simple Lakehouse Analytics",
-    "section": "Step 3. Create a notebook and add Spark - SQL pipeline code",
-    "text": "Step 3. Create a notebook and add Spark - SQL pipeline code\n1. Download dataset from external datasource (Github) \n\nClick on New in the left side bar, then select Notebook. Rename it to “Malware_Pipeline_Spark_SQL”\nIn the cell code, change the language in cell to Python\nCopy and paste the following code\n\n# Define the URL and the destination path in the volume\nurl = \"https://raw.githubusercontent.com/Phuong-NTL/Dataset-collection/refs/heads/main/malware_dataset.csv\"\n\n# Define the catalog, schema, and volume\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\nvolume_name = \"malware_volume\"\n\n# Construct the path to save the file in the volume\nvolume_path = f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/raw_malware_dataset.csv\"\n\n# Use dbutils to download the file to the volume\ndbutils.fs.cp(url, volume_path)\n\n# Verify the file is downloaded\ndisplay(dbutils.fs.ls(f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/\"))",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "3.Pipeline of Building a Simple Lakehouse Analytics"
+      "3. Pipeline of Building a Simple Lakehouse Analytics"
     ]
   },
   {
@@ -310,7 +298,7 @@
     "crumbs": [
       "📝Posts",
       "📊 **Azure Databricks AI/BI**",
-      "3.Pipeline of Building a Simple Lakehouse Analytics"
+      "3. Pipeline of Building a Simple Lakehouse Analytics"
     ]
   },
   {
@@ -322,7 +310,7 @@
     "crumbs": [
       "📝Posts",
       "📊 **Azure Databricks AI/BI**",
-      "3.Pipeline of Building a Simple Lakehouse Analytics"
+      "3. Pipeline of Building a Simple Lakehouse Analytics"
     ]
   },
   {
@@ -334,7 +322,7 @@
     "crumbs": [
       "📝Posts",
       "📊 **Azure Databricks AI/BI**",
-      "3.Pipeline of Building a Simple Lakehouse Analytics"
+      "3. Pipeline of Building a Simple Lakehouse Analytics"
     ]
   },
   {

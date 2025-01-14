@@ -13,7 +13,7 @@ Hello,
 
 This post provides an understanding of data organization in Azure Databricks and guides you step-by-step through a use case to build a lakehouse analytics in Unity Catalog of Azure Databricks and use the curated data for dashboard design. We'll use a dataset available at a URL, employing the medallion architecture.
 
-# Understanding data structure in Azure Databricks
+## Understanding data structure in Azure Databricks
 
 Typically, one Unity Catalog is one meta store per Azure subscription or AWS tenant. The Unity Catalog served as a unified organizational structure that holds all data within the entire organization. Data is organized within Unity Catalog into catalogs -> schemas -> table. 
     •	Catalogs: Function like databases, holding multiple schemas.
@@ -35,19 +35,19 @@ In this layer, data is organized in consumption-ready “project-specific” dat
 
 In summary, the data is curated as it moves through the different layers of a lakehouse. The lake house architecture enable data to be easy to understand and implement. 
 
-# Use case: Building a simple Lakehouse analytics with data retrieved from an URL
+## Use case: Building a simple Lakehouse analytics with data retrieved from an URL
 
-# Description 
+### Description 
 
 You have a dataset available on an external data source (Github). It is an academic Android malware classification dataset, given by Canadian Institute for Cybersecurity (CIC) and  Canadian Centre for Cybersecurity (CCCS). The mission is to retrieve such dataset to your Unity Catalog and organize the data in different layer: Bronze, Silver and Gold. Then, to project the statistics on the impact of malware on mobile phones
 By the end of this use case, you will have a dashboard published to answer questions on the most affecting malware for mobile phone.
 
-# The guide step to step
+### The guide step to step
 
 Before we get started, it need to have  an **All-purpose compute** resource. As in this demo, I run both Spark and SQL code in the same notebook. This is typically used for interactive data analysis in notebooks and supports running multiple programming languages. For the pipeline codes simply in SQL, select the option **SQL warehouses**.
 From the Databricks work space, click on **Compute** -> Select the tab **All-purpose compute** -> Click **Create compute** then following the instruction to configure the compute.
 
-## Step 1: Create Schema
+### Step 1: Create Schema
 
 - In your Databricks workspace, click **Catalog**
 - Search and click on your catalog, e.g. azure_databricks_demo
@@ -55,7 +55,7 @@ From the Databricks work space, click on **Compute** -> Select the tab **All-pur
 - Enter a name for the schema. e.g. malware
 - Click **Create**.
 
-## Step 2: Create Volume
+### Step 2: Create Volume
 
 - Search or browse to the schema malware
 - Click **Create Volume**
@@ -63,7 +63,7 @@ From the Databricks work space, click on **Compute** -> Select the tab **All-pur
 - Provide comment (optional)
 - Click **Create**.
 
-## Step 3. Create a notebook and add Spark - SQL pipeline code
+### Step 3. Create a notebook and add Spark - SQL pipeline code
 
 **1. Download dataset from external datasource (Github) **
 

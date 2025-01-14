@@ -56,7 +56,7 @@ website:
                 href: posts/create_dashboard_by-databricks_AIBI.qmd
               - text: "2. Connect Databricks Tables to Power BI"
                 href: posts/connect_databricks_tables_Power_BI.qmd
-              - text: "3.Pipeline of Building a Simple Lakehouse Analytics"
+              - text: "3. Pipeline of Building a Simple Lakehouse Analytics"
                 href: posts/building_simple_Lakehouse_analytics.qmd
           - text: "---"    
 format:
