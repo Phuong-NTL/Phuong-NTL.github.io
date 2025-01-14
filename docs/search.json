@@ -282,31 +282,7 @@
     "href": "posts/building_simple_Lakehouse_analytics.html#use-case-building-a-simple-lakehouse-analytics-with-data-retrieved-from-an-url",
     "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
     "section": "Use case: Building a simple Lakehouse analytics with data retrieved from an URL",
-    "text": "Use case: Building a simple Lakehouse analytics with data retrieved from an URL\n\nDescription\nYou have a dataset available on an external data source (Github). It is an academic Android malware classification dataset, given by Canadian Institute for Cybersecurity (CIC) and Canadian Centre for Cybersecurity (CCCS). The mission is to retrieve such dataset to your Unity Catalog and organize the data in different layer: Bronze, Silver and Gold. Then, to project the statistics on the impact of malware on mobile phones By the end of this use case, you will have a dashboard published to answer questions on the most affecting malware for mobile phone.\n\n\nThe guide step to step\nBefore we get started, it need to have an All-purpose compute resource. As in this demo, I run both Spark and SQL code in the same notebook. This is typically used for interactive data analysis in notebooks and supports running multiple programming languages. For the pipeline codes simply in SQL, select the option SQL warehouses. From the Databricks work space, click on Compute -&gt; Select the tab All-purpose compute -&gt; Click Create compute then following the instruction to configure the compute.\n\n\n\n\n\nStep 1: Create Schema\n\nIn your Databricks workspace, click Catalog\nSearch and click on your catalog, e.g. azure_databricks_demo\nClick the Create Schema button\nEnter a name for the schema. e.g. malware\nClick Create.\n\n\n\nStep 2: Create Volume\n\nSearch or browse to the schema malware\nClick Create Volume\nEnter a name for the volume. e.g. malware_volume\nProvide comment (optional)\nClick Create.\n\n\n\nStep 3. Create a notebook and add Spark - SQL pipeline code\n1. Download dataset from external datasource (Github) \n\nClick on New in the left side bar, then select Notebook. Rename it to “Malware_Pipeline_Spark_SQL”\nIn the cell code, change the language in cell to Python\nCopy and paste the following code in Python\n\n# Define the URL and the destination path in the volume\nurl = \"https://raw.githubusercontent.com/Phuong-NTL/Dataset-collection/refs/heads/main/malware_dataset.csv\"\n\n# Define the catalog, schema, and volume\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\nvolume_name = \"malware_volume\"\n\n# Construct the path to save the file in the volume\nvolume_path = f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/raw_malware_dataset.csv\"\n\n# Use dbutils to download the file to the volume\ndbutils.fs.cp(url, volume_path)\n\n# Verify the file is downloaded\ndisplay(dbutils.fs.ls(f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/\"))",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "3. Pipeline of Building a Simple Lakehouse Analytics"
-    ]
-  },
-  {
-    "objectID": "posts/building_simple_Lakehouse_analytics.html#read-the-file-into-a-dataframe",
-    "href": "posts/building_simple_Lakehouse_analytics.html#read-the-file-into-a-dataframe",
-    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
-    "section": "2. Read the file into a DataFrame",
-    "text": "2. Read the file into a DataFrame\n# Read the raw file to dataframe\ndf = spark.read.format(\"csv\") \\\n        .option(\"header\", True) \\\n        .option(\"delimiter\", \",\") \\\n        .option(\"escape\", \"\\\\\") \\\n        .load(volume_path)\ndisplay(df)\nprint(df.count())",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "3. Pipeline of Building a Simple Lakehouse Analytics"
-    ]
-  },
-  {
-    "objectID": "posts/building_simple_Lakehouse_analytics.html#write-to-catalog",
-    "href": "posts/building_simple_Lakehouse_analytics.html#write-to-catalog",
-    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
-    "section": "3. Write to catalog",
-    "text": "3. Write to catalog\n# Define the catalog and schema\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\ntable_name = \"malware_raw\"\n\n# Create the catalog and schema if they do not exist\n# spark.sql(f\"CREATE CATALOG IF NOT EXISTS {catalog_name}\")\n# spark.sql(f\"CREATE SCHEMA IF NOT EXISTS {catalog_name}.{schema_name}\")\n\n# Save the DataFrame as a table in the specified catalog and schema\ndf.write.format(\"delta\").saveAsTable(f\"{catalog_name}.{schema_name}.{table_name}\")\nCopy and paste the following code in SQL\nSELECT * FROM azure_databricks_demo.malware.malware_raw",
+    "text": "Use case: Building a simple Lakehouse analytics with data retrieved from an URL\n\nDescription\nYou have a dataset available on an external data source (Github). It is an academic Android malware classification dataset, given by Canadian Institute for Cybersecurity (CIC) and Canadian Centre for Cybersecurity (CCCS). The mission is to retrieve such dataset to your Unity Catalog and organize the data in different layer: Bronze, Silver and Gold. Then, to project the statistics on the impact of malware on mobile phones By the end of this use case, you will have a dashboard published to answer questions on the most affecting malware for mobile phone.\n\n\nThe guide step to step\nBefore we get started, it need to have an All-purpose compute resource. As in this demo, I run both Spark and SQL code in the same notebook. This is typically used for interactive data analysis in notebooks and supports running multiple programming languages. For the pipeline codes simply in SQL, select the option SQL warehouses. From the Databricks work space, click on Compute -&gt; Select the tab All-purpose compute -&gt; Click Create compute then following the instruction to configure the compute.\n\n\n\n\n\nStep 1: Create Schema\n\nIn your Databricks workspace, click Catalog\nSearch and click on your catalog, e.g. azure_databricks_demo\nClick the Create Schema button\nEnter a name for the schema. e.g. malware\nClick Create.\n\n\n\nStep 2: Create Volume\n\nSearch or browse to the schema malware\nClick Create Volume\nEnter a name for the volume. e.g. malware_volume\nProvide comment (optional)\nClick Create.\n\n\n\nStep 3. Create a notebook and add Spark - SQL pipeline code\n1. Download dataset from external datasource (Github) \n\nClick on New in the left side bar, then select Notebook. Rename it to “Malware_Pipeline_Spark_SQL”\nIn the cell code, change the language in cell to Python\nCopy and paste the following code in Python\n\n# Define the URL and the destination path in the volume\nurl = \"https://raw.githubusercontent.com/Phuong-NTL/Dataset-collection/refs/heads/main/malware_dataset.csv\"\n\n# Define the catalog, schema, and volume\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\nvolume_name = \"malware_volume\"\n\n# Construct the path to save the file in the volume\nvolume_path = f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/raw_malware_dataset.csv\"\n\n# Use dbutils to download the file to the volume\ndbutils.fs.cp(url, volume_path)\n\n# Verify the file is downloaded\ndisplay(dbutils.fs.ls(f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/\"))\n2. Read the file into a DataFrame\n# Read the raw file to dataframe\ndf = spark.read.format(\"csv\") \\\n        .option(\"header\", True) \\\n        .option(\"delimiter\", \",\") \\\n        .option(\"escape\", \"\\\\\") \\\n        .load(volume_path)\ndisplay(df)\nprint(df.count())\n3. Write to catalog\n# Define the catalog and schema\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\ntable_name = \"malware_raw\"\n\n# Create the catalog and schema if they do not exist\n# spark.sql(f\"CREATE CATALOG IF NOT EXISTS {catalog_name}\")\n# spark.sql(f\"CREATE SCHEMA IF NOT EXISTS {catalog_name}.{schema_name}\")\n\n# Save the DataFrame as a table in the specified catalog and schema\ndf.write.format(\"delta\").saveAsTable(f\"{catalog_name}.{schema_name}.{table_name}\")\nCopy and paste the following code in SQL\nSELECT * FROM azure_databricks_demo.malware.malware_raw",
     "crumbs": [
       "📝Posts",
       "📊 **Azure Databricks AI/BI**",
@@ -318,43 +294,7 @@
     "href": "posts/building_simple_Lakehouse_analytics.html#organization-of-data",
     "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
     "section": "Organization of data",
-    "text": "Organization of data",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "3. Pipeline of Building a Simple Lakehouse Analytics"
-    ]
-  },
-  {
-    "objectID": "posts/building_simple_Lakehouse_analytics.html#bronze-layer",
-    "href": "posts/building_simple_Lakehouse_analytics.html#bronze-layer",
-    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
-    "section": "Bronze layer",
-    "text": "Bronze layer\n-- Bronze layer: Raw data ingestion\nCREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_bronze_raw \nAS\nSELECT *\nFROM azure_databricks_demo.malware.malware_raw",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "3. Pipeline of Building a Simple Lakehouse Analytics"
-    ]
-  },
-  {
-    "objectID": "posts/building_simple_Lakehouse_analytics.html#silver-layer",
-    "href": "posts/building_simple_Lakehouse_analytics.html#silver-layer",
-    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
-    "section": "Silver layer",
-    "text": "Silver layer\n-- Silver layer: Selected columns\nCREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_silver_selected_features \nAS\nSELECT\n    Category,\n    Family,\n    Process_total, \n    Battery_wakelock, \n    Memory_HeapSize,\n    Memory_HeapAlloc,\n    Memory_HeapFree\nFROM azure_databricks_demo.malware.malware_bronze_raw",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "3. Pipeline of Building a Simple Lakehouse Analytics"
-    ]
-  },
-  {
-    "objectID": "posts/building_simple_Lakehouse_analytics.html#gold-layer",
-    "href": "posts/building_simple_Lakehouse_analytics.html#gold-layer",
-    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
-    "section": "Gold layer",
-    "text": "Gold layer\n-- Gold layer: Max Process_total per Category\nCREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_gold_max_processes \nAS\nSELECT\n    Category,\n    MAX(CAST(Process_total AS INT)) AS Total_Processes_Breached\nFROM malware.malware_silver_selected_features\nGROUP BY Category\n\nStep 4: Discover data using Catalog Explorer\nExplorer and verify the dataset generated through Unity Catalog via the path structure catalog_name/schema_name/table_name. - Click Catalog in the left sidebar - Click schema_name - Click table_name - Click on the tab Sample Data to load the table detail - Click on Lineage then click See lineage graph to see the overview of all the upstream and downstream tables of the current table.\n\n\nStep 5: Create a Dashboard\n\nOn the current table, click on the button Create on the right side then select Dashboard. It automatically create a dashboard template on the current table.\nUsing Ask the Assistant and give a prompt, e.g. “create a line chart on Category and Total_Processes_Breached” . Click Accept to save the AI-generated chart.\nCustomize the chart using configuration option in the right.\n\n\n\nStep 6: Publish and distribute your dashboard\n\nClick Publish in the upper right corner to create a lean copy of the dashboard.\nClick Publish. The dashboard now is ready to be shared to the others.\n\nFor a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:",
+    "text": "Organization of data\nBronze layer\n-- Bronze layer: Raw data ingestion\nCREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_bronze_raw \nAS\nSELECT *\nFROM azure_databricks_demo.malware.malware_raw\nSilver layer\n-- Silver layer: Selected columns\nCREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_silver_selected_features \nAS\nSELECT\n    Category,\n    Family,\n    Process_total, \n    Battery_wakelock, \n    Memory_HeapSize,\n    Memory_HeapAlloc,\n    Memory_HeapFree\nFROM azure_databricks_demo.malware.malware_bronze_raw\nGold layer\n-- Gold layer: Max Process_total per Category\nCREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_gold_max_processes \nAS\nSELECT\n    Category,\n    MAX(CAST(Process_total AS INT)) AS Total_Processes_Breached\nFROM malware.malware_silver_selected_features\nGROUP BY Category\n\nStep 4: Discover data using Catalog Explorer\nExplorer and verify the dataset generated through Unity Catalog via the path structure catalog_name/schema_name/table_name. - Click Catalog in the left sidebar - Click schema_name - Click table_name - Click on the tab Sample Data to load the table detail - Click on Lineage then click See lineage graph to see the overview of all the upstream and downstream tables of the current table.\n\n\nStep 5: Create a Dashboard\n\nOn the current table, click on the button Create on the right side then select Dashboard. It automatically create a dashboard template on the current table.\nUsing Ask the Assistant and give a prompt, e.g. “create a line chart on Category and Total_Processes_Breached” . Click Accept to save the AI-generated chart.\nCustomize the chart using configuration option in the right.\n\n\n\nStep 6: Publish and distribute your dashboard\n\nClick Publish in the upper right corner to create a lean copy of the dashboard.\nClick Publish. The dashboard now is ready to be shared to the others.\n\nFor a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:",
     "crumbs": [
       "📝Posts",
       "📊 **Azure Databricks AI/BI**",

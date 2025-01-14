@@ -97,7 +97,9 @@ dbutils.fs.cp(url, volume_path)
 # Verify the file is downloaded
 display(dbutils.fs.ls(f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/"))
 ```
-## 2. Read the file into a DataFrame
+
+**2. Read the file into a DataFrame**
+
 ```python
 # Read the raw file to dataframe
 df = spark.read.format("csv") \
@@ -108,7 +110,9 @@ df = spark.read.format("csv") \
 display(df)
 print(df.count())
 ```
-## 3. Write to catalog
+
+**3. Write to catalog**
+
 ```python
 # Define the catalog and schema
 catalog_name = "azure_databricks_demo"
@@ -129,7 +133,9 @@ Copy and paste the following code in SQL
 SELECT * FROM azure_databricks_demo.malware.malware_raw
 ```
 ## Organization of data
-## Bronze layer
+
+**Bronze layer**
+
 ```sql
 -- Bronze layer: Raw data ingestion
 CREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_bronze_raw 
@@ -137,7 +143,9 @@ AS
 SELECT *
 FROM azure_databricks_demo.malware.malware_raw
 ```
-## Silver layer
+
+**Silver layer**
+
 ```sql
 -- Silver layer: Selected columns
 CREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_silver_selected_features 
@@ -152,7 +160,9 @@ SELECT
     Memory_HeapFree
 FROM azure_databricks_demo.malware.malware_bronze_raw
 ```
-## Gold layer
+
+**Gold layer**
+
 ```sql
 -- Gold layer: Max Process_total per Category
 CREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_gold_max_processes 
