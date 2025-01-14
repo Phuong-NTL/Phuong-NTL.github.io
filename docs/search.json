@@ -240,6 +240,13 @@
     ]
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "✨ Data Analysis, Business Intelligence",
+    "section": "",
+    "text": "End To End Pipeline Of Building a Simple Lakehouse Analytics\n\n\nHow To Organize Your Data in Databricks Lakehouse\n\n\n\nMedallion Architecture\n\n\nAI/BI dashboard\n\n\nBusiness intelligence\n\n\nUnity Catalog\n\n\n\n\n\n\nJan 14, 2025\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nGet Table And Visualize Data in Databricks Notebook\n\n\nQuery Table And Visualize Data with Databricks SQL\n\n\n\nDatabricks Notebook\n\n\nQuery\n\n\nVisualisation\n\n\n\n\n\n\nJan 8, 2025\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nConnect Databricks Tables to Power BI\n\n\nPublish Azure Databricks Tables to a Power BI Dataset\n\n\n\nAzure\n\n\nDatabricks\n\n\nPower BI\n\n\nReport\n\n\nData Source\n\n\n\n\n\n\nJan 3, 2025\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nCreate A Dashboard By Databricks AI/BI\n\n\nBuilding a AI/BI Dashboard on Azure Databricks\n\n\n\nAI/BI dashboard\n\n\nBusiness intelligence\n\n\nVisualisation\n\n\n\n\n\n\nDec 30, 2024\n\n\n5 min\n\n\n\n\n\n\n\n\n\n\n\n\nCreate Sample Azure SQL Server and Database\n\n\nHow to create a single database and server in Azure SQL Database\n\n\n\nAzure\n\n\nSQL Database\n\n\nServer\n\n\nSingle Database\n\n\n\n\n\n\nDec 29, 2024\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nGet CSV Tables Into Databricks\n\n\nUploading one or many csv table into your Databricks work space\n\n\n\nDatabricks\n\n\nGet Csv File\n\n\nMicrosoft Azure\n\n\n\n\n\n\nDec 28, 2024\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nImproving Power BI Reports with Drill-through Pages\n\n\nMastering Power BI with Finance Report Use-case and Drill-through page\n\n\n\nPower BI\n\n\nReport\n\n\nDrill-through Pages\n\n\nHierarchy\n\n\nChanges Over Time\n\n\n\n\n\n\nDec 27, 2024\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -247,11 +254,88 @@
     "text": "Hi, I’m Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in Paris, France.\nI have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as Azure, GCP, AWS, Databricks."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "✨ Data Analysis, Business Intelligence",
+    "objectID": "posts/building_simple_Lakehouse_analytics.html",
+    "href": "posts/building_simple_Lakehouse_analytics.html",
+    "title": "End To End Pipeline Of Building a Simple Lakehouse Analytics",
     "section": "",
-    "text": "Get Table And Visualize Data in Databricks Notebook\n\n\nQuery Table And Visualize Data with Databricks SQL\n\n\n\nDatabricks Notebook\n\n\nQuery\n\n\nVisualisation\n\n\n\n\n\n\nJan 8, 2025\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nConnect Databricks Tables to Power BI\n\n\nPublish Azure Databricks Tables to a Power BI Dataset\n\n\n\nAzure\n\n\nDatabricks\n\n\nPower BI\n\n\nReport\n\n\nData Source\n\n\n\n\n\n\nJan 3, 2025\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nCreate A Dashboard By Databricks AI/BI\n\n\nBuilding a AI/BI Dashboard on Azure Databricks\n\n\n\nAI/BI dashboard\n\n\nBusiness intelligence\n\n\nVisualisation\n\n\n\n\n\n\nDec 30, 2024\n\n\n5 min\n\n\n\n\n\n\n\n\n\n\n\n\nCreate Sample Azure SQL Server and Database\n\n\nHow to create a single database and server in Azure SQL Database\n\n\n\nAzure\n\n\nSQL Database\n\n\nServer\n\n\nSingle Database\n\n\n\n\n\n\nDec 29, 2024\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nGet CSV Tables Into Databricks\n\n\nUploading one or many csv table into your Databricks work space\n\n\n\nDatabricks\n\n\nGet Csv File\n\n\nMicrosoft Azure\n\n\n\n\n\n\nDec 28, 2024\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nImproving Power BI Reports with Drill-through Pages\n\n\nMastering Power BI with Finance Report Use-case and Drill-through page\n\n\n\nPower BI\n\n\nReport\n\n\nDrill-through Pages\n\n\nHierarchy\n\n\nChanges Over Time\n\n\n\n\n\n\nDec 27, 2024\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Hello,\nThis post provides an understanding of data organization in Azure Databricks and guides you step-by-step through a use case to build a lakehouse analytics in Unity Catalog of Azure Databricks and use the curated data for dashboard design. We’ll use a dataset available at a URL, employing the medallion architecture.",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "3.Pipeline of Building a Simple Lakehouse Analytics"
+    ]
+  },
+  {
+    "objectID": "posts/building_simple_Lakehouse_analytics.html#step-1-create-schema",
+    "href": "posts/building_simple_Lakehouse_analytics.html#step-1-create-schema",
+    "title": "End To End Pipeline Of Building a Simple Lakehouse Analytics",
+    "section": "Step 1: Create Schema",
+    "text": "Step 1: Create Schema\n\nIn your Databricks workspace, click Catalog\nSearch and click on your catalog, e.g. azure_databricks_demo\nClick the Create Schema button\nEnter a name for the schema. e.g. malware\nClick Create.",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "3.Pipeline of Building a Simple Lakehouse Analytics"
+    ]
+  },
+  {
+    "objectID": "posts/building_simple_Lakehouse_analytics.html#step-2-create-volume",
+    "href": "posts/building_simple_Lakehouse_analytics.html#step-2-create-volume",
+    "title": "End To End Pipeline Of Building a Simple Lakehouse Analytics",
+    "section": "Step 2: Create Volume",
+    "text": "Step 2: Create Volume\n\nSearch or browse to the schema malware\nClick Create Volume\nEnter a name for the volume. e.g. malware_volume\nProvide comment (optional)\nClick Create.",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "3.Pipeline of Building a Simple Lakehouse Analytics"
+    ]
+  },
+  {
+    "objectID": "posts/building_simple_Lakehouse_analytics.html#step-3.-create-a-notebook-and-add-spark---sql-pipeline-code",
+    "href": "posts/building_simple_Lakehouse_analytics.html#step-3.-create-a-notebook-and-add-spark---sql-pipeline-code",
+    "title": "End To End Pipeline Of Building a Simple Lakehouse Analytics",
+    "section": "Step 3. Create a notebook and add Spark - SQL pipeline code",
+    "text": "Step 3. Create a notebook and add Spark - SQL pipeline code\n1. Download dataset from external datasource (Github) \n\nClick on New in the left side bar, then select Notebook. Rename it to “Malware_Pipeline_Spark_SQL”\nIn the cell code, change the language in cell to Python\nCopy and paste the following code\n\n# Define the URL and the destination path in the volume\nurl = \"https://raw.githubusercontent.com/Phuong-NTL/Dataset-collection/refs/heads/main/malware_dataset.csv\"\n\n# Define the catalog, schema, and volume\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\nvolume_name = \"malware_volume\"\n\n# Construct the path to save the file in the volume\nvolume_path = f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/raw_malware_dataset.csv\"\n\n# Use dbutils to download the file to the volume\ndbutils.fs.cp(url, volume_path)\n\n# Verify the file is downloaded\ndisplay(dbutils.fs.ls(f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/\"))",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "3.Pipeline of Building a Simple Lakehouse Analytics"
+    ]
+  },
+  {
+    "objectID": "posts/building_simple_Lakehouse_analytics.html#read-the-file-into-a-dataframe",
+    "href": "posts/building_simple_Lakehouse_analytics.html#read-the-file-into-a-dataframe",
+    "title": "End To End Pipeline Of Building a Simple Lakehouse Analytics",
+    "section": "2. Read the file into a DataFrame",
+    "text": "2. Read the file into a DataFrame\n# Read the raw file to dataframe\ndf = spark.read.format(\"csv\") \\\n        .option(\"header\", True) \\\n        .option(\"delimiter\", \",\") \\\n        .option(\"escape\", \"\\\\\") \\\n        .load(volume_path)\ndisplay(df)\nprint(df.count())",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "3.Pipeline of Building a Simple Lakehouse Analytics"
+    ]
+  },
+  {
+    "objectID": "posts/building_simple_Lakehouse_analytics.html#organization-of-data",
+    "href": "posts/building_simple_Lakehouse_analytics.html#organization-of-data",
+    "title": "End To End Pipeline Of Building a Simple Lakehouse Analytics",
+    "section": "Organization of data",
+    "text": "Organization of data",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "3.Pipeline of Building a Simple Lakehouse Analytics"
+    ]
+  },
+  {
+    "objectID": "posts/building_simple_Lakehouse_analytics.html#bronze-layer",
+    "href": "posts/building_simple_Lakehouse_analytics.html#bronze-layer",
+    "title": "End To End Pipeline Of Building a Simple Lakehouse Analytics",
+    "section": "Bronze layer",
+    "text": "Bronze layer",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "3.Pipeline of Building a Simple Lakehouse Analytics"
+    ]
   },
   {
     "objectID": "posts/create_dashboard_by-databricks_AIBI.html",

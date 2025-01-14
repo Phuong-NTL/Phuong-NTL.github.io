@@ -1,0 +1,108 @@
+---
+title: "End To End Pipeline Of Building a Simple Lakehouse Analytics"
+subtitle: "How To Organize Your Data in Databricks Lakehouse"
+author: "Phuong Nguyen"
+date: "2025-01-14"
+categories: [Medallion Architecture, AI/BI dashboard, Business intelligence, Unity Catalog]
+image: "/images/building_simple_Lakehouse_analytics/thumbnail_pipeline_Lakehouse.png" 
+---
+
+<center><img src="/images/building_simple_Lakehouse_analytics/intro_pipeline_lakehouse.webp"></center>
+
+Hello,
+
+This post provides an understanding of data organization in Azure Databricks and guides you step-by-step through a use case to build a lakehouse analytics in Unity Catalog of Azure Databricks and use the curated data for dashboard design. We'll use a dataset available at a URL, employing the medallion architecture.
+
+# Understanding data structure in Azure Databricks
+
+Typically, one Unity Catalog is one meta store per Azure subscription or AWS tenant. The Unity Catalog served as a unified organizational structure that holds all data within the entire organization. Data is organized within Unity Catalog into catalogs -> schemas -> table. 
+    •	Catalogs: Function like databases, holding multiple schemas.
+    •	Schemas: Contain multiple tables.
+    •	Tables: The organized storage of data
+The medallion architecture provides a way to organize data in the lakehouse for managing and analyzing large, diverse data. It is structured by three primary layers, corresponding to each specific stage in the data handling process:
+
+**Bronze Layer (Raw Layer)**
+
+This layer includes raw data from external source systems. The table structures in this layer mirror the "as-is" structure of the source systems. The tables are designed to maintain their original format, reflecting the data exactly as it is in the source systems.
+
+**Silver Layer (Enriched Data)**
+
+The table structures in this layer mirror the "as-is" structure of the source systems. The tables are designed to maintain their original format, reflecting the data exactly as it is in the source systems.
+
+**Gold layer (curated data)**
+
+In this layer, data is organized in consumption-ready “project-specific” database. Data in Gold layer is highly curated and prepared for specific business use case such as analytics or reporting. 
+
+In summary, the data is curated as it moves through the different layers of a lakehouse. The lake house architecture enable data to be easy to understand and implement. 
+
+# Use case: Building a simple Lakehouse analytics with data retrieved from an URL
+
+# Description 
+
+You have a dataset available on an external data source (Github). It is an academic Android malware classification dataset, given by Canadian Institute for Cybersecurity (CIC) and  Canadian Centre for Cybersecurity (CCCS). The mission is to retrieve such dataset to your Unity Catalog and organize the data in different layer: Bronze, Silver and Gold. Then, to project the statistics on the impact of malware on mobile phones
+By the end of this use case, you will have a dashboard published to answer questions on the most affecting malware for mobile phone.
+
+# The guide step to step
+
+Before we get started, it need to have  an **All-purpose compute** resource. As in this demo, I run both Spark and SQL code in the same notebook. This is typically used for interactive data analysis in notebooks and supports running multiple programming languages. For the pipeline codes simply in SQL, select the option **SQL warehouses**.
+From the Databricks work space, click on **Compute** -> Select the tab **All-purpose compute** -> Click **Create compute** then following the instruction to configure the compute.
+
+## Step 1: Create Schema
+
+- In your Databricks workspace, click **Catalog**
+- Search and click on your catalog, e.g. azure_databricks_demo
+- Click the **Create Schema** button
+- Enter a name for the schema. e.g. malware
+- Click **Create**.
+
+## Step 2: Create Volume
+
+- Search or browse to the schema malware
+- Click **Create Volume**
+- Enter a name for the volume. e.g. malware_volume
+- Provide comment (optional)
+- Click **Create**.
+
+## Step 3. Create a notebook and add Spark - SQL pipeline code
+
+**1. Download dataset from external datasource (Github) **
+
+- Click on **New** in the left side bar, then select **Notebook**. Rename it to “Malware_Pipeline_Spark_SQL”
+- In the cell code, change the language in cell to Python
+- Copy and paste the following code 
+
+```python
+# Define the URL and the destination path in the volume
+url = "https://raw.githubusercontent.com/Phuong-NTL/Dataset-collection/refs/heads/main/malware_dataset.csv"
+
+# Define the catalog, schema, and volume
+catalog_name = "azure_databricks_demo"
+schema_name = "malware"
+volume_name = "malware_volume"
+
+# Construct the path to save the file in the volume
+volume_path = f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/raw_malware_dataset.csv"
+
+# Use dbutils to download the file to the volume
+dbutils.fs.cp(url, volume_path)
+
+# Verify the file is downloaded
+display(dbutils.fs.ls(f"/Volumes/{catalog_name}/{schema_name}/{volume_name}/"))
+```
+## 2. Read the file into a DataFrame
+```python
+# Read the raw file to dataframe
+df = spark.read.format("csv") \
+        .option("header", True) \
+        .option("delimiter", ",") \
+        .option("escape", "\\") \
+        .load(volume_path)
+display(df)
+print(df.count())
+```
+## Organization of data
+
+## Bronze layer
+
+
+
