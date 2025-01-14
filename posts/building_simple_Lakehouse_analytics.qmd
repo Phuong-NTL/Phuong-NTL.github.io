@@ -21,6 +21,8 @@ Typically, one Unity Catalog is one meta store per Azure subscription or AWS ten
     •	Tables: The organized storage of data
 The medallion architecture provides a way to organize data in the lakehouse for managing and analyzing large, diverse data. It is structured by three primary layers, corresponding to each specific stage in the data handling process:
 
+<center><img src="/images/building_simple_Lakehouse_analytics/medallion_architecture.png"></center>
+
 **Bronze Layer (Raw Layer)**
 
 This layer includes raw data from external source systems. The table structures in this layer mirror the "as-is" structure of the source systems. The tables are designed to maintain their original format, reflecting the data exactly as it is in the source systems.
@@ -47,6 +49,8 @@ By the end of this use case, you will have a dashboard published to answer quest
 Before we get started, it need to have  an **All-purpose compute** resource. As in this demo, I run both Spark and SQL code in the same notebook. This is typically used for interactive data analysis in notebooks and supports running multiple programming languages. For the pipeline codes simply in SQL, select the option **SQL warehouses**.
 From the Databricks work space, click on **Compute** -> Select the tab **All-purpose compute** -> Click **Create compute** then following the instruction to configure the compute.
 
+<center><img src="/images/building_simple_Lakehouse_analytics/Step 1.png"></center>
+
 ### Step 1: Create Schema
 
 - In your Databricks workspace, click **Catalog**
@@ -69,7 +73,7 @@ From the Databricks work space, click on **Compute** -> Select the tab **All-pur
 
 - Click on **New** in the left side bar, then select **Notebook**. Rename it to “Malware_Pipeline_Spark_SQL”
 - In the cell code, change the language in cell to Python
-- Copy and paste the following code 
+- Copy and paste the following code in Python
 
 ```python
 # Define the URL and the destination path in the volume
@@ -100,9 +104,85 @@ df = spark.read.format("csv") \
 display(df)
 print(df.count())
 ```
+## 3. Write to catalog
+```python
+# Define the catalog and schema
+catalog_name = "azure_databricks_demo"
+schema_name = "malware"
+table_name = "malware_raw"
+
+# Create the catalog and schema if they do not exist
+# spark.sql(f"CREATE CATALOG IF NOT EXISTS {catalog_name}")
+# spark.sql(f"CREATE SCHEMA IF NOT EXISTS {catalog_name}.{schema_name}")
+
+# Save the DataFrame as a table in the specified catalog and schema
+df.write.format("delta").saveAsTable(f"{catalog_name}.{schema_name}.{table_name}")
+```
+
+Copy and paste the following code in SQL
+
+```sql
+SELECT * FROM azure_databricks_demo.malware.malware_raw
+```
 ## Organization of data
-
 ## Bronze layer
+```sql
+-- Bronze layer: Raw data ingestion
+CREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_bronze_raw 
+AS
+SELECT *
+FROM azure_databricks_demo.malware.malware_raw
+```
+## Silver layer
+```sql
+-- Silver layer: Selected columns
+CREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_silver_selected_features 
+AS
+SELECT
+    Category,
+    Family,
+    Process_total, 
+    Battery_wakelock, 
+    Memory_HeapSize,
+    Memory_HeapAlloc,
+    Memory_HeapFree
+FROM azure_databricks_demo.malware.malware_bronze_raw
+```
+## Gold layer
+```sql
+-- Gold layer: Max Process_total per Category
+CREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_gold_max_processes 
+AS
+SELECT
+    Category,
+    MAX(CAST(Process_total AS INT)) AS Total_Processes_Breached
+FROM malware.malware_silver_selected_features
+GROUP BY Category
+```
+### Step 4: Discover data using Catalog Explorer
 
+Explorer and verify the dataset generated through Unity Catalog via the path structure catalog_name/schema_name/table_name.
+- Click **Catalog** in the left sidebar
+- Click schema_name
+- Click table_name
+- Click on the tab **Sample Data**  to load the table detail
+- Click on **Lineage** then click **See lineage graph** to see the overview of all the upstream and downstream tables of the current table.
 
+### Step 5: Create a Dashboard
 
+- On the current table, click on the button **Create** on the right side then select **Dashboard**. It automatically create a dashboard template on the current table.
+- Using Ask the Assistant and give a prompt, e.g. “create a line chart on Category and Total_Processes_Breached” . Click **Accept** to save the AI-generated chart.
+- Customize the chart using configuration option in the right.
+
+### Step 6: Publish and distribute your dashboard
+
+- Click **Publish** in the upper right corner to create a lean copy of the dashboard.
+- Click **Publish**. The dashboard now is ready to be shared to the others.
+
+For a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:
+{{< video https://www.youtube.com/watch?v=qLL52EXA-fc>}}
+
+## References
+
+[1] https://community.databricks.com/t5/get-started-guides/getting-started-with-databricks-build-a-simple-lakehouse/ta-p/67404
+[2] Canadian Institute for Cybersecurity (CIC) in collaboration with the Canadian Centre for Cybersecurity (CCCS)
