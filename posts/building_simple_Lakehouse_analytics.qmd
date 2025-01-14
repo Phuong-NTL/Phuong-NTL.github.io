@@ -1,5 +1,5 @@
 ---
-title: "End To End Pipeline Of Building a Simple Lakehouse Analytics"
+title: "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution"
 subtitle: "How To Organize Your Data in Databricks Lakehouse"
 author: "Phuong Nguyen"
 date: "2025-01-14"
@@ -16,9 +16,13 @@ This post provides an understanding of data organization in Azure Databricks and
 ## Understanding data structure in Azure Databricks
 
 Typically, one Unity Catalog is one meta store per Azure subscription or AWS tenant. The Unity Catalog served as a unified organizational structure that holds all data within the entire organization. Data is organized within Unity Catalog into catalogs -> schemas -> table. 
+
     •	Catalogs: Function like databases, holding multiple schemas.
+
     •	Schemas: Contain multiple tables.
+
     •	Tables: The organized storage of data
+
 The medallion architecture provides a way to organize data in the lakehouse for managing and analyzing large, diverse data. It is structured by three primary layers, corresponding to each specific stage in the data handling process:
 
 <center><img src="/images/building_simple_Lakehouse_analytics/medallion_architecture.png"></center>
