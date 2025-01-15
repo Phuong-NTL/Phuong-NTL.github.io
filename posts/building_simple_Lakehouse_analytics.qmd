@@ -50,7 +50,7 @@ By the end of this use case, you will have a dashboard published to answer quest
 
 ### The guide step to step
 
-Before we get started, it need to have  an **All-purpose compute** resource. As in this demo, I run both Spark and SQL code in the same notebook. This is typically used for interactive data analysis in notebooks and supports running multiple programming languages. For the pipeline codes simply in SQL, select the option **SQL warehouses**.
+Before we get started, it need to have a Databrick Unity Catalog and an **All-purpose compute** resource. As in this demo, I run both Spark and SQL code in the same notebook. The all-purpose compute resource is typically used for interactive data analysis in notebooks and supports running multiple programming languages. For the pipeline codes simply in SQL, select the option **SQL warehouses**.
 From the Databricks work space, click on **Compute** -> Select the tab **All-purpose compute** -> Click **Create compute** then following the instruction to configure the compute.
 
 <center><img src="/images/building_simple_Lakehouse_analytics/Step 1.png"></center>

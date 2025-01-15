@@ -7,7 +7,7 @@
     "text": "Welcome to Business Intelligence world with Power BI!\nIn this post, I will guide you through building an executive summary finance report using Power BI.",
     "crumbs": [
       "📝Posts",
-      "🧪 **Power BI Dashboard/Report**",
+      "📈 **Power BI Dashboard/Report**",
       "1. Financial Dashboard"
     ]
   },
@@ -19,7 +19,7 @@
     "text": "Use Case Description\n\nOur dataset is a sample financical dataset from Power BI Desktop.\nOur objective is to create a Power BI report that helps executives answer the following three questions:\n\nWhich month and year had the highest profit?\nWhere is the company experiencing the most success (by country/region)?\nWhich product and segment should the company continue investing in?",
     "crumbs": [
       "📝Posts",
-      "🧪 **Power BI Dashboard/Report**",
+      "📈 **Power BI Dashboard/Report**",
       "1. Financial Dashboard"
     ]
   },
@@ -31,7 +31,7 @@
     "text": "How-to Guide\nOur development process involves the following steps:\n- Data preparation\n\nData loading\nData transformation\n\nConvert the data type of “Units Sold” to Whole Number.\nChange the ext format of “Segment” to UPPERCASE.\nRename “Month Name” to “Month”.\nRemove the “Montana” product from “Product” as it was discontinued last month.\n\n\n- Data modeling\n\nWrite two DAX formulas for measures and tables.\n\n- Report building\n\nVisual #1: Add a title.\nVisual #2: Line graph for Profit by Date.\nVisual #3: Map visualisation for Profit by Country/Region.\nVisual #4: Bar graph for Sales by Product and Segment.\nVisual #5: Time slider for Year.\n\n- Report Publishing\n\nPublish our report from Power BI Desktop to Power BI service to share.\n\nTo give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:",
     "crumbs": [
       "📝Posts",
-      "🧪 **Power BI Dashboard/Report**",
+      "📈 **Power BI Dashboard/Report**",
       "1. Financial Dashboard"
     ]
   },
@@ -43,7 +43,7 @@
     "text": "Final result\nIn summary, the final Executive Summary - Finance Report should look like this:\n\n\n\nThis report enables executives to address the following questions:\n- Which month and year had the highest profit?\n- December 2014.\n- In which country/region the company experiencing the most success?\n- In Europe, specifically France and Germany.\n- Which product and segment should the company continue to invest in?\n- The company should continue to invest in the Paseo product, focusing on the Small Business and Government segments.",
     "crumbs": [
       "📝Posts",
-      "🧪 **Power BI Dashboard/Report**",
+      "📈 **Power BI Dashboard/Report**",
       "1. Financial Dashboard"
     ]
   },
@@ -55,7 +55,7 @@
     "text": "Reference\n\n[1] https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-excel-stunning-report",
     "crumbs": [
       "📝Posts",
-      "🧪 **Power BI Dashboard/Report**",
+      "📈 **Power BI Dashboard/Report**",
       "1. Financial Dashboard"
     ]
   },
@@ -67,7 +67,7 @@
     "text": "How to upload a table into your Databricks work space in Microsoft Azure\nHello,\nThis post give a quick through of creating a table in Azure Databricks work space.",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "1. Get CSV Tables into Databricks"
     ]
   },
@@ -79,7 +79,7 @@
     "text": "Prerequisite:\nIn order to perform the task, you must have an Azure Databricks account. If you have not had that, go to create an Azure account, then subscribe Databricks to create an Databricks work space",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "1. Get CSV Tables into Databricks"
     ]
   },
@@ -91,7 +91,7 @@
     "text": "Create your first table\nStep 1. Launch your work space Databricks\n\n\n\nStep 2. In the sidebar, click + New to Add or Upload data\n\n\n\nStep 3. Click on Create and modify table\n\n\n\nStep 4. Drop files into the frame or click on browse to upload the files (Maximum 10 files and total upload size of 2GB)\n\n\n\nStep 5. After files are uploaded, verify then click on Create Table",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "1. Get CSV Tables into Databricks"
     ]
   },
@@ -103,7 +103,7 @@
     "text": "Final result\nHere is the table successfully uploaded on the Databrick work space\n\n\n\nTo give you a hands-on practice of this work, please following my step-by-step tutorial video to perform all the above steps:",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "1. Get CSV Tables into Databricks"
     ]
   },
@@ -115,7 +115,7 @@
     "text": "Reference\n[1] https://learn.microsoft.com",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "1. Get CSV Tables into Databricks"
     ]
   },
@@ -127,7 +127,7 @@
     "text": "Hi there,\nIn this guide, I will walk you through the process of creating a single database in Azure SQL Database. Once created, you can query the database using the Query Editor in the Azure portal.",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "2. Create Sample Azure SQL Server and Database"
     ]
   },
@@ -139,7 +139,7 @@
     "text": "Prerequisites\nTo complete this task, you must have an active Azure subscription. If you do not have one yet, you can create a free account by following this link: Azure Free Account",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "2. Create Sample Azure SQL Server and Database"
     ]
   },
@@ -151,7 +151,7 @@
     "text": "Creating a Single Azure SQL Database\nStep 1: Access Azure SQL Databases\n\nGo to the Microsoft Azure Portal\nOn the homepage, click on the SQL Databases icon.\n\n\n\n\nStep 2: Create a New SQL Database\n\nOn the SQL Databases page, click Create SQL Database.\n\n\n\n\nStep 3: Configure Database Settings\nBasics Tab:\n\nSelect the desired Azure Subscription.\nFor the Resource group, click Create new, enter a name, and click OK.\nEnter the Database name (requirements: maximum 128 characters, no reserved words, and no existing database with the same name on the server).\nFor Server, select Create new and proceed as follows:\n\n\n\n\no Enter a Server name (Azure will notify you if the name is available). o Select the Location from the dropdown list. o For Authentication method, choose SQL Authentication.  Create a Server Admin Login.  Set a password.  Click OK.\n\n\n\nWorkload Environment\n\nUnder Workload environment, select either Development or Production. Note that the fees differ significantly between these options.\nClick Next to proceed to the Networking tab\n\n\n\n\nNetworking Tab\n\nChoose the connectivity method (e.g., Public endpoint).\nUnder Firewall rules, enable: o Allow Azure services and resources to access this server. o Add current client IP address.\n\n\n\n\nAdditional Settings Tab\n\nIn the Data source section, select Sample.\nClick OK.\n\n\n\n\nStep 4: Review and Create\n\nReview all information in the Tags and Review + create tabs.\nClick Create to finalize the database creation.",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "2. Create Sample Azure SQL Server and Database"
     ]
   },
@@ -163,7 +163,7 @@
     "text": "Final Result\nYou have successfully created a sample Azure SQL Database. You can now query and manage your database directly from the Azure portal\n\n\n\nTo give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "2. Create Sample Azure SQL Server and Database"
     ]
   },
@@ -175,7 +175,7 @@
     "text": "Reference\nhttps://learn.microsoft.com/en-us/azure/azure-sql/database",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "2. Create Sample Azure SQL Server and Database"
     ]
   },
@@ -282,7 +282,7 @@
     "href": "posts/building_simple_Lakehouse_analytics.html#use-case-building-a-simple-lakehouse-analytics-with-data-retrieved-from-an-url",
     "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
     "section": "Use case: Building a simple Lakehouse analytics with data retrieved from an URL",
-    "text": "Use case: Building a simple Lakehouse analytics with data retrieved from an URL\n\nDescription\nYou have a dataset available on an external data source (Github). It is an academic Android malware classification dataset, given by Canadian Institute for Cybersecurity (CIC) and Canadian Centre for Cybersecurity (CCCS). The mission is to retrieve such dataset to your Unity Catalog and organize the data in different layer: Bronze, Silver and Gold. Then, to project the statistics on the impact of malware on mobile phones By the end of this use case, you will have a dashboard published to answer questions on the most affecting malware for mobile phone.\n\n\nThe guide step to step\nBefore we get started, it need to have an All-purpose compute resource. As in this demo, I run both Spark and SQL code in the same notebook. This is typically used for interactive data analysis in notebooks and supports running multiple programming languages. For the pipeline codes simply in SQL, select the option SQL warehouses. From the Databricks work space, click on Compute -&gt; Select the tab All-purpose compute -&gt; Click Create compute then following the instruction to configure the compute.\n\n\n\n\n\nStep 1: Create Schema\n\nIn your Databricks workspace, click Catalog\nSearch and click on your catalog, e.g. azure_databricks_demo\nClick the Create Schema button\nEnter a name for the schema. e.g. malware\nClick Create.\n\n\n\nStep 2: Create Volume\n\nSearch or browse to the schema malware\nClick Create Volume\nEnter a name for the volume. e.g. malware_volume\nProvide comment (optional)\nClick Create.\n\n\n\nStep 3. Create a notebook and add Spark - SQL pipeline code\n1. Download dataset from external datasource (Github) \n\nClick on New in the left side bar, then select Notebook. Rename it to “Malware_Pipeline_Spark_SQL”\nIn the cell code, change the language in cell to Python\nCopy and paste the following code in Python\n\n# Define the URL and the destination path in the volume\nurl = \"https://raw.githubusercontent.com/Phuong-NTL/Dataset-collection/refs/heads/main/malware_dataset.csv\"\n\n# Define the catalog, schema, and volume\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\nvolume_name = \"malware_volume\"\n\n# Construct the path to save the file in the volume\nvolume_path = f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/raw_malware_dataset.csv\"\n\n# Use dbutils to download the file to the volume\ndbutils.fs.cp(url, volume_path)\n\n# Verify the file is downloaded\ndisplay(dbutils.fs.ls(f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/\"))\n2. Read the file into a DataFrame\n# Read the raw file to dataframe\ndf = spark.read.format(\"csv\") \\\n        .option(\"header\", True) \\\n        .option(\"delimiter\", \",\") \\\n        .option(\"escape\", \"\\\\\") \\\n        .load(volume_path)\ndisplay(df)\nprint(df.count())\n3. Write to catalog\n# Define the catalog and schema\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\ntable_name = \"malware_raw\"\n\n# Create the catalog and schema if they do not exist\n# spark.sql(f\"CREATE CATALOG IF NOT EXISTS {catalog_name}\")\n# spark.sql(f\"CREATE SCHEMA IF NOT EXISTS {catalog_name}.{schema_name}\")\n\n# Save the DataFrame as a table in the specified catalog and schema\ndf.write.format(\"delta\").saveAsTable(f\"{catalog_name}.{schema_name}.{table_name}\")\nCopy and paste the following code in SQL\nSELECT * FROM azure_databricks_demo.malware.malware_raw",
+    "text": "Use case: Building a simple Lakehouse analytics with data retrieved from an URL\n\nDescription\nYou have a dataset available on an external data source (Github). It is an academic Android malware classification dataset, given by Canadian Institute for Cybersecurity (CIC) and Canadian Centre for Cybersecurity (CCCS). The mission is to retrieve such dataset to your Unity Catalog and organize the data in different layer: Bronze, Silver and Gold. Then, to project the statistics on the impact of malware on mobile phones By the end of this use case, you will have a dashboard published to answer questions on the most affecting malware for mobile phone.\n\n\nThe guide step to step\nBefore we get started, it need to have a Databrick Unity Catalog and an All-purpose compute resource. As in this demo, I run both Spark and SQL code in the same notebook. The all-purpose compute resource is typically used for interactive data analysis in notebooks and supports running multiple programming languages. For the pipeline codes simply in SQL, select the option SQL warehouses. From the Databricks work space, click on Compute -&gt; Select the tab All-purpose compute -&gt; Click Create compute then following the instruction to configure the compute.\n\n\n\n\n\nStep 1: Create Schema\n\nIn your Databricks workspace, click Catalog\nSearch and click on your catalog, e.g. azure_databricks_demo\nClick the Create Schema button\nEnter a name for the schema. e.g. malware\nClick Create.\n\n\n\nStep 2: Create Volume\n\nSearch or browse to the schema malware\nClick Create Volume\nEnter a name for the volume. e.g. malware_volume\nProvide comment (optional)\nClick Create.\n\n\n\nStep 3. Create a notebook and add Spark - SQL pipeline code\n1. Download dataset from external datasource (Github) \n\nClick on New in the left side bar, then select Notebook. Rename it to “Malware_Pipeline_Spark_SQL”\nIn the cell code, change the language in cell to Python\nCopy and paste the following code in Python\n\n# Define the URL and the destination path in the volume\nurl = \"https://raw.githubusercontent.com/Phuong-NTL/Dataset-collection/refs/heads/main/malware_dataset.csv\"\n\n# Define the catalog, schema, and volume\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\nvolume_name = \"malware_volume\"\n\n# Construct the path to save the file in the volume\nvolume_path = f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/raw_malware_dataset.csv\"\n\n# Use dbutils to download the file to the volume\ndbutils.fs.cp(url, volume_path)\n\n# Verify the file is downloaded\ndisplay(dbutils.fs.ls(f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/\"))\n2. Read the file into a DataFrame\n# Read the raw file to dataframe\ndf = spark.read.format(\"csv\") \\\n        .option(\"header\", True) \\\n        .option(\"delimiter\", \",\") \\\n        .option(\"escape\", \"\\\\\") \\\n        .load(volume_path)\ndisplay(df)\nprint(df.count())\n3. Write to catalog\n# Define the catalog and schema\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\ntable_name = \"malware_raw\"\n\n# Create the catalog and schema if they do not exist\n# spark.sql(f\"CREATE CATALOG IF NOT EXISTS {catalog_name}\")\n# spark.sql(f\"CREATE SCHEMA IF NOT EXISTS {catalog_name}.{schema_name}\")\n\n# Save the DataFrame as a table in the specified catalog and schema\ndf.write.format(\"delta\").saveAsTable(f\"{catalog_name}.{schema_name}.{table_name}\")\nCopy and paste the following code in SQL\nSELECT * FROM azure_databricks_demo.malware.malware_raw",
     "crumbs": [
       "📝Posts",
       "📊 **Azure Databricks AI/BI**",
@@ -369,7 +369,7 @@
     "text": "Hello!\nIn this post, I will introduce how to enhance Power BI reports by using drill-through fields to filter detailed reports, providing deeper insights. Additionally, I will demonstrate how to visualize changes over time using the Play Axis feature, which offers engaging and dynamic data insights.",
     "crumbs": [
       "📝Posts",
-      "🧪 **Power BI Dashboard/Report**",
+      "📈 **Power BI Dashboard/Report**",
       "2. Reports with Drill-through Pages"
     ]
   },
@@ -381,7 +381,7 @@
     "text": "Use-case description\nOur dataset is a sample financial dataset in Power BI Desktop. Our goal is to create a report on the expenditures of Wake County Watchdog, with a focus on the fiscal year 2019. The report consists of two pages:\nGeneral Report (Page 1)\nThis page provides an overview of expenditures across different funds and departments. It addresses the following questions:\n\nWhat is the comparison between Actual Amount and Budgeted Amount by Fund Name?\nWhich departments exceeded their budget, and which did not?\nWhat is the total amount over budget?\n\nDetailed Drill-through Report (Page 2)\nThis page focuses on detailed expenditure reports for a selected department, allowing exploration by sub-categories based on the hierarchy: Department -&gt; Division -&gt; Cost Center. It answers questions such as:\n\nHow is expenditure distributed by department, division, and cost center over time?\nHow does the amount over budget change over time by cost center?",
     "crumbs": [
       "📝Posts",
-      "🧪 **Power BI Dashboard/Report**",
+      "📈 **Power BI Dashboard/Report**",
       "2. Reports with Drill-through Pages"
     ]
   },
@@ -393,7 +393,7 @@
     "text": "Development Process\nOur development process follows these key steps:\n\nData Loading\n\nImport the sample financial dataset into Power BI Desktop.\n\n\n\nData Modeling\n\nCreate and verify the hierarchy (Department -&gt; Division -&gt; Cost Center).\nDevelop DAX formulas to calculate key measures:\n\nAmount Over Budget = SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount])\nIs Over Budget = (SUM(Expenditures[Actual Amount]) - SUM(Expenditures[Budgeted Amount])) &gt; 0\nNumber of Expenditures = COUNT(Expenditures[Check Number])\n\n\n\n\nReport Building\nPage 1: General Report\n\nAdd a title.\nVisual #1: Clustered bar chart showing Actual Amount and Budgeted Amount by Fund Name.\nVisual #2: Table listing departments over/under budget.\nVisual #3: Card visual displaying the total amount over budget.\nApply a filter to display data for fiscal year 2019.\nAdd lines to separate sections of the report.\n\nPage 2: Drill-through Detailed Report\n\nAdd a title.\nVisual #4: Line chart showing Actual Amount over time.\nVisual #5: Treemap visualizing Actual Amount by Division and Cost Center. Add a drill-through dimension to this page.\nVisual #6: Scatter chart with a Play Axis to visualize Expenditures by Cost Center over time (Year and Month).\n\n\n\nReport Publishing\n\nPublish the report from Power BI Desktop to the Power BI Service for sharing and collaboration.\n\nTo practice this use case hands-on, follow my step-by-step tutorial video to complete the outlined steps.",
     "crumbs": [
       "📝Posts",
-      "🧪 **Power BI Dashboard/Report**",
+      "📈 **Power BI Dashboard/Report**",
       "2. Reports with Drill-through Pages"
     ]
   },
@@ -405,7 +405,7 @@
     "text": "Final result\nThe resulting report on Wake County Watchdog’s expenditures will contain two pages.\nThe first page Over Budget should be like this:\n\n\n\nThe drill-through page will be accessible through a selected dimension from the first page.\n\n\n\nTo give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps: \nYou can download the PowerBI data file here: Download PowerBI Report\nKey Insights for Executives:\n\nTotal Expenditure Over Budget (Fiscal Year 2019): $108.36M\nActual Expenditure for Fire 800MHZ on September 4, 2018: $126,578\nNumber of Over-Budget Expenditures for Facilities Design and Construction (November 2018): 41",
     "crumbs": [
       "📝Posts",
-      "🧪 **Power BI Dashboard/Report**",
+      "📈 **Power BI Dashboard/Report**",
       "2. Reports with Drill-through Pages"
     ]
   },
@@ -417,7 +417,7 @@
     "text": "Reference\n[1] https://app.datacamp.com/learn/courses/reports-in-power-bi",
     "crumbs": [
       "📝Posts",
-      "🧪 **Power BI Dashboard/Report**",
+      "📈 **Power BI Dashboard/Report**",
       "2. Reports with Drill-through Pages"
     ]
   },
@@ -429,7 +429,7 @@
     "text": "Introduction\nAzure Databricks has built-in support for data visualizations in notebooks. In this poste, I will guide you how to query and visualize data in a Databricks notebook.",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "3. Get Table And Visualize Data in Databricks Notebook"
     ]
   },
@@ -441,7 +441,7 @@
     "text": "Requirement\n\nYou must have a Unity Catalog enable. If you have not yet had, see how to Create Azure Databricks Workspace. A workspace created successfully enable Unity Catalog.\nYou must have permission to use an existing compute resource or create a new compute resource. If you have not yet had, see Create Sample Azure SQL Server and Database",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "3. Get Table And Visualize Data in Databricks Notebook"
     ]
   },
@@ -453,7 +453,7 @@
     "text": "How-to Guide\nStep 1: Create a new notebook\nClick on ✙ in the sidebar of your Databricks workspace, then select Notebook. A blank notebook opens in the workspace\n\n\n\nStep 2: Query a table\nDatabricks notebook allow you to develop multiple languages: SQL, Python, Scala or R. Pay attention to connect to your compute resource before starting query\nIn order to query the samples.nyctaxi.trips table in Unity Catalog using the language of your choice: - Copy and paste the code corresponding to your language in a new empty notebook cell:\nSQL\nSELECT * FROM samples.nyctaxi.trips\nPython\ndisplay(spark.read.table(\"samples.nyctaxi.trips\"))\nScala\ndisplay(spark.read.table(\"samples.nyctaxi.trips\"))\nR\nlibrary(SparkR)\ndisplay(sql(\"SELECT*FROM samples.nyctaxi.trips\"))\n\nPress Enter to executive the code then move to the next cell.\n\n\n\n\nStep 3. Data Visualization\nThe objective is display a bar chart on the average fare amount by trip distance, grouped by the pickup zip code. Thus, the configuration of Visualization should be as following:\n\nIn the Visualization Type, select Bar.\nFor the X column, select fare_amount.\nFor the Y column, select trip_distance. For the aggregation type, select Average.\nFor Group by, select pickup_zip.\nClick Save\n\n\n\n\nFurther posibilities:\nAfter visualizing successfully, you can click on the drop-list of Visualizations to have further options (e.g. Download, Rename, Add to dashboard…)\nFor a hands-on practice, watch my step-by-step tutorial video demonstrating the above process: \nI hope this was helpful !",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "3. Get Table And Visualize Data in Databricks Notebook"
     ]
   },
@@ -465,7 +465,7 @@
     "text": "References\nhttps://learn.microsoft.com/en-us/azure/databricks/getting-started/quick-start",
     "crumbs": [
       "📝Posts",
-      "🔗 **Databricks**",
+      "🚀 **Databricks**",
       "3. Get Table And Visualize Data in Databricks Notebook"
     ]
   }
