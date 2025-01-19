@@ -48,7 +48,9 @@ website:
               - text: "2. Create Sample Azure SQL Server and Database"
                 href: posts/create_sample_azure_SQL_server_database.qmd
               - text: "3. Get Table And Visualize Data in Databricks Notebook"
-                href: posts/get_table_visualize_data_with_databricks_SQL.qmd                
+                href: posts/get_table_visualize_data_with_databricks_SQL.qmd  
+              - text: "4. How To Connect To Azure SQL Database To Query Data"
+                href: posts/how_to_connect_to_Azure_SQL_database_to_Query_data.qmd                
           - text: "---"
           - section: "📊 **Azure Databricks AI/BI**"
             contents:

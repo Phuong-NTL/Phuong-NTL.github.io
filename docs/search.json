@@ -60,305 +60,51 @@
     ]
   },
   {
-    "objectID": "posts/get_csv_tables_into_databricks.html",
-    "href": "posts/get_csv_tables_into_databricks.html",
-    "title": "Get CSV Tables Into Databricks",
-    "section": "",
-    "text": "How to upload a table into your Databricks work space in Microsoft Azure\nHello,\nThis post give a quick through of creating a table in Azure Databricks work space.",
+    "objectID": "posts/get_table_visualize_data_with_databricks_SQL.html#introduction",
+    "href": "posts/get_table_visualize_data_with_databricks_SQL.html#introduction",
+    "title": "Get Table And Visualize Data in Databricks Notebook",
+    "section": "Introduction",
+    "text": "Introduction\nAzure Databricks has built-in support for data visualizations in notebooks. In this poste, I will guide you how to query and visualize data in a Databricks notebook.",
     "crumbs": [
       "📝Posts",
       "🚀 **Databricks**",
-      "1. Get CSV Tables into Databricks"
+      "3. Get Table And Visualize Data in Databricks Notebook"
     ]
   },
   {
-    "objectID": "posts/get_csv_tables_into_databricks.html#prerequisite",
-    "href": "posts/get_csv_tables_into_databricks.html#prerequisite",
-    "title": "Get CSV Tables Into Databricks",
-    "section": "Prerequisite:",
-    "text": "Prerequisite:\nIn order to perform the task, you must have an Azure Databricks account. If you have not had that, go to create an Azure account, then subscribe Databricks to create an Databricks work space",
+    "objectID": "posts/get_table_visualize_data_with_databricks_SQL.html#requirement",
+    "href": "posts/get_table_visualize_data_with_databricks_SQL.html#requirement",
+    "title": "Get Table And Visualize Data in Databricks Notebook",
+    "section": "Requirement",
+    "text": "Requirement\n\nYou must have a Unity Catalog enable. If you have not yet had, see how to Create Azure Databricks Workspace. A workspace created successfully enable Unity Catalog.\nYou must have permission to use an existing compute resource or create a new compute resource. If you have not yet had, see Create Sample Azure SQL Server and Database",
     "crumbs": [
       "📝Posts",
       "🚀 **Databricks**",
-      "1. Get CSV Tables into Databricks"
+      "3. Get Table And Visualize Data in Databricks Notebook"
     ]
   },
   {
-    "objectID": "posts/get_csv_tables_into_databricks.html#create-your-first-table",
-    "href": "posts/get_csv_tables_into_databricks.html#create-your-first-table",
-    "title": "Get CSV Tables Into Databricks",
-    "section": "Create your first table",
-    "text": "Create your first table\nStep 1. Launch your work space Databricks\n\n\n\nStep 2. In the sidebar, click + New to Add or Upload data\n\n\n\nStep 3. Click on Create and modify table\n\n\n\nStep 4. Drop files into the frame or click on browse to upload the files (Maximum 10 files and total upload size of 2GB)\n\n\n\nStep 5. After files are uploaded, verify then click on Create Table",
-    "crumbs": [
-      "📝Posts",
-      "🚀 **Databricks**",
-      "1. Get CSV Tables into Databricks"
-    ]
-  },
-  {
-    "objectID": "posts/get_csv_tables_into_databricks.html#final-result",
-    "href": "posts/get_csv_tables_into_databricks.html#final-result",
-    "title": "Get CSV Tables Into Databricks",
-    "section": "Final result",
-    "text": "Final result\nHere is the table successfully uploaded on the Databrick work space\n\n\n\nTo give you a hands-on practice of this work, please following my step-by-step tutorial video to perform all the above steps:",
-    "crumbs": [
-      "📝Posts",
-      "🚀 **Databricks**",
-      "1. Get CSV Tables into Databricks"
-    ]
-  },
-  {
-    "objectID": "posts/get_csv_tables_into_databricks.html#reference",
-    "href": "posts/get_csv_tables_into_databricks.html#reference",
-    "title": "Get CSV Tables Into Databricks",
-    "section": "Reference",
-    "text": "Reference\n[1] https://learn.microsoft.com",
-    "crumbs": [
-      "📝Posts",
-      "🚀 **Databricks**",
-      "1. Get CSV Tables into Databricks"
-    ]
-  },
-  {
-    "objectID": "posts/create_sample_azure_SQL_server_database.html",
-    "href": "posts/create_sample_azure_SQL_server_database.html",
-    "title": "Create Sample Azure SQL Server and Database",
-    "section": "",
-    "text": "Hi there,\nIn this guide, I will walk you through the process of creating a single database in Azure SQL Database. Once created, you can query the database using the Query Editor in the Azure portal.",
-    "crumbs": [
-      "📝Posts",
-      "🚀 **Databricks**",
-      "2. Create Sample Azure SQL Server and Database"
-    ]
-  },
-  {
-    "objectID": "posts/create_sample_azure_SQL_server_database.html#prerequisites",
-    "href": "posts/create_sample_azure_SQL_server_database.html#prerequisites",
-    "title": "Create Sample Azure SQL Server and Database",
-    "section": "Prerequisites",
-    "text": "Prerequisites\nTo complete this task, you must have an active Azure subscription. If you do not have one yet, you can create a free account by following this link: Azure Free Account",
-    "crumbs": [
-      "📝Posts",
-      "🚀 **Databricks**",
-      "2. Create Sample Azure SQL Server and Database"
-    ]
-  },
-  {
-    "objectID": "posts/create_sample_azure_SQL_server_database.html#creating-a-single-azure-sql-database",
-    "href": "posts/create_sample_azure_SQL_server_database.html#creating-a-single-azure-sql-database",
-    "title": "Create Sample Azure SQL Server and Database",
-    "section": "Creating a Single Azure SQL Database",
-    "text": "Creating a Single Azure SQL Database\nStep 1: Access Azure SQL Databases\n\nGo to the Microsoft Azure Portal\nOn the homepage, click on the SQL Databases icon.\n\n\n\n\nStep 2: Create a New SQL Database\n\nOn the SQL Databases page, click Create SQL Database.\n\n\n\n\nStep 3: Configure Database Settings\nBasics Tab:\n\nSelect the desired Azure Subscription.\nFor the Resource group, click Create new, enter a name, and click OK.\nEnter the Database name (requirements: maximum 128 characters, no reserved words, and no existing database with the same name on the server).\nFor Server, select Create new and proceed as follows:\n\n\n\n\no Enter a Server name (Azure will notify you if the name is available). o Select the Location from the dropdown list. o For Authentication method, choose SQL Authentication.  Create a Server Admin Login.  Set a password.  Click OK.\n\n\n\nWorkload Environment\n\nUnder Workload environment, select either Development or Production. Note that the fees differ significantly between these options.\nClick Next to proceed to the Networking tab\n\n\n\n\nNetworking Tab\n\nChoose the connectivity method (e.g., Public endpoint).\nUnder Firewall rules, enable: o Allow Azure services and resources to access this server. o Add current client IP address.\n\n\n\n\nAdditional Settings Tab\n\nIn the Data source section, select Sample.\nClick OK.\n\n\n\n\nStep 4: Review and Create\n\nReview all information in the Tags and Review + create tabs.\nClick Create to finalize the database creation.",
-    "crumbs": [
-      "📝Posts",
-      "🚀 **Databricks**",
-      "2. Create Sample Azure SQL Server and Database"
-    ]
-  },
-  {
-    "objectID": "posts/create_sample_azure_SQL_server_database.html#final-result",
-    "href": "posts/create_sample_azure_SQL_server_database.html#final-result",
-    "title": "Create Sample Azure SQL Server and Database",
-    "section": "Final Result",
-    "text": "Final Result\nYou have successfully created a sample Azure SQL Database. You can now query and manage your database directly from the Azure portal\n\n\n\nTo give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:",
-    "crumbs": [
-      "📝Posts",
-      "🚀 **Databricks**",
-      "2. Create Sample Azure SQL Server and Database"
-    ]
-  },
-  {
-    "objectID": "posts/create_sample_azure_SQL_server_database.html#reference",
-    "href": "posts/create_sample_azure_SQL_server_database.html#reference",
-    "title": "Create Sample Azure SQL Server and Database",
-    "section": "Reference",
-    "text": "Reference\nhttps://learn.microsoft.com/en-us/azure/azure-sql/database",
-    "crumbs": [
-      "📝Posts",
-      "🚀 **Databricks**",
-      "2. Create Sample Azure SQL Server and Database"
-    ]
-  },
-  {
-    "objectID": "posts/connect_databricks_tables_Power_BI.html",
-    "href": "posts/connect_databricks_tables_Power_BI.html",
-    "title": "Connect Databricks Tables to Power BI",
-    "section": "",
-    "text": "Hi there,\nFollow these instructions, you can use Azure Databricks as a data resource to create Power BI dataset from tables or schemas directly from the Databricks UI.",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "2. Connect Databricks Tables to Power BI"
-    ]
-  },
-  {
-    "objectID": "posts/connect_databricks_tables_Power_BI.html#prerequisites",
-    "href": "posts/connect_databricks_tables_Power_BI.html#prerequisites",
-    "title": "Connect Databricks Tables to Power BI",
-    "section": "Prerequisites",
-    "text": "Prerequisites\n\nYour data must reside in the Unity Catalog within your Databricks workspace.\nYour compute (cluster) must be Unity Catalog-enabled.",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "2. Connect Databricks Tables to Power BI"
-    ]
-  },
-  {
-    "objectID": "posts/connect_databricks_tables_Power_BI.html#step-by-step-guide",
-    "href": "posts/connect_databricks_tables_Power_BI.html#step-by-step-guide",
-    "title": "Connect Databricks Tables to Power BI",
-    "section": "Step-by-Step Guide",
-    "text": "Step-by-Step Guide\n### Open your table\nStep 1. In your Databricks workspace, click on Catalog in the left sidebar to open Catalog Explorer.\nStep 2. Select the schema or table wish to publish.\n\n\n\nStep 3. Choose a compute resource from the drop-down list “Attach to an existing compute resource”. Click Start and Close. Once your compute resource (e.g, Serverless) has started , verifying the table content by clicking on the Overview, Sample Data, … tabs.\n\n\n\nStep 4. In the left side bar, click on Parter Connect dialog, then Select Microsoft Power BI.\n\n\n\nStep 5. In the Compute box: - Choose your compute resource. - Click Download connection file. - Open the downloaded .pbids file in Power BI Desktop.\n\n\n\n\nDeal with Azure Databricks credentials – Generate Access token\nStep 6. When Power BI Desktop starts, a prompt will request your Azure Databricks credentials. For the credential Method, select Personal Access Token (PAT). This token grants Power BI access to the semantic model.\n\n\n\nStep 7. Back to the Databricks UI to get a PAT.\n\nClick on “personal access token”, a window of Access tokens opens.\nClick on Generate new token.\nAdd a comment (e.g., “access databricks”)\nSet the token lifetime. (default is 90 days).\nClick Generate and copy the token immediately once created.\n\n\n\n\n\n\nConnect with Power BI Desktop\nStep 8. In Power BI Desktop, enter your credentials:\n\nPersonal Access Token: Paste the copied Azure Databricks token.\nClick Connect. A Power BI Navigator will open.\n\n\n\n\nStep 9. Select the desired Azure Databricks data to query from the Power BI Navigator.\nClick Load to import the dataset into Power BI.",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "2. Connect Databricks Tables to Power BI"
-    ]
-  },
-  {
-    "objectID": "posts/connect_databricks_tables_Power_BI.html#result",
-    "href": "posts/connect_databricks_tables_Power_BI.html#result",
-    "title": "Connect Databricks Tables to Power BI",
-    "section": "Result",
-    "text": "Result\nCongratulations! You have successfully loaded a dataset in Power BI from Azure Databricks Catalog. Now, you can create interactive reports and dashboards using Power BI’s visualization tools.\n\n\n\nFor a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:\n\nI hope this was helpful !",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "2. Connect Databricks Tables to Power BI"
-    ]
-  },
-  {
-    "objectID": "posts/connect_databricks_tables_Power_BI.html#references",
-    "href": "posts/connect_databricks_tables_Power_BI.html#references",
-    "title": "Connect Databricks Tables to Power BI",
-    "section": "References:",
-    "text": "References:\nhttps://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi#additional-resources",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "2. Connect Databricks Tables to Power BI"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "✨ Data Analysis, Business Intelligence",
-    "section": "",
-    "text": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution\n\n\nHow To Organize Your Data in Databricks Lakehouse\n\n\n\nMedallion Architecture\n\n\nAI/BI dashboard\n\n\nBusiness intelligence\n\n\nUnity Catalog\n\n\n\n\n\n\nJan 14, 2025\n\n\n6 min\n\n\n\n\n\n\n\n\n\n\n\n\nGet Table And Visualize Data in Databricks Notebook\n\n\nQuery Table And Visualize Data with Databricks SQL\n\n\n\nDatabricks Notebook\n\n\nQuery\n\n\nVisualisation\n\n\n\n\n\n\nJan 8, 2025\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nConnect Databricks Tables to Power BI\n\n\nPublish Azure Databricks Tables to a Power BI Dataset\n\n\n\nAzure\n\n\nDatabricks\n\n\nPower BI\n\n\nReport\n\n\nData Source\n\n\n\n\n\n\nJan 3, 2025\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nCreate A Dashboard By Databricks AI/BI\n\n\nBuilding a AI/BI Dashboard on Azure Databricks\n\n\n\nAI/BI dashboard\n\n\nBusiness intelligence\n\n\nVisualisation\n\n\n\n\n\n\nDec 30, 2024\n\n\n5 min\n\n\n\n\n\n\n\n\n\n\n\n\nCreate Sample Azure SQL Server and Database\n\n\nHow to create a single database and server in Azure SQL Database\n\n\n\nAzure\n\n\nSQL Database\n\n\nServer\n\n\nSingle Database\n\n\n\n\n\n\nDec 29, 2024\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nGet CSV Tables Into Databricks\n\n\nUploading one or many csv table into your Databricks work space\n\n\n\nDatabricks\n\n\nGet Csv File\n\n\nMicrosoft Azure\n\n\n\n\n\n\nDec 28, 2024\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nImproving Power BI Reports with Drill-through Pages\n\n\nMastering Power BI with Finance Report Use-case and Drill-through page\n\n\n\nPower BI\n\n\nReport\n\n\nDrill-through Pages\n\n\nHierarchy\n\n\nChanges Over Time\n\n\n\n\n\n\nDec 27, 2024\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Hi, I’m Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in Paris, France.\nI have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as Azure, GCP, AWS, Databricks."
-  },
-  {
-    "objectID": "posts/building_simple_Lakehouse_analytics.html",
-    "href": "posts/building_simple_Lakehouse_analytics.html",
-    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
-    "section": "",
-    "text": "Hello,\nThis post provides an understanding of data organization in Azure Databricks and guides you step-by-step through a use case to build a lakehouse analytics in Unity Catalog of Azure Databricks and use the curated data for dashboard design. We’ll use a dataset available at a URL, employing the medallion architecture.",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "3. Pipeline of Building a Simple Lakehouse Analytics"
-    ]
-  },
-  {
-    "objectID": "posts/building_simple_Lakehouse_analytics.html#understanding-data-structure-in-azure-databricks",
-    "href": "posts/building_simple_Lakehouse_analytics.html#understanding-data-structure-in-azure-databricks",
-    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
-    "section": "Understanding data structure in Azure Databricks",
-    "text": "Understanding data structure in Azure Databricks\nTypically, one Unity Catalog is one meta store per Azure subscription or AWS tenant. The Unity Catalog served as a unified organizational structure that holds all data within the entire organization. Data is organized within Unity Catalog into catalogs -&gt; schemas -&gt; table.\n•   Catalogs: Function like databases, holding multiple schemas.\n\n•   Schemas: Contain multiple tables.\n\n•   Tables: The organized storage of data\nThe medallion architecture provides a way to organize data in the lakehouse for managing and analyzing large, diverse data. It is structured by three primary layers, corresponding to each specific stage in the data handling process:\n\n\n\nBronze Layer (Raw Layer)\nThis layer includes raw data from external source systems. The table structures in this layer mirror the “as-is” structure of the source systems. The tables are designed to maintain their original format, reflecting the data exactly as it is in the source systems.\nSilver Layer (Enriched Data)\nThe table structures in this layer mirror the “as-is” structure of the source systems. The tables are designed to maintain their original format, reflecting the data exactly as it is in the source systems.\nGold layer (curated data)\nIn this layer, data is organized in consumption-ready “project-specific” database. Data in Gold layer is highly curated and prepared for specific business use case such as analytics or reporting.\nIn summary, the data is curated as it moves through the different layers of a lakehouse. The lake house architecture enable data to be easy to understand and implement.",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "3. Pipeline of Building a Simple Lakehouse Analytics"
-    ]
-  },
-  {
-    "objectID": "posts/building_simple_Lakehouse_analytics.html#use-case-building-a-simple-lakehouse-analytics-with-data-retrieved-from-an-url",
-    "href": "posts/building_simple_Lakehouse_analytics.html#use-case-building-a-simple-lakehouse-analytics-with-data-retrieved-from-an-url",
-    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
-    "section": "Use case: Building a simple Lakehouse analytics with data retrieved from an URL",
-    "text": "Use case: Building a simple Lakehouse analytics with data retrieved from an URL\n\nDescription\nYou have a dataset available on an external data source (Github). It is an academic Android malware classification dataset, given by Canadian Institute for Cybersecurity (CIC) and Canadian Centre for Cybersecurity (CCCS). The mission is to retrieve such dataset to your Unity Catalog and organize the data in different layer: Bronze, Silver and Gold. Then, to project the statistics on the impact of malware on mobile phones By the end of this use case, you will have a dashboard published to answer questions on the most affecting malware for mobile phone.\n\n\nThe guide step to step\nBefore we get started, it need to have a Databrick Unity Catalog and an All-purpose compute resource. As in this demo, I run both Spark and SQL code in the same notebook. The all-purpose compute resource is typically used for interactive data analysis in notebooks and supports running multiple programming languages. For the pipeline codes simply in SQL, select the option SQL warehouses. From the Databricks work space, click on Compute -&gt; Select the tab All-purpose compute -&gt; Click Create compute then following the instruction to configure the compute.\n\n\n\n\n\nStep 1: Create Schema\n\nIn your Databricks workspace, click Catalog\nSearch and click on your catalog, e.g. azure_databricks_demo\nClick the Create Schema button\nEnter a name for the schema. e.g. malware\nClick Create.\n\n\n\nStep 2: Create Volume\n\nSearch or browse to the schema malware\nClick Create Volume\nEnter a name for the volume. e.g. malware_volume\nProvide comment (optional)\nClick Create.\n\n\n\nStep 3. Create a notebook and add Spark - SQL pipeline code\n1. Download dataset from external datasource (Github) \n\nClick on New in the left side bar, then select Notebook. Rename it to “Malware_Pipeline_Spark_SQL”\nIn the cell code, change the language in cell to Python\nCopy and paste the following code in Python\n\n# Define the URL and the destination path in the volume\nurl = \"https://raw.githubusercontent.com/Phuong-NTL/Dataset-collection/refs/heads/main/malware_dataset.csv\"\n\n# Define the catalog, schema, and volume\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\nvolume_name = \"malware_volume\"\n\n# Construct the path to save the file in the volume\nvolume_path = f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/raw_malware_dataset.csv\"\n\n# Use dbutils to download the file to the volume\ndbutils.fs.cp(url, volume_path)\n\n# Verify the file is downloaded\ndisplay(dbutils.fs.ls(f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/\"))\n2. Read the file into a DataFrame\n# Read the raw file to dataframe\ndf = spark.read.format(\"csv\") \\\n        .option(\"header\", True) \\\n        .option(\"delimiter\", \",\") \\\n        .option(\"escape\", \"\\\\\") \\\n        .load(volume_path)\ndisplay(df)\nprint(df.count())\n3. Write to catalog\n# Define the catalog and schema\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\ntable_name = \"malware_raw\"\n\n# Create the catalog and schema if they do not exist\n# spark.sql(f\"CREATE CATALOG IF NOT EXISTS {catalog_name}\")\n# spark.sql(f\"CREATE SCHEMA IF NOT EXISTS {catalog_name}.{schema_name}\")\n\n# Save the DataFrame as a table in the specified catalog and schema\ndf.write.format(\"delta\").saveAsTable(f\"{catalog_name}.{schema_name}.{table_name}\")\nCopy and paste the following code in SQL\nSELECT * FROM azure_databricks_demo.malware.malware_raw",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "3. Pipeline of Building a Simple Lakehouse Analytics"
-    ]
-  },
-  {
-    "objectID": "posts/building_simple_Lakehouse_analytics.html#organization-of-data",
-    "href": "posts/building_simple_Lakehouse_analytics.html#organization-of-data",
-    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
-    "section": "Organization of data",
-    "text": "Organization of data\nBronze layer\n-- Bronze layer: Raw data ingestion\nCREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_bronze_raw \nAS\nSELECT *\nFROM azure_databricks_demo.malware.malware_raw\nSilver layer\n-- Silver layer: Selected columns\nCREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_silver_selected_features \nAS\nSELECT\n    Category,\n    Family,\n    Process_total, \n    Battery_wakelock, \n    Memory_HeapSize,\n    Memory_HeapAlloc,\n    Memory_HeapFree\nFROM azure_databricks_demo.malware.malware_bronze_raw\nGold layer\n-- Gold layer: Max Process_total per Category\nCREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_gold_max_processes \nAS\nSELECT\n    Category,\n    MAX(CAST(Process_total AS INT)) AS Total_Processes_Breached\nFROM malware.malware_silver_selected_features\nGROUP BY Category\n\nStep 4: Discover data using Catalog Explorer\nExplorer and verify the dataset generated through Unity Catalog via the path structure catalog_name/schema_name/table_name. - Click Catalog in the left sidebar - Click schema_name - Click table_name - Click on the tab Sample Data to load the table detail - Click on Lineage then click See lineage graph to see the overview of all the upstream and downstream tables of the current table.\n\n\nStep 5: Create a Dashboard\n\nOn the current table, click on the button Create on the right side then select Dashboard. It automatically create a dashboard template on the current table.\nUsing Ask the Assistant and give a prompt, e.g. “create a line chart on Category and Total_Processes_Breached” . Click Accept to save the AI-generated chart.\nCustomize the chart using configuration option in the right.\n\n\n\nStep 6: Publish and distribute your dashboard\n\nClick Publish in the upper right corner to create a lean copy of the dashboard.\nClick Publish. The dashboard now is ready to be shared to the others.\n\nFor a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "3. Pipeline of Building a Simple Lakehouse Analytics"
-    ]
-  },
-  {
-    "objectID": "posts/building_simple_Lakehouse_analytics.html#references",
-    "href": "posts/building_simple_Lakehouse_analytics.html#references",
-    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
-    "section": "References",
-    "text": "References\n[1] https://community.databricks.com/t5/get-started-guides/getting-started-with-databricks-build-a-simple-lakehouse/ta-p/67404 [2] Canadian Institute for Cybersecurity (CIC) in collaboration with the Canadian Centre for Cybersecurity (CCCS)",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "3. Pipeline of Building a Simple Lakehouse Analytics"
-    ]
-  },
-  {
-    "objectID": "posts/create_dashboard_by-databricks_AIBI.html",
-    "href": "posts/create_dashboard_by-databricks_AIBI.html",
-    "title": "Create A Dashboard By Databricks AI/BI",
-    "section": "",
-    "text": "Hi there,\nIn this guide, I will walk you through how to use a sample dataset to build a dashboard and extract insights using the AI/BI dashboard UI on Azure Databricks\nAdditionally, I will guide you how to query sample data from the Databricks workspace’s sample catalog using SQL, allowing you to retrieve the input dataset needed for the dashboard.",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "1. Create a Dashboard by Databricks AI/BI"
-    ]
-  },
-  {
-    "objectID": "posts/create_dashboard_by-databricks_AIBI.html#prerequisites",
-    "href": "posts/create_dashboard_by-databricks_AIBI.html#prerequisites",
-    "title": "Create A Dashboard By Databricks AI/BI",
-    "section": "Prerequisites",
-    "text": "Prerequisites\n\nYou are logged into a Azure Databricks workspace.\nYou have the SQL entitlement in that workspace.\nYou have at least CAN USE access to one or more SQL warehouses.",
-    "crumbs": [
-      "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "1. Create a Dashboard by Databricks AI/BI"
-    ]
-  },
-  {
-    "objectID": "posts/create_dashboard_by-databricks_AIBI.html#how-to-guide",
-    "href": "posts/create_dashboard_by-databricks_AIBI.html#how-to-guide",
-    "title": "Create A Dashboard By Databricks AI/BI",
+    "objectID": "posts/get_table_visualize_data_with_databricks_SQL.html#how-to-guide",
+    "href": "posts/get_table_visualize_data_with_databricks_SQL.html#how-to-guide",
+    "title": "Get Table And Visualize Data in Databricks Notebook",
     "section": "How-to Guide",
-    "text": "How-to Guide\nStep 1. Create a dashboard\n\nIn your Azure Databricks workspace, click on Dashboard, then click Create Dashboard.\n\n\n\n\n\nBy default, the new dashboard is automatically named using its creation timestamp and stored in your /Workspace/Users/ directory.\nRename the dashboard and the page as needed.\n\n\n\n\n\nUse the Canvas tab to create and edit widgets such as visualizations, text boxes, and filters.\nUse the Data tab to define the underlying datasets for your dashboard.\n\n\n\n\nStep 2. Define datasets\n\nClick the Data tab.\nClick Create from SQL\nPaste the following query into the editor. Then click Run to return a collection of records.\n\nSELECT\n  T.tpep_pickup_datetime,\n  T.tpep_dropoff_datetime,\n  T.fare_amount,\n  T.pickup_zip,\n  T.dropoff_zip,\n  T.trip_distance,\n  T.weekday,\n  CASE\n    WHEN T.weekday = 1 THEN 'Sunday'\n    WHEN T.weekday = 2 THEN 'Monday'\n    WHEN T.weekday = 3 THEN 'Tuesday'\n    WHEN T.weekday = 4 THEN 'Wednesday'\n    WHEN T.weekday = 5 THEN 'Thursday'\n    WHEN T.weekday = 6 THEN 'Friday'\n    WHEN T.weekday = 7 THEN 'Saturday'\n    ELSE 'N/A'\n  END AS day_of_week\nFROM\n(\n  SELECT\n    dayofweek(tpep_pickup_datetime) as weekday,\n    *\n  FROM\n    `samples`.nyctaxi.trips\n  WHERE\n    trip_distance &gt; 0\n    AND trip_distance &lt; 10\n    AND fare_amount &gt; 0\n    AND fare_amount &lt; 50\n) T\nORDER BY\n  T.weekday\n\nSelect the server for running\nClick Run. The results will appear below the editor once the query is executed.\nRename the dataset. By default, it is saved as Untitled dataset. Double-click the title to rename it to Taxicab Data.\n\n\n\n\nStep 3. Create and place a visualization\n\nReturn to the Canvas tab.\nClick Add a Visualization to create a new visualization widget.\nUse your mouse to position the widget on the canvas.\n\n\n\n\nStep 4. Configure the visualization\n\nSelect the visualization widget.\nUse the configuration panel on the right to configure the data. The previously created dataset is automatically selected.\nSelect Bar Chart as the visualization type.\n\nX-Axis Configuration:\n\nSelect tpep_dropoff_datetime as the X-axis.\nClick the field to access additional options: o Scale Type: Select Temporal. o Transform: Choose HOURLY.\n\nY-Axis Configuration:\n\nSelect fare_amount as the Y-axis.\nClick the field to access additional options: o Scale Type: Select Quantitative. o Transform: Choose AVG.\n\n\n\n\nOptional: Use Databricks Assistant\n\nYou can create visualizations using natural language with Databricks Assistant.\nClick Create a Visualization. A prompt will appear with the text: Describe a chart…\n\n\n\n\n\nType a prompt, for example: Create a bar chart of average fare amount over hourly drop-off time.\n\n\n\n\n\nPress Enter and click Accept if you are satisfied with the visualization.\nTo edit, click the Assistant icon, type a new prompt, or modify the existing chart (e.g., Switch to a line chart).\n\n\n\n\nStep 5. Clone and modify a visualization\n\nRight-click on an existing visualization and select Clone.\nSet the X-axis field to tpep_pickup_datetime.\nKeep the transform type as HOURLY.\nChoose a new color for the cloned chart.\n\n\n\n\nStep 6. Create a scatter chart\n\nClick Create a Visualization to add a new widget.\nConfigure the chart as follows: o Dataset: Taxicab Data o Visualization: Scatter o X-axis: trip_distance o Y-axis: fare_amount o Color/Group by: day_of_week\n\n\n\n\nStep 7. Create dashboard filters\nThe filter helps your dashboard become more interactive\n- Create a Date Range Filter: 1. Click the Filter icon to add a filter widget to the canvas. 2. In the configuration panel, select Date range picker from the dropdown. 3. Check the Title box, rename the filter to Date Range. 4. Select Taxicab_data.tpep_pickup_datetime as the field.\n- Create a Dropdown Filter: 1. Click the Filter icon again to add another filter. 2. Select Dropdown (single-value). 3. Check the Title box and rename it to Dropoff Zip Code. 4. Select Taxicab_data.dropoff_zip as the field.\n- Clone a Filter: 1. Right-click the Dropoff Zip Code filter and select Clone. 2. Remove the existing field by clicking the remove icon. 3. Select Taxicab_data.pickup_zip to filter by pickup zip code.\n\n\n\nStep 8. Resize and arrange charts and filters\nArrange and resize your visualizations and filters to optimize the layout.\n\n\n\nStep 9. Publish and share\n1.  Your dashboard is saved as a draft. To create a final version, click **Publish**.\n\n2.  Review the list of people with access, then click **Publish**. Users and groups with at least **CAN VIEW** permission will be able to see the dashboard.\n\n\n\nResult Click on Dashboard on the left sidebar of Databricks to verify the your dashboard published successfully\n\n\n\n3.  Follow the link in the notification to view the published dashboard.\nSharing the Dashboard: - To update the list of users or groups, return to the draft dashboard and click Share. - Add users or groups and set appropriate permission levels.\nTo give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:",
+    "text": "How-to Guide\nStep 1: Create a new notebook\nClick on ✙ in the sidebar of your Databricks workspace, then select Notebook. A blank notebook opens in the workspace\n\n\n\nStep 2: Query a table\nDatabricks notebook allow you to develop multiple languages: SQL, Python, Scala or R. Pay attention to connect to your compute resource before starting query\nIn order to query the samples.nyctaxi.trips table in Unity Catalog using the language of your choice: - Copy and paste the code corresponding to your language in a new empty notebook cell:\nSQL\nSELECT * FROM samples.nyctaxi.trips\nPython\ndisplay(spark.read.table(\"samples.nyctaxi.trips\"))\nScala\ndisplay(spark.read.table(\"samples.nyctaxi.trips\"))\nR\nlibrary(SparkR)\ndisplay(sql(\"SELECT*FROM samples.nyctaxi.trips\"))\n\nPress Enter to executive the code then move to the next cell.\n\n\n\n\nStep 3. Data Visualization\nThe objective is display a bar chart on the average fare amount by trip distance, grouped by the pickup zip code. Thus, the configuration of Visualization should be as following:\n\nIn the Visualization Type, select Bar.\nFor the X column, select fare_amount.\nFor the Y column, select trip_distance. For the aggregation type, select Average.\nFor Group by, select pickup_zip.\nClick Save\n\n\n\n\nFurther posibilities:\nAfter visualizing successfully, you can click on the drop-list of Visualizations to have further options (e.g. Download, Rename, Add to dashboard…)\nFor a hands-on practice, watch my step-by-step tutorial video demonstrating the above process: \nI hope this was helpful !",
     "crumbs": [
       "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "1. Create a Dashboard by Databricks AI/BI"
+      "🚀 **Databricks**",
+      "3. Get Table And Visualize Data in Databricks Notebook"
     ]
   },
   {
-    "objectID": "posts/create_dashboard_by-databricks_AIBI.html#reference",
-    "href": "posts/create_dashboard_by-databricks_AIBI.html#reference",
-    "title": "Create A Dashboard By Databricks AI/BI",
-    "section": "Reference",
-    "text": "Reference\nhttps://learn.microsoft.com/en-us/azure/databricks/dashboards/tutorials/create-dashboard",
+    "objectID": "posts/get_table_visualize_data_with_databricks_SQL.html#references",
+    "href": "posts/get_table_visualize_data_with_databricks_SQL.html#references",
+    "title": "Get Table And Visualize Data in Databricks Notebook",
+    "section": "References",
+    "text": "References\nhttps://learn.microsoft.com/en-us/azure/databricks/getting-started/quick-start",
     "crumbs": [
       "📝Posts",
-      "📊 **Azure Databricks AI/BI**",
-      "1. Create a Dashboard by Databricks AI/BI"
+      "🚀 **Databricks**",
+      "3. Get Table And Visualize Data in Databricks Notebook"
     ]
   },
   {
@@ -422,51 +168,353 @@
     ]
   },
   {
-    "objectID": "posts/get_table_visualize_data_with_databricks_SQL.html#introduction",
-    "href": "posts/get_table_visualize_data_with_databricks_SQL.html#introduction",
-    "title": "Get Table And Visualize Data in Databricks Notebook",
-    "section": "Introduction",
-    "text": "Introduction\nAzure Databricks has built-in support for data visualizations in notebooks. In this poste, I will guide you how to query and visualize data in a Databricks notebook.",
+    "objectID": "posts/create_dashboard_by-databricks_AIBI.html",
+    "href": "posts/create_dashboard_by-databricks_AIBI.html",
+    "title": "Create A Dashboard By Databricks AI/BI",
+    "section": "",
+    "text": "Hi there,\nIn this guide, I will walk you through how to use a sample dataset to build a dashboard and extract insights using the AI/BI dashboard UI on Azure Databricks\nAdditionally, I will guide you how to query sample data from the Databricks workspace’s sample catalog using SQL, allowing you to retrieve the input dataset needed for the dashboard.",
     "crumbs": [
       "📝Posts",
-      "🚀 **Databricks**",
-      "3. Get Table And Visualize Data in Databricks Notebook"
+      "📊 **Azure Databricks AI/BI**",
+      "1. Create a Dashboard by Databricks AI/BI"
     ]
   },
   {
-    "objectID": "posts/get_table_visualize_data_with_databricks_SQL.html#requirement",
-    "href": "posts/get_table_visualize_data_with_databricks_SQL.html#requirement",
-    "title": "Get Table And Visualize Data in Databricks Notebook",
-    "section": "Requirement",
-    "text": "Requirement\n\nYou must have a Unity Catalog enable. If you have not yet had, see how to Create Azure Databricks Workspace. A workspace created successfully enable Unity Catalog.\nYou must have permission to use an existing compute resource or create a new compute resource. If you have not yet had, see Create Sample Azure SQL Server and Database",
+    "objectID": "posts/create_dashboard_by-databricks_AIBI.html#prerequisites",
+    "href": "posts/create_dashboard_by-databricks_AIBI.html#prerequisites",
+    "title": "Create A Dashboard By Databricks AI/BI",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nYou are logged into a Azure Databricks workspace.\nYou have the SQL entitlement in that workspace.\nYou have at least CAN USE access to one or more SQL warehouses.",
     "crumbs": [
       "📝Posts",
-      "🚀 **Databricks**",
-      "3. Get Table And Visualize Data in Databricks Notebook"
+      "📊 **Azure Databricks AI/BI**",
+      "1. Create a Dashboard by Databricks AI/BI"
     ]
   },
   {
-    "objectID": "posts/get_table_visualize_data_with_databricks_SQL.html#how-to-guide",
-    "href": "posts/get_table_visualize_data_with_databricks_SQL.html#how-to-guide",
-    "title": "Get Table And Visualize Data in Databricks Notebook",
+    "objectID": "posts/create_dashboard_by-databricks_AIBI.html#how-to-guide",
+    "href": "posts/create_dashboard_by-databricks_AIBI.html#how-to-guide",
+    "title": "Create A Dashboard By Databricks AI/BI",
     "section": "How-to Guide",
-    "text": "How-to Guide\nStep 1: Create a new notebook\nClick on ✙ in the sidebar of your Databricks workspace, then select Notebook. A blank notebook opens in the workspace\n\n\n\nStep 2: Query a table\nDatabricks notebook allow you to develop multiple languages: SQL, Python, Scala or R. Pay attention to connect to your compute resource before starting query\nIn order to query the samples.nyctaxi.trips table in Unity Catalog using the language of your choice: - Copy and paste the code corresponding to your language in a new empty notebook cell:\nSQL\nSELECT * FROM samples.nyctaxi.trips\nPython\ndisplay(spark.read.table(\"samples.nyctaxi.trips\"))\nScala\ndisplay(spark.read.table(\"samples.nyctaxi.trips\"))\nR\nlibrary(SparkR)\ndisplay(sql(\"SELECT*FROM samples.nyctaxi.trips\"))\n\nPress Enter to executive the code then move to the next cell.\n\n\n\n\nStep 3. Data Visualization\nThe objective is display a bar chart on the average fare amount by trip distance, grouped by the pickup zip code. Thus, the configuration of Visualization should be as following:\n\nIn the Visualization Type, select Bar.\nFor the X column, select fare_amount.\nFor the Y column, select trip_distance. For the aggregation type, select Average.\nFor Group by, select pickup_zip.\nClick Save\n\n\n\n\nFurther posibilities:\nAfter visualizing successfully, you can click on the drop-list of Visualizations to have further options (e.g. Download, Rename, Add to dashboard…)\nFor a hands-on practice, watch my step-by-step tutorial video demonstrating the above process: \nI hope this was helpful !",
+    "text": "How-to Guide\nStep 1. Create a dashboard\n\nIn your Azure Databricks workspace, click on Dashboard, then click Create Dashboard.\n\n\n\n\n\nBy default, the new dashboard is automatically named using its creation timestamp and stored in your /Workspace/Users/ directory.\nRename the dashboard and the page as needed.\n\n\n\n\n\nUse the Canvas tab to create and edit widgets such as visualizations, text boxes, and filters.\nUse the Data tab to define the underlying datasets for your dashboard.\n\n\n\n\nStep 2. Define datasets\n\nClick the Data tab.\nClick Create from SQL\nPaste the following query into the editor. Then click Run to return a collection of records.\n\nSELECT\n  T.tpep_pickup_datetime,\n  T.tpep_dropoff_datetime,\n  T.fare_amount,\n  T.pickup_zip,\n  T.dropoff_zip,\n  T.trip_distance,\n  T.weekday,\n  CASE\n    WHEN T.weekday = 1 THEN 'Sunday'\n    WHEN T.weekday = 2 THEN 'Monday'\n    WHEN T.weekday = 3 THEN 'Tuesday'\n    WHEN T.weekday = 4 THEN 'Wednesday'\n    WHEN T.weekday = 5 THEN 'Thursday'\n    WHEN T.weekday = 6 THEN 'Friday'\n    WHEN T.weekday = 7 THEN 'Saturday'\n    ELSE 'N/A'\n  END AS day_of_week\nFROM\n(\n  SELECT\n    dayofweek(tpep_pickup_datetime) as weekday,\n    *\n  FROM\n    `samples`.nyctaxi.trips\n  WHERE\n    trip_distance &gt; 0\n    AND trip_distance &lt; 10\n    AND fare_amount &gt; 0\n    AND fare_amount &lt; 50\n) T\nORDER BY\n  T.weekday\n\nSelect the server for running\nClick Run. The results will appear below the editor once the query is executed.\nRename the dataset. By default, it is saved as Untitled dataset. Double-click the title to rename it to Taxicab Data.\n\n\n\n\nStep 3. Create and place a visualization\n\nReturn to the Canvas tab.\nClick Add a Visualization to create a new visualization widget.\nUse your mouse to position the widget on the canvas.\n\n\n\n\nStep 4. Configure the visualization\n\nSelect the visualization widget.\nUse the configuration panel on the right to configure the data. The previously created dataset is automatically selected.\nSelect Bar Chart as the visualization type.\n\nX-Axis Configuration:\n\nSelect tpep_dropoff_datetime as the X-axis.\nClick the field to access additional options: o Scale Type: Select Temporal. o Transform: Choose HOURLY.\n\nY-Axis Configuration:\n\nSelect fare_amount as the Y-axis.\nClick the field to access additional options: o Scale Type: Select Quantitative. o Transform: Choose AVG.\n\n\n\n\nOptional: Use Databricks Assistant\n\nYou can create visualizations using natural language with Databricks Assistant.\nClick Create a Visualization. A prompt will appear with the text: Describe a chart…\n\n\n\n\n\nType a prompt, for example: Create a bar chart of average fare amount over hourly drop-off time.\n\n\n\n\n\nPress Enter and click Accept if you are satisfied with the visualization.\nTo edit, click the Assistant icon, type a new prompt, or modify the existing chart (e.g., Switch to a line chart).\n\n\n\n\nStep 5. Clone and modify a visualization\n\nRight-click on an existing visualization and select Clone.\nSet the X-axis field to tpep_pickup_datetime.\nKeep the transform type as HOURLY.\nChoose a new color for the cloned chart.\n\n\n\n\nStep 6. Create a scatter chart\n\nClick Create a Visualization to add a new widget.\nConfigure the chart as follows: o Dataset: Taxicab Data o Visualization: Scatter o X-axis: trip_distance o Y-axis: fare_amount o Color/Group by: day_of_week\n\n\n\n\nStep 7. Create dashboard filters\nThe filter helps your dashboard become more interactive\n- Create a Date Range Filter: 1. Click the Filter icon to add a filter widget to the canvas. 2. In the configuration panel, select Date range picker from the dropdown. 3. Check the Title box, rename the filter to Date Range. 4. Select Taxicab_data.tpep_pickup_datetime as the field.\n- Create a Dropdown Filter: 1. Click the Filter icon again to add another filter. 2. Select Dropdown (single-value). 3. Check the Title box and rename it to Dropoff Zip Code. 4. Select Taxicab_data.dropoff_zip as the field.\n- Clone a Filter: 1. Right-click the Dropoff Zip Code filter and select Clone. 2. Remove the existing field by clicking the remove icon. 3. Select Taxicab_data.pickup_zip to filter by pickup zip code.\n\n\n\nStep 8. Resize and arrange charts and filters\nArrange and resize your visualizations and filters to optimize the layout.\n\n\n\nStep 9. Publish and share\n1.  Your dashboard is saved as a draft. To create a final version, click **Publish**.\n\n2.  Review the list of people with access, then click **Publish**. Users and groups with at least **CAN VIEW** permission will be able to see the dashboard.\n\n\n\nResult Click on Dashboard on the left sidebar of Databricks to verify the your dashboard published successfully\n\n\n\n3.  Follow the link in the notification to view the published dashboard.\nSharing the Dashboard: - To update the list of users or groups, return to the draft dashboard and click Share. - Add users or groups and set appropriate permission levels.\nTo give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:",
     "crumbs": [
       "📝Posts",
-      "🚀 **Databricks**",
-      "3. Get Table And Visualize Data in Databricks Notebook"
+      "📊 **Azure Databricks AI/BI**",
+      "1. Create a Dashboard by Databricks AI/BI"
     ]
   },
   {
-    "objectID": "posts/get_table_visualize_data_with_databricks_SQL.html#references",
-    "href": "posts/get_table_visualize_data_with_databricks_SQL.html#references",
-    "title": "Get Table And Visualize Data in Databricks Notebook",
+    "objectID": "posts/create_dashboard_by-databricks_AIBI.html#reference",
+    "href": "posts/create_dashboard_by-databricks_AIBI.html#reference",
+    "title": "Create A Dashboard By Databricks AI/BI",
+    "section": "Reference",
+    "text": "Reference\nhttps://learn.microsoft.com/en-us/azure/databricks/dashboards/tutorials/create-dashboard",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "1. Create a Dashboard by Databricks AI/BI"
+    ]
+  },
+  {
+    "objectID": "posts/building_simple_Lakehouse_analytics.html",
+    "href": "posts/building_simple_Lakehouse_analytics.html",
+    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
+    "section": "",
+    "text": "Hello,\nThis post provides an understanding of data organization in Azure Databricks and guides you step-by-step through a use case to build a lakehouse analytics in Unity Catalog of Azure Databricks and use the curated data for dashboard design. We’ll use a dataset available at a URL, employing the medallion architecture.",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "3. Pipeline of Building a Simple Lakehouse Analytics"
+    ]
+  },
+  {
+    "objectID": "posts/building_simple_Lakehouse_analytics.html#understanding-data-structure-in-azure-databricks",
+    "href": "posts/building_simple_Lakehouse_analytics.html#understanding-data-structure-in-azure-databricks",
+    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
+    "section": "Understanding data structure in Azure Databricks",
+    "text": "Understanding data structure in Azure Databricks\nTypically, one Unity Catalog is one meta store per Azure subscription or AWS tenant. The Unity Catalog served as a unified organizational structure that holds all data within the entire organization. Data is organized within Unity Catalog into catalogs -&gt; schemas -&gt; table.\n•   Catalogs: Function like databases, holding multiple schemas.\n\n•   Schemas: Contain multiple tables.\n\n•   Tables: The organized storage of data\nThe medallion architecture provides a way to organize data in the lakehouse for managing and analyzing large, diverse data. It is structured by three primary layers, corresponding to each specific stage in the data handling process:\n\n\n\nBronze Layer (Raw Layer)\nThis layer includes raw data from external source systems. The table structures in this layer mirror the “as-is” structure of the source systems. The tables are designed to maintain their original format, reflecting the data exactly as it is in the source systems.\nSilver Layer (Enriched Data)\nThe table structures in this layer mirror the “as-is” structure of the source systems. The tables are designed to maintain their original format, reflecting the data exactly as it is in the source systems.\nGold layer (curated data)\nIn this layer, data is organized in consumption-ready “project-specific” database. Data in Gold layer is highly curated and prepared for specific business use case such as analytics or reporting.\nIn summary, the data is curated as it moves through the different layers of a lakehouse. The lake house architecture enable data to be easy to understand and implement.",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "3. Pipeline of Building a Simple Lakehouse Analytics"
+    ]
+  },
+  {
+    "objectID": "posts/building_simple_Lakehouse_analytics.html#use-case-building-a-simple-lakehouse-analytics-with-data-retrieved-from-an-url",
+    "href": "posts/building_simple_Lakehouse_analytics.html#use-case-building-a-simple-lakehouse-analytics-with-data-retrieved-from-an-url",
+    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
+    "section": "Use case: Building a simple Lakehouse analytics with data retrieved from an URL",
+    "text": "Use case: Building a simple Lakehouse analytics with data retrieved from an URL\n\nDescription\nYou have a dataset available on an external data source (Github). It is an academic Android malware classification dataset, given by Canadian Institute for Cybersecurity (CIC) and Canadian Centre for Cybersecurity (CCCS). The mission is to retrieve such dataset to your Unity Catalog and organize the data in different layer: Bronze, Silver and Gold. Then, to project the statistics on the impact of malware on mobile phones By the end of this use case, you will have a dashboard published to answer questions on the most affecting malware for mobile phone.\n\n\nThe guide step to step\nBefore we get started, it need to have a Databrick Unity Catalog and an All-purpose compute resource. As in this demo, I run both Spark and SQL code in the same notebook. The all-purpose compute resource is typically used for interactive data analysis in notebooks and supports running multiple programming languages. For the pipeline codes simply in SQL, select the option SQL warehouses. From the Databricks work space, click on Compute -&gt; Select the tab All-purpose compute -&gt; Click Create compute then following the instruction to configure the compute.\n\n\n\n\n\nStep 1: Create Schema\n\nIn your Databricks workspace, click Catalog\nSearch and click on your catalog, e.g. azure_databricks_demo\nClick the Create Schema button\nEnter a name for the schema. e.g. malware\nClick Create.\n\n\n\nStep 2: Create Volume\n\nSearch or browse to the schema malware\nClick Create Volume\nEnter a name for the volume. e.g. malware_volume\nProvide comment (optional)\nClick Create.\n\n\n\nStep 3. Create a notebook and add Spark - SQL pipeline code\n1. Download dataset from external datasource (Github) \n\nClick on New in the left side bar, then select Notebook. Rename it to “Malware_Pipeline_Spark_SQL”\nIn the cell code, change the language in cell to Python\nCopy and paste the following code in Python\n\n# Define the URL and the destination path in the volume\nurl = \"https://raw.githubusercontent.com/Phuong-NTL/Dataset-collection/refs/heads/main/malware_dataset.csv\"\n\n# Define the catalog, schema, and volume\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\nvolume_name = \"malware_volume\"\n\n# Construct the path to save the file in the volume\nvolume_path = f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/raw_malware_dataset.csv\"\n\n# Use dbutils to download the file to the volume\ndbutils.fs.cp(url, volume_path)\n\n# Verify the file is downloaded\ndisplay(dbutils.fs.ls(f\"/Volumes/{catalog_name}/{schema_name}/{volume_name}/\"))\n2. Read the file into a DataFrame\n# Read the raw file to dataframe\ndf = spark.read.format(\"csv\") \\\n        .option(\"header\", True) \\\n        .option(\"delimiter\", \",\") \\\n        .option(\"escape\", \"\\\\\") \\\n        .load(volume_path)\ndisplay(df)\nprint(df.count())\n3. Write to catalog\n# Define the catalog and schema\ncatalog_name = \"azure_databricks_demo\"\nschema_name = \"malware\"\ntable_name = \"malware_raw\"\n\n# Create the catalog and schema if they do not exist\n# spark.sql(f\"CREATE CATALOG IF NOT EXISTS {catalog_name}\")\n# spark.sql(f\"CREATE SCHEMA IF NOT EXISTS {catalog_name}.{schema_name}\")\n\n# Save the DataFrame as a table in the specified catalog and schema\ndf.write.format(\"delta\").saveAsTable(f\"{catalog_name}.{schema_name}.{table_name}\")\nCopy and paste the following code in SQL\nSELECT * FROM azure_databricks_demo.malware.malware_raw",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "3. Pipeline of Building a Simple Lakehouse Analytics"
+    ]
+  },
+  {
+    "objectID": "posts/building_simple_Lakehouse_analytics.html#organization-of-data",
+    "href": "posts/building_simple_Lakehouse_analytics.html#organization-of-data",
+    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
+    "section": "Organization of data",
+    "text": "Organization of data\nBronze layer\n-- Bronze layer: Raw data ingestion\nCREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_bronze_raw \nAS\nSELECT *\nFROM azure_databricks_demo.malware.malware_raw\nSilver layer\n-- Silver layer: Selected columns\nCREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_silver_selected_features \nAS\nSELECT\n    Category,\n    Family,\n    Process_total, \n    Battery_wakelock, \n    Memory_HeapSize,\n    Memory_HeapAlloc,\n    Memory_HeapFree\nFROM azure_databricks_demo.malware.malware_bronze_raw\nGold layer\n-- Gold layer: Max Process_total per Category\nCREATE OR REPLACE TABLE azure_databricks_demo.malware.malware_gold_max_processes \nAS\nSELECT\n    Category,\n    MAX(CAST(Process_total AS INT)) AS Total_Processes_Breached\nFROM malware.malware_silver_selected_features\nGROUP BY Category\n\nStep 4: Discover data using Catalog Explorer\nExplorer and verify the dataset generated through Unity Catalog via the path structure catalog_name/schema_name/table_name. - Click Catalog in the left sidebar - Click schema_name - Click table_name - Click on the tab Sample Data to load the table detail - Click on Lineage then click See lineage graph to see the overview of all the upstream and downstream tables of the current table.\n\n\nStep 5: Create a Dashboard\n\nOn the current table, click on the button Create on the right side then select Dashboard. It automatically create a dashboard template on the current table.\nUsing Ask the Assistant and give a prompt, e.g. “create a line chart on Category and Total_Processes_Breached” . Click Accept to save the AI-generated chart.\nCustomize the chart using configuration option in the right.\n\n\n\nStep 6: Publish and distribute your dashboard\n\nClick Publish in the upper right corner to create a lean copy of the dashboard.\nClick Publish. The dashboard now is ready to be shared to the others.\n\nFor a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "3. Pipeline of Building a Simple Lakehouse Analytics"
+    ]
+  },
+  {
+    "objectID": "posts/building_simple_Lakehouse_analytics.html#references",
+    "href": "posts/building_simple_Lakehouse_analytics.html#references",
+    "title": "End-to-End Pipeline for Building a Simple Lakehouse Analytics Solution",
     "section": "References",
-    "text": "References\nhttps://learn.microsoft.com/en-us/azure/databricks/getting-started/quick-start",
+    "text": "References\n[1] https://community.databricks.com/t5/get-started-guides/getting-started-with-databricks-build-a-simple-lakehouse/ta-p/67404 [2] Canadian Institute for Cybersecurity (CIC) in collaboration with the Canadian Centre for Cybersecurity (CCCS)",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "3. Pipeline of Building a Simple Lakehouse Analytics"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, I’m Phuong. I am a Data Analyst and Data/AI Consultant. I live and work in Paris, France.\nI have over six years of experience in data analysis and business intelligence. My skills include Python, R, SQL, Power BI, and Tableau, as well as cloud services such as Azure, GCP, AWS, Databricks."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "✨ Data Analysis, Business Intelligence",
+    "section": "",
+    "text": "How To Connect To Azure SQL Database To Query Data\n\n\nConnect Azure SQL Server to SQL Server Management Studio and Power BI Desktop\n\n\n\nSQL Database\n\n\nSQL Server Management Studio\n\n\nServer\n\n\nPower Query Desktop\n\n\n\n\n\n\nJan 19, 2025\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nEnd-to-End Pipeline for Building a Simple Lakehouse Analytics Solution\n\n\nHow To Organize Your Data in Databricks Lakehouse\n\n\n\nMedallion Architecture\n\n\nAI/BI dashboard\n\n\nBusiness intelligence\n\n\nUnity Catalog\n\n\n\n\n\n\nJan 14, 2025\n\n\n6 min\n\n\n\n\n\n\n\n\n\n\n\n\nGet Table And Visualize Data in Databricks Notebook\n\n\nQuery Table And Visualize Data with Databricks SQL\n\n\n\nDatabricks Notebook\n\n\nQuery\n\n\nVisualisation\n\n\n\n\n\n\nJan 8, 2025\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nConnect Databricks Tables to Power BI\n\n\nPublish Azure Databricks Tables to a Power BI Dataset\n\n\n\nAzure\n\n\nDatabricks\n\n\nPower BI\n\n\nReport\n\n\nData Source\n\n\n\n\n\n\nJan 3, 2025\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nCreate A Dashboard By Databricks AI/BI\n\n\nBuilding a AI/BI Dashboard on Azure Databricks\n\n\n\nAI/BI dashboard\n\n\nBusiness intelligence\n\n\nVisualisation\n\n\n\n\n\n\nDec 30, 2024\n\n\n5 min\n\n\n\n\n\n\n\n\n\n\n\n\nCreate Sample Azure SQL Server and Database\n\n\nHow to create a single database and server in Azure SQL Database\n\n\n\nAzure\n\n\nSQL Database\n\n\nServer\n\n\nSingle Database\n\n\n\n\n\n\nDec 29, 2024\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nGet CSV Tables Into Databricks\n\n\nUploading one or many csv table into your Databricks work space\n\n\n\nDatabricks\n\n\nGet Csv File\n\n\nMicrosoft Azure\n\n\n\n\n\n\nDec 28, 2024\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nImproving Power BI Reports with Drill-through Pages\n\n\nMastering Power BI with Finance Report Use-case and Drill-through page\n\n\n\nPower BI\n\n\nReport\n\n\nDrill-through Pages\n\n\nHierarchy\n\n\nChanges Over Time\n\n\n\n\n\n\nDec 27, 2024\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Excecutive Summary - Finance Report\n\n\nMastering Power BI with Excutive Summary - Finance Report Use-case\n\n\n\nPower BI\n\n\nReport\n\n\nDashboard\n\n\nFinance\n\n\nExecutive Summary\n\n\n\n\n\n\nDec 23, 2024\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/connect_databricks_tables_Power_BI.html",
+    "href": "posts/connect_databricks_tables_Power_BI.html",
+    "title": "Connect Databricks Tables to Power BI",
+    "section": "",
+    "text": "Hi there,\nFollow these instructions, you can use Azure Databricks as a data resource to create Power BI dataset from tables or schemas directly from the Databricks UI.",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "2. Connect Databricks Tables to Power BI"
+    ]
+  },
+  {
+    "objectID": "posts/connect_databricks_tables_Power_BI.html#prerequisites",
+    "href": "posts/connect_databricks_tables_Power_BI.html#prerequisites",
+    "title": "Connect Databricks Tables to Power BI",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nYour data must reside in the Unity Catalog within your Databricks workspace.\nYour compute (cluster) must be Unity Catalog-enabled.",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "2. Connect Databricks Tables to Power BI"
+    ]
+  },
+  {
+    "objectID": "posts/connect_databricks_tables_Power_BI.html#step-by-step-guide",
+    "href": "posts/connect_databricks_tables_Power_BI.html#step-by-step-guide",
+    "title": "Connect Databricks Tables to Power BI",
+    "section": "Step-by-Step Guide",
+    "text": "Step-by-Step Guide\n### Open your table\nStep 1. In your Databricks workspace, click on Catalog in the left sidebar to open Catalog Explorer.\nStep 2. Select the schema or table wish to publish.\n\n\n\nStep 3. Choose a compute resource from the drop-down list “Attach to an existing compute resource”. Click Start and Close. Once your compute resource (e.g, Serverless) has started , verifying the table content by clicking on the Overview, Sample Data, … tabs.\n\n\n\nStep 4. In the left side bar, click on Parter Connect dialog, then Select Microsoft Power BI.\n\n\n\nStep 5. In the Compute box: - Choose your compute resource. - Click Download connection file. - Open the downloaded .pbids file in Power BI Desktop.\n\n\n\n\nDeal with Azure Databricks credentials – Generate Access token\nStep 6. When Power BI Desktop starts, a prompt will request your Azure Databricks credentials. For the credential Method, select Personal Access Token (PAT). This token grants Power BI access to the semantic model.\n\n\n\nStep 7. Back to the Databricks UI to get a PAT.\n\nClick on “personal access token”, a window of Access tokens opens.\nClick on Generate new token.\nAdd a comment (e.g., “access databricks”)\nSet the token lifetime. (default is 90 days).\nClick Generate and copy the token immediately once created.\n\n\n\n\n\n\nConnect with Power BI Desktop\nStep 8. In Power BI Desktop, enter your credentials:\n\nPersonal Access Token: Paste the copied Azure Databricks token.\nClick Connect. A Power BI Navigator will open.\n\n\n\n\nStep 9. Select the desired Azure Databricks data to query from the Power BI Navigator.\nClick Load to import the dataset into Power BI.",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "2. Connect Databricks Tables to Power BI"
+    ]
+  },
+  {
+    "objectID": "posts/connect_databricks_tables_Power_BI.html#result",
+    "href": "posts/connect_databricks_tables_Power_BI.html#result",
+    "title": "Connect Databricks Tables to Power BI",
+    "section": "Result",
+    "text": "Result\nCongratulations! You have successfully loaded a dataset in Power BI from Azure Databricks Catalog. Now, you can create interactive reports and dashboards using Power BI’s visualization tools.\n\n\n\nFor a hands-on practice, watch my step-by-step tutorial video demonstrating the above process:\n\nI hope this was helpful !",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "2. Connect Databricks Tables to Power BI"
+    ]
+  },
+  {
+    "objectID": "posts/connect_databricks_tables_Power_BI.html#references",
+    "href": "posts/connect_databricks_tables_Power_BI.html#references",
+    "title": "Connect Databricks Tables to Power BI",
+    "section": "References:",
+    "text": "References:\nhttps://learn.microsoft.com/en-us/azure/databricks/partners/bi/power-bi#additional-resources",
+    "crumbs": [
+      "📝Posts",
+      "📊 **Azure Databricks AI/BI**",
+      "2. Connect Databricks Tables to Power BI"
+    ]
+  },
+  {
+    "objectID": "posts/create_sample_azure_SQL_server_database.html",
+    "href": "posts/create_sample_azure_SQL_server_database.html",
+    "title": "Create Sample Azure SQL Server and Database",
+    "section": "",
+    "text": "Hi there,\nIn this guide, I will walk you through the process of creating a single database in Azure SQL Database. Once created, you can query the database using the Query Editor in the Azure portal.",
     "crumbs": [
       "📝Posts",
       "🚀 **Databricks**",
-      "3. Get Table And Visualize Data in Databricks Notebook"
+      "2. Create Sample Azure SQL Server and Database"
+    ]
+  },
+  {
+    "objectID": "posts/create_sample_azure_SQL_server_database.html#prerequisites",
+    "href": "posts/create_sample_azure_SQL_server_database.html#prerequisites",
+    "title": "Create Sample Azure SQL Server and Database",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nTo complete this task, you must have an active Azure subscription. If you do not have one yet, you can create a free account by following this link: Azure Free Account",
+    "crumbs": [
+      "📝Posts",
+      "🚀 **Databricks**",
+      "2. Create Sample Azure SQL Server and Database"
+    ]
+  },
+  {
+    "objectID": "posts/create_sample_azure_SQL_server_database.html#creating-a-single-azure-sql-database",
+    "href": "posts/create_sample_azure_SQL_server_database.html#creating-a-single-azure-sql-database",
+    "title": "Create Sample Azure SQL Server and Database",
+    "section": "Creating a Single Azure SQL Database",
+    "text": "Creating a Single Azure SQL Database\nStep 1: Access Azure SQL Databases\n\nGo to the Microsoft Azure Portal\nOn the homepage, click on the SQL Databases icon.\n\n\n\n\nStep 2: Create a New SQL Database\n\nOn the SQL Databases page, click Create SQL Database.\n\n\n\n\nStep 3: Configure Database Settings\nBasics Tab:\n\nSelect the desired Azure Subscription.\nFor the Resource group, click Create new, enter a name, and click OK.\nEnter the Database name (requirements: maximum 128 characters, no reserved words, and no existing database with the same name on the server).\nFor Server, select Create new and proceed as follows:\n\n\n\n\no Enter a Server name (Azure will notify you if the name is available). o Select the Location from the dropdown list. o For Authentication method, choose SQL Authentication.  Create a Server Admin Login.  Set a password.  Click OK.\n\n\n\nWorkload Environment\n\nUnder Workload environment, select either Development or Production. Note that the fees differ significantly between these options.\nClick Next to proceed to the Networking tab\n\n\n\n\nNetworking Tab\n\nChoose the connectivity method (e.g., Public endpoint).\nUnder Firewall rules, enable: o Allow Azure services and resources to access this server. o Add current client IP address.\n\n\n\n\nAdditional Settings Tab\n\nIn the Data source section, select Sample.\nClick OK.\n\n\n\n\nStep 4: Review and Create\n\nReview all information in the Tags and Review + create tabs.\nClick Create to finalize the database creation.",
+    "crumbs": [
+      "📝Posts",
+      "🚀 **Databricks**",
+      "2. Create Sample Azure SQL Server and Database"
+    ]
+  },
+  {
+    "objectID": "posts/create_sample_azure_SQL_server_database.html#final-result",
+    "href": "posts/create_sample_azure_SQL_server_database.html#final-result",
+    "title": "Create Sample Azure SQL Server and Database",
+    "section": "Final Result",
+    "text": "Final Result\nYou have successfully created a sample Azure SQL Database. You can now query and manage your database directly from the Azure portal\n\n\n\nTo give you a hands-on practice of this use case, please following my step-by-step tutorial video to perform all the above steps:",
+    "crumbs": [
+      "📝Posts",
+      "🚀 **Databricks**",
+      "2. Create Sample Azure SQL Server and Database"
+    ]
+  },
+  {
+    "objectID": "posts/create_sample_azure_SQL_server_database.html#reference",
+    "href": "posts/create_sample_azure_SQL_server_database.html#reference",
+    "title": "Create Sample Azure SQL Server and Database",
+    "section": "Reference",
+    "text": "Reference\nhttps://learn.microsoft.com/en-us/azure/azure-sql/database",
+    "crumbs": [
+      "📝Posts",
+      "🚀 **Databricks**",
+      "2. Create Sample Azure SQL Server and Database"
+    ]
+  },
+  {
+    "objectID": "posts/get_csv_tables_into_databricks.html",
+    "href": "posts/get_csv_tables_into_databricks.html",
+    "title": "Get CSV Tables Into Databricks",
+    "section": "",
+    "text": "How to upload a table into your Databricks work space in Microsoft Azure\nHello,\nThis post give a quick through of creating a table in Azure Databricks work space.",
+    "crumbs": [
+      "📝Posts",
+      "🚀 **Databricks**",
+      "1. Get CSV Tables into Databricks"
+    ]
+  },
+  {
+    "objectID": "posts/get_csv_tables_into_databricks.html#prerequisite",
+    "href": "posts/get_csv_tables_into_databricks.html#prerequisite",
+    "title": "Get CSV Tables Into Databricks",
+    "section": "Prerequisite:",
+    "text": "Prerequisite:\nIn order to perform the task, you must have an Azure Databricks account. If you have not had that, go to create an Azure account, then subscribe Databricks to create an Databricks work space",
+    "crumbs": [
+      "📝Posts",
+      "🚀 **Databricks**",
+      "1. Get CSV Tables into Databricks"
+    ]
+  },
+  {
+    "objectID": "posts/get_csv_tables_into_databricks.html#create-your-first-table",
+    "href": "posts/get_csv_tables_into_databricks.html#create-your-first-table",
+    "title": "Get CSV Tables Into Databricks",
+    "section": "Create your first table",
+    "text": "Create your first table\nStep 1. Launch your work space Databricks\n\n\n\nStep 2. In the sidebar, click + New to Add or Upload data\n\n\n\nStep 3. Click on Create and modify table\n\n\n\nStep 4. Drop files into the frame or click on browse to upload the files (Maximum 10 files and total upload size of 2GB)\n\n\n\nStep 5. After files are uploaded, verify then click on Create Table",
+    "crumbs": [
+      "📝Posts",
+      "🚀 **Databricks**",
+      "1. Get CSV Tables into Databricks"
+    ]
+  },
+  {
+    "objectID": "posts/get_csv_tables_into_databricks.html#final-result",
+    "href": "posts/get_csv_tables_into_databricks.html#final-result",
+    "title": "Get CSV Tables Into Databricks",
+    "section": "Final result",
+    "text": "Final result\nHere is the table successfully uploaded on the Databrick work space\n\n\n\nTo give you a hands-on practice of this work, please following my step-by-step tutorial video to perform all the above steps:",
+    "crumbs": [
+      "📝Posts",
+      "🚀 **Databricks**",
+      "1. Get CSV Tables into Databricks"
+    ]
+  },
+  {
+    "objectID": "posts/get_csv_tables_into_databricks.html#reference",
+    "href": "posts/get_csv_tables_into_databricks.html#reference",
+    "title": "Get CSV Tables Into Databricks",
+    "section": "Reference",
+    "text": "Reference\n[1] https://learn.microsoft.com",
+    "crumbs": [
+      "📝Posts",
+      "🚀 **Databricks**",
+      "1. Get CSV Tables into Databricks"
+    ]
+  },
+  {
+    "objectID": "posts/how_to_connect_to_Azure_SQL_database_to_Query_data.html#introduction",
+    "href": "posts/how_to_connect_to_Azure_SQL_database_to_Query_data.html#introduction",
+    "title": "How To Connect To Azure SQL Database To Query Data",
+    "section": "Introduction",
+    "text": "Introduction\nSometimes, you need to work with data directly in environments other than the Databricks platform while maintaining the ability to access SQL databases. In such cases, ensuring connectivity between these tools and Azure SQL Server is essential. In this quickstart, you will learn how to connect Azure SQL Server to SQL Server Management Studio (SSMS) and Power BI Desktop.",
+    "crumbs": [
+      "📝Posts",
+      "🚀 **Databricks**",
+      "4. How To Connect To Azure SQL Database To Query Data"
+    ]
+  },
+  {
+    "objectID": "posts/how_to_connect_to_Azure_SQL_database_to_Query_data.html#prerequisites",
+    "href": "posts/how_to_connect_to_Azure_SQL_database_to_Query_data.html#prerequisites",
+    "title": "How To Connect To Azure SQL Database To Query Data",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nTo complete this task, you must have the following: - A database in Azure SQL Database. If you do not have one, follow these instructions - SQL Server Management Studio installed. - Power BI Desktop installed.",
+    "crumbs": [
+      "📝Posts",
+      "🚀 **Databricks**",
+      "4. How To Connect To Azure SQL Database To Query Data"
+    ]
+  },
+  {
+    "objectID": "posts/how_to_connect_to_Azure_SQL_database_to_Query_data.html#instructions",
+    "href": "posts/how_to_connect_to_Azure_SQL_database_to_Query_data.html#instructions",
+    "title": "How To Connect To Azure SQL Database To Query Data",
+    "section": "Instructions",
+    "text": "Instructions\n1. Get server connection information\nYou need the fully qualified server name, login name and password to meet the requirements of the connection. - Sign in to your Azure portal.\n\n\n\n\nNavigate to the SQL database you want to query.\nClick on the Overview tab, you can find the fully server name. Copy this name.\nClick on the server name, you can see the server admin name.\n\n2. Connectivity\n2.1. Connect Azure SQL Server to SSMS \n\nOpen the software SSMS\nIn the Connect to Server dialog box, on the Login tab:\n\nSelect the Server type as Database Engine\nPaste your server name into the Server name box.\nSelect SQL Server Authentication as the authentication method.\nEnter your login name (admin name) and password in the corresponding fields.\nClick Connect. The Object Explorer window will open.\n\nQuery data:\n\nIn the Available Databases dropdown menu, select your database. (e.x. sql-database-sample-demo)\nOn the SSMS interface, click New Query\nIn the query window, paste the following SQL code:\n\nSELECT TOP 20 * FROM SalesLT.Address\n\nClick Execute to run the query and and retrieve data:\n\n\nFor a hands-on practice, watch my step-by-step tutorial video demonstrating this process: \n2.2. Connect Azure SQL Server to Power Query Desktop\n\nOpen the software Power BI Desktop. Select Import data from SQL Server.\nIn the SQL Server Database dialog box:\n\nPaste your server name into the Server name box\nSelect Import as Data Connectivity mode\nClick OK. The new window of authentication type will open\nSelect Database.\nProvide your credentials by entering your user name (admin name) and password in the corresponding fields\nClick Connect\nNavigate to your dataset, click to select then Click Transform data to open the dataset in Power Query.\n\n\nFor a hands-on practice, watch my step-by-step tutorial video demonstrating this process:",
+    "crumbs": [
+      "📝Posts",
+      "🚀 **Databricks**",
+      "4. How To Connect To Azure SQL Database To Query Data"
+    ]
+  },
+  {
+    "objectID": "posts/how_to_connect_to_Azure_SQL_database_to_Query_data.html#references",
+    "href": "posts/how_to_connect_to_Azure_SQL_database_to_Query_data.html#references",
+    "title": "How To Connect To Azure SQL Database To Query Data",
+    "section": "References",
+    "text": "References\nhttps://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ssms?view=azuresql https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ssms?view=azuresql",
+    "crumbs": [
+      "📝Posts",
+      "🚀 **Databricks**",
+      "4. How To Connect To Azure SQL Database To Query Data"
     ]
   }
 ]

@@ -1,0 +1,79 @@
+---
+title: "How To Connect To Azure SQL Database To Query Data"
+subtitle: "Connect Azure SQL Server to SQL Server Management Studio and Power BI Desktop"
+author: "Phuong Nguyen"
+date: "2025-01-19"
+categories: [SQL Database, SQL Server Management Studio, Server, Power Query Desktop]
+image: "/images/how_to_connect_to_Azure_SQL_database_to_Query_data/thumbnail_SQLdatabase.png" 
+---
+
+<center><img src="/images/how_to_connect_to_Azure_SQL_database_to_Query_data/intro_SQLdatabase.webp"></center>
+
+## Introduction
+
+Sometimes, you need to work with data directly in environments other than the Databricks platform while maintaining the ability to access SQL databases. In such cases, ensuring connectivity between these tools and Azure SQL Server is essential. In this quickstart, you will learn how to connect Azure SQL Server to SQL Server Management Studio (SSMS) and Power BI Desktop.
+
+## Prerequisites
+
+To complete this task, you must have the following:
+- A database in Azure SQL Database. If you do not have one, follow [these instructions](https://phuong-ntl.github.io/posts/create_sample_azure_SQL_server_database.html) 
+- SQL Server Management Studio installed.
+- Power BI Desktop installed.
+
+## Instructions
+
+**1. Get server connection information**
+
+You need the fully qualified server name, login name and password to meet the requirements of the connection.
+- Sign in to your **Azure portal**.
+
+<center><img src="/images/how_to_connect_to_Azure_SQL_database_to_Query_data/Step 1-1.png"></center>
+
+- Navigate to the SQL database you want to query.
+- Click on the **Overview** tab, you can find the fully server name. Copy this name.
+- Click on the server name, you can see the server admin name.
+
+**2. Connectivity**
+
+**2.1. Connect Azure SQL Server to SSMS **
+
+- Open the software SSMS
+- In the **Connect to Server** dialog box, on the **Login** tab:
+	- Select the **Server type** as **Database Engine**
+	- Paste your server name into the Server name box.
+	- Select **SQL Server Authentication** as the **authentication method**.
+	- Enter your login name (admin name) and password in the corresponding fields.
+	- Click  **Connect**. The Object Explorer window will open.
+- Query data:
+	- In the **Available Databases** dropdown menu, select your database. (e.x. sql-database-sample-demo)
+	- On the SSMS interface, click **New Query**
+	- In the query window, paste the following SQL code:
+
+    ```SQL
+	SELECT TOP 20 * FROM SalesLT.Address
+    ```
+	- Click **Execute** to run the query and and retrieve data:
+
+For a hands-on practice, watch my step-by-step tutorial video demonstrating this process:
+{{< video https://www.youtube.com/watch?v=52xZH-38l_o>}}
+
+**2.2. Connect Azure SQL Server to Power Query Desktop**
+
+- Open the software Power BI Desktop. Select **Import data from SQL Server**. 
+- In the **SQL Server Database** dialog box:
+	- Paste your server name into the Server name box
+	- Select **Import**  as **Data Connectivity mode**
+	- Click **OK**. The new window of authentication type will open
+	- Select **Database**. 
+	- Provide your credentials by entering your user name (admin name) and password in the corresponding fields
+	- Click **Connect**
+	- Navigate to your dataset, click to select then Click **Transform data** to open the dataset in Power Query.
+
+For a hands-on practice, watch my step-by-step tutorial video demonstrating this process:
+{{< video https://www.youtube.com/watch?v=iii5U3EFSbc>}}
+
+## References
+
+https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ssms?view=azuresql
+https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-ssms?view=azuresql
+
