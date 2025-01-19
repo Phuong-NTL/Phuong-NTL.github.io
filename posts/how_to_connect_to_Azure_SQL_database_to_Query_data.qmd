@@ -27,11 +27,16 @@ To complete this task, you must have the following:
 You need the fully qualified server name, login name and password to meet the requirements of the connection.
 - Sign in to your **Azure portal**.
 
-<center><img src="/images/how_to_connect_to_Azure_SQL_database_to_Query_data/Step 1-1.png"></center>
+<center><img src="/images/how_to_connect_to_Azure_SQL_database_to_Query_data/Step 1-1"></center>
 
 - Navigate to the SQL database you want to query.
 - Click on the **Overview** tab, you can find the fully server name. Copy this name.
+
+<center><img src="/images/how_to_connect_to_Azure_SQL_database_to_Query_data/Step 1-2"></center>
+
 - Click on the server name, you can see the server admin name.
+
+<center><img src="/images/how_to_connect_to_Azure_SQL_database_to_Query_data/Step 1-3"></center>
 
 **2. Connectivity**
 
@@ -44,6 +49,9 @@ You need the fully qualified server name, login name and password to meet the re
 	- Select **SQL Server Authentication** as the **authentication method**.
 	- Enter your login name (admin name) and password in the corresponding fields.
 	- Click  **Connect**. The Object Explorer window will open.
+
+<center><img src="/images/how_to_connect_to_Azure_SQL_database_to_Query_data/Step 1-4"></center>
+
 - Query data:
 	- In the **Available Databases** dropdown menu, select your database. (e.x. sql-database-sample-demo)
 	- On the SSMS interface, click **New Query**
@@ -54,20 +62,34 @@ You need the fully qualified server name, login name and password to meet the re
     ```
 	- Click **Execute** to run the query and and retrieve data:
 
+
+<center><img src="/images/how_to_connect_to_Azure_SQL_database_to_Query_data/Step 1-5"></center>
+
 For a hands-on practice, watch my step-by-step tutorial video demonstrating this process:
 {{< video https://www.youtube.com/watch?v=52xZH-38l_o>}}
 
 **2.2. Connect Azure SQL Server to Power Query Desktop**
 
 - Open the software Power BI Desktop. Select **Import data from SQL Server**. 
+
+<center><img src="/images/how_to_connect_to_Azure_SQL_database_to_Query_data/Step 2-1"></center>
+
 - In the **SQL Server Database** dialog box:
 	- Paste your server name into the Server name box
 	- Select **Import**  as **Data Connectivity mode**
 	- Click **OK**. The new window of authentication type will open
+
+<center><img src="/images/how_to_connect_to_Azure_SQL_database_to_Query_data/Step 2-2"></center>
+
 	- Select **Database**. 
 	- Provide your credentials by entering your user name (admin name) and password in the corresponding fields
 	- Click **Connect**
+
+<center><img src="/images/how_to_connect_to_Azure_SQL_database_to_Query_data/Step 2-3"></center>
+
 	- Navigate to your dataset, click to select then Click **Transform data** to open the dataset in Power Query.
+
+<center><img src="/images/how_to_connect_to_Azure_SQL_database_to_Query_data/Step 2-4"></center>
 
 For a hands-on practice, watch my step-by-step tutorial video demonstrating this process:
 {{< video https://www.youtube.com/watch?v=iii5U3EFSbc>}}
